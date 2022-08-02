@@ -14,10 +14,14 @@ export default function Layout({children}) {
         <title>Orientation 2022</title>
     </Head>
     <Header />
-    <div className='mt-44 md:mt-40'>
+    <div className='mt-60 md:mt-64 relative z-30'>
     <SplashComponent />
     </div>
-    <MyParticles />
+
+
+<MyParticles />
+
+    
 
     </>
   )

@@ -1,6 +1,6 @@
 import React, { useRef,useState } from 'react'
 import styles from './Music.module.css'
-import music from '../../assets/audio/u-said-it-v13-1167.mp3'
+import music from '../../assets/audio/NMX ON.mp3'
 
 export default function Music() {
 

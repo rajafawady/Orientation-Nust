@@ -1,0 +1,6 @@
+.logodiv{
+    position: absolute;
+    
+    z-index: 10;
+    background: white;
+}
