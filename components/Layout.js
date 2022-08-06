@@ -1,28 +1,20 @@
-import Head from 'next/head'
-import React from 'react'
-import Header from './Header/Header'
-import MyParticles from './Particles/Particles'
-import SplashComponent from './SplashComponent/SplashComponent'
+import Head from "next/head";
+import React from "react";
+import Header from "./Header/Header";
+import MyParticles from "./Particles/Particles";
+import SplashComponent from "./SplashComponent/SplashComponent";
 
-
-export default function Layout({children}) {
-  
+export default function Layout({ children, isIndex }) {
   return (
     <>
-    
-    <Head>
+      <Head>
         <title>Orientation 2022</title>
-    </Head>
-    <Header />
-    <div className='mt-60 md:mt-64 relative z-30'>
-    <SplashComponent />
-    </div>
+      </Head>
 
+      <Header />
+      {children}
 
-<MyParticles />
-
-    
-
+      {isIndex && <MyParticles />}
     </>
-  )
+  );
 }
