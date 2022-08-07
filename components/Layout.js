@@ -6,13 +6,12 @@ import Socials from './Socials/Socials'
 import SplashComponent from './SplashComponent/SplashComponent'
 
 
-export default function Layout({children}) {
-  
+export default function Layout({ children, isIndex }) {
   return (
     <>
-    
-    <Head>
+      <Head>
         <title>Orientation 2022</title>
+
     </Head>
     <Header />
     <div>
@@ -23,8 +22,6 @@ export default function Layout({children}) {
 
 <MyParticles />
 
-    
-
     </>
-  )
+  );
 }

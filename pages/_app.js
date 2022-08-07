@@ -9,8 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       </TransitionEffect>
     </ThemeProvider>
-  )
-  
+  );
 }
 
-export default MyApp
+export default MyApp;
