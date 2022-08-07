@@ -14,7 +14,6 @@ const ParticlesComponent = (props) => {
     // using an empty options object will load the default options, which are static particles with no background and 3px radius, opacity 100%, white color
     // all options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
     return {
-      
       fullScreen: {
         enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
         zIndex: -1, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
@@ -45,9 +44,10 @@ const ParticlesComponent = (props) => {
             value: theme =="dark"? "#F26E83" : "#720240",
         },
         links: {
-            color: "#F26E83",
+          color: "#F26E83",
           enable: true, // enabling this will make particles linked together
           distance: 200, // maximum distance for linking the particles
+          opacity:0.5,
         },
         move: {
           enable: true, // enabling this will make particles move in the canvas
@@ -57,7 +57,7 @@ const ParticlesComponent = (props) => {
           value: { min: 0.6, max: 0.9 }, // using a different opacity, to have some semitransparent effects
         },
         size: {
-          value: { min: 1, max: 3 }, // let's randomize the particles size a bit
+          value: { min: 3, max: 10 }, // let's randomize the particles size a bit
         },
       },
     };

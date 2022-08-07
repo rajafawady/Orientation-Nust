@@ -1,3 +1,8 @@
+.credits{
+    font-size: 8px;
+    font-weight: bolder;
+}
+
 .music {
     position: relative;
     left: -10px;

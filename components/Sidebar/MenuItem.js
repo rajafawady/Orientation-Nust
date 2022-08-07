@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const variants = {
   open: {
@@ -28,8 +29,12 @@ export const MenuItem = ({ i }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
+    <Link href="/dashboard">
+      
       <div className="icon-placeholder" style={style} />
+      </Link>
       <div className="text-placeholder" style={style} />
+    
     </motion.li>
   );
 };
