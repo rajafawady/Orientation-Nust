@@ -19,7 +19,7 @@ export default function Music() {
   
   return (
     <>
-    <div className='flex justify-evenly '>
+    <div className='flex justify-evenly'>
     <div className={`w-12 rotate-90 text-tyrian-purple dark:text-pale-pink ${styles.credits}`}>
       Composed By NMX
     </div>

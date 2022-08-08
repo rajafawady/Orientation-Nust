@@ -13,8 +13,8 @@ export default function Header() {
 
         </div>
        
-        <div className='w-1/3 md:w-1/4 flex justify-end'>
-          <div className='pt-5 mr-14 md:pr-5'>
+        <div className='w-1/3 md:w-1/4 flex justify-end items-center'>
+          <div className=' mr-14 md:pr-5'>
 
             <Music />
           </div>

@@ -14,13 +14,7 @@ export default function Layout({ children, isIndex }) {
 
     </Head>
     <Header />
-    <div>
-    <SplashComponent />
-    </div>
-
-    <Socials />
-
-<MyParticles />
+    {children}
 
     </>
   );

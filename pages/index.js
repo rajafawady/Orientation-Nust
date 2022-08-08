@@ -1,13 +1,21 @@
 import Layout from "../components/Layout";
+
 import SplashComponent from "../components/SplashComponent/SplashComponent";
+import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
+
 export default function Home() {
+  const [click, setClick] = useState(false);
+
   return (
     <>
-      <Layout isIndex={true}>
-      <div className="mt-60 md:mt-64 relative z-30">
-        <SplashComponent />
-      </div>
-      </Layout>
+      <AnimatePresence exitBeforeEnter>
+        <Layout isIndex={true}>
+         
+            <SplashComponent />
+          
+        </Layout>
+      </AnimatePresence>
     </>
   );
 }
