@@ -5,14 +5,14 @@ import Link from "next/link";
 const variants = {
   open: {
     y: 0,
-    opacity: 1,
+    display: "block",
     transition: {
       y: { stiffness: 1000, velocity: -100 }
     }
   },
   closed: {
     y: 50,
-    opacity: 0,
+    display: "none",
     transition: {
       y: { stiffness: 1000 }
     }
@@ -29,12 +29,12 @@ export const MenuItem = ({ i }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-    <Link href="/dashboard">
+    <div className="flex items-center">
       
       <div className="icon-placeholder" style={style} />
-      </Link>
+ 
       <div className="text-placeholder" style={style} />
-    
+      </div>
     </motion.li>
   );
 };

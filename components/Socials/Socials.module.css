@@ -1,5 +1,11 @@
 .social{
     position: absolute;
     bottom: 60px;
-    z-index: 10;
+    z-index: 3;
+}
+
+@media screen and (max-width: 500px) {
+    .social{
+        bottom: 10px;
+    }
 }
