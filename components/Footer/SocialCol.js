@@ -1,22 +1,44 @@
 import React from "react";
 import FooterItem from "./FooterItem";
-import { IoLogoFacebook, IoLogoInstagram } from "react-icons/io";
+import { IoLogoFacebook, IoLogoInstagram, IoLogoTwitter } from "react-icons/io";
+import { MdLocalDrink, MdFastfood, MdEmojiFoodBeverage } from "react-icons/md";
 
-const SocialCol = ({  }) => {
+const SocialCol = ({}) => {
   return (
     <div className="flex flex-col sm:mt-0 mt-4">
-      <div className="text-2xl mb-2">Socials</div>
-      <FooterItem
-        text="Facebook"
-        logo={<IoLogoFacebook size={25} className="inline-block mr-1" />}
-        link={'https://www.facebook.com/ON.NUST/'}
-      />
-      <FooterItem
-        text="Instagram"
-        logo={<IoLogoInstagram size={25} className="inline-block mr-1" />}
-        link={'https://www.instagram.com/o_nust/'}
-      />
-      
+      <div className="text-4xl mb-2">Socials</div>
+      <div className="flex sm:justify-between space">
+        <FooterItem
+          text=""
+          logo={<IoLogoFacebook size={35} className="inline-block mr-6 sm:mr-1 " />}
+          link={"https://www.facebook.com/ON.NUST/"}
+        />
+        <FooterItem
+          text=""
+          logo={<IoLogoInstagram size={35} className="inline-block mr-6 sm:mr-1 " />}
+          link={"https://www.instagram.com/o_nust/"}
+        />
+        <FooterItem
+          text=""
+          logo={<IoLogoTwitter size={35} className="inline-block mr-6 sm:mr-1 " />}
+          link={"https://twitter.com/o_nust?lang=en"}
+        />
+      </div>
+      <div className="text-4xl mb-2">Sponsors</div>
+      <div className="flex sm:justify-between ">
+        <FooterItem
+          text=""
+          logo={<MdLocalDrink size={35} className="inline-block mr-6 sm:mr-1  " />}
+        />
+        <FooterItem
+          text=""
+          logo={<MdFastfood size={35} className="inline-block mr-6 sm:mr-1 " />}
+        />
+        <FooterItem
+          text=""
+          logo={<MdEmojiFoodBeverage size={35} className="inline-block mr-6 sm:mr-1 " />}
+        />
+      </div>
     </div>
   );
 };
