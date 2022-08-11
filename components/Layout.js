@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Header from "./Header/Header";
 import MyParticles from "./Particles/Particles";
+import Footer from "./Footer";
 
 export default function Layout({ children, isIndex }) {
   return (
@@ -14,6 +15,7 @@ export default function Layout({ children, isIndex }) {
       {children}
 
       {isIndex && <MyParticles />}
+      <Footer />
     </>
   );
 }

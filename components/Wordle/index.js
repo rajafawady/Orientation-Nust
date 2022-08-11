@@ -91,7 +91,9 @@ function Wordle() {
         <div
           className={`h-14 w-full m-0 border-b-gray-600 grid place-items-center ${styles.nav}`}
         >
-          <h1 className={`m-0 text-black text-5xl font-montserrat dark:text-white`}>
+          <h1
+            className={`m-0 text-black text-5xl font-montserrat dark:text-white`}
+          >
             NUST Wordle
           </h1>
         </div>
