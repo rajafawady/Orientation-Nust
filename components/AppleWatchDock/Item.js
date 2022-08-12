@@ -3,7 +3,7 @@ import { motion, useMotionValue } from "framer-motion";
 import { icon } from "./settings";
 import { useIconTransform } from "./use-icon-transform";
 
-export function Item({ row, col, planeX, planeY }) {
+export function Item({ row, col, planeX, planeY, image }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const scale = useMotionValue(1);
@@ -36,8 +36,10 @@ export function Item({ row, col, planeX, planeY }) {
         // This will change the color of an icon every render. In production
         // you'd want to save this as a ref or similar. But here it makes a nice
         // visual indicator that we're doing all this without any re-renders :)
-        background: `hsla(${Math.random() * 360}, 95%, 55%, 1)`
+        background: "black",
       }}
-    ><img src="/profile-img.png" style={{pointerEvents: "none"}}/></motion.div>
+    >
+      <img className="rounded-full w-full h-full pointer-events-none" src={image}  />
+    </motion.div>
   );
 }

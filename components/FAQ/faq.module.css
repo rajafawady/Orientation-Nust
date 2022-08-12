@@ -1,0 +1,12 @@
+.accordionItem:first-of-type {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.accordionItem:last-of-type {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.selected{
+    display: block;
+}

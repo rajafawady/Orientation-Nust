@@ -16,6 +16,8 @@
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
     "@popmotion/popcorn": "^0.4.4",
+    "@react-google-maps/api": "^2.12.1",
+    "@react-spring/parallax": "^9.5.2",
     "framer-motion": "^6.5.1",
     "next": "12.2.3",
     "next-themes": "^0.2.0",

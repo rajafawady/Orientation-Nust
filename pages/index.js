@@ -5,12 +5,11 @@ import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 export default function Home() {
-  const [click, setClick] = useState(false);
 
   return (
     <>
       <AnimatePresence exitBeforeEnter>
-        <Layout isIndex={true}>
+        <Layout title={"Orientation 2022"} homePage={true}>
          
             <SplashComponent />
           

@@ -14,9 +14,30 @@ const variants = {
 export const Navigation = () => (
   <motion.ul variants={variants}>
     {itemIds.map(i => (
-      <MenuItem i={i} key={i} />
+      <MenuItem i={i} key={i.id} />
     ))}
   </motion.ul>
 );
 
-const itemIds = [0, 1, 2, 3, 4];
+const itemIds = [
+  {
+    "id": 0,
+    "name":"Home",
+    "href":"/",
+  },
+  {
+    "id": 1,
+    "name":"Life AT NUST",
+    "href":"/gallery",
+  },
+  {
+    "id": 2,
+    "name":"Our Team",
+    "href":"/our_team",
+  },
+  {
+    "id": 3,
+    "name":"FAQs",
+    "href":"/faqs",
+  },
+];

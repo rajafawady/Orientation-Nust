@@ -3,8 +3,8 @@ import CardList from "../../components/CardList/CardList";
 import Layout from '../../components/Layout';
 const Gallery = ({schools, lifeAtNUST}) => {
     return( 
-    <Layout>
-    <div className='width-conia'>
+    <Layout title={"Life At NUST"}>
+    <div className='width-container'>
         <CardList schools={schools} lifeAtNUST={lifeAtNUST} />
     </div>
     </Layout>

@@ -1,7 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faBuildingUser, faPeopleGroup, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 const variants = {
   open: {
     y: 0,
@@ -19,10 +20,10 @@ const variants = {
   }
 };
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+const icons = [faHome,faBuildingUser, faPeopleGroup,faCircleQuestion];
 
 export const MenuItem = ({ i }) => {
-  const style = { border: `2px solid ${colors[i]}` };
+  const icon = icons[i.id]
   return (
     <motion.li
       variants={variants}
@@ -31,10 +32,18 @@ export const MenuItem = ({ i }) => {
     >
     <div className="flex items-center">
       
-      <div className="icon-placeholder" style={style} />
- 
-      <div className="text-placeholder" style={style} />
+      <Link href={i.href}>
+      <div className="flex justify-center items-center my-2">
+      <div className="icon-placeholder" >
+      <FontAwesomeIcon icon={icon} size="2x" color="white" />
       </div>
+
+        <div className="text-white text-3xl font-bold"  >
+          {i.name}
+        </div>
+        </div>
+      </Link>
+    </div>
     </motion.li>
   );
 };

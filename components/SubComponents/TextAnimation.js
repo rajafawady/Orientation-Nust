@@ -37,7 +37,7 @@ export const TypeWriter = ({Text}) => {
                   visible: i => ({
                     y: 0,
                     transition: {
-                      delay: i * 0.1
+                      delay: i * 0.03
                     }
                   })
                 }}

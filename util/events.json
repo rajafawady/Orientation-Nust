@@ -1,0 +1,117 @@
+[
+  {
+    "day": "Day 1",
+    "activities": [
+      {
+        "name": "Opening Ceremony",
+        "image": "/events/Day1/opening.jpg",
+        "date": "2022-09-12 09:00 AM",
+        "description": ""
+      },
+      {
+        "name": "Interaction with OG",
+        "image": "/events/Day1/og.jpg",
+        "date": "2022-09-12 02:00 PM",
+        "description": ""
+      },
+      {
+        "name": "Batch Photo",
+        "image": "/events/Day1/batch-day.jpg",
+        "date": "2022-09-12 05:00 PM",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "day": "Day 2",
+    "activities": [
+      {
+        "name": "Registration in respective schools",
+        "image": "/events/Day2/regis.jpg",
+        "date": "2022-09-13 09:00 AM",
+        "description": ""
+      },
+      {
+        "name": "OG Activities",
+        "image": "/events/Day2/og.jpg",
+        "date": "2022-09-13 02:00 PM",
+        "description": ""
+      },
+      {
+        "name": "Sports Gala",
+        "image": "/events/Day2/sports.jpg",
+        "date": "2022-09-13 05:00 PM",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "day": "Day 3",
+    "activities": [
+      {
+        "name": "School visits",
+        "image": "/events/Day3/school.jpg",
+        "date": "2022-09-14 09:00 AM",
+        "description": ""
+      },
+      {
+        "name": "OG Activities",
+        "image": "/events/Day3/og.jpg",
+        "date": "2022-09-14 02:00 PM",
+        "description": ""
+      },
+      {
+        "name": "Sports Gala",
+        "image": "/events/Day3/sports.jpg",
+        "date": "2022-09-14 05:00 PM",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "day": "Day 4",
+    "activities": [
+      {
+        "name": "School Visits",
+        "image": "/events/Day4/school.jpg",
+        "date": "2022-09-15 09:00 AM",
+        "description": ""
+      },
+      {
+        "name": "OG Activities",
+        "image": "/events/Day4/og.jpg",
+        "date": "2022-09-15 02:00 PM",
+        "description": ""
+      },
+      {
+        "name": "ON Fest",
+        "image": "/events/Day4/fest.jpg",
+        "date": "2022-09-15 05:00 PM",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "day": "Day 5",
+    "activities": [
+      {
+        "name": "School Visits",
+        "image": "/events/Day5/school.jpg",
+        "date": "2022-09-16 09:00 AM",
+        "description": ""
+      },
+      {
+        "name": "Closing Ceremony",
+        "image": "/events/Day5/batch-night.jpg",
+        "date": "2022-09-16 02:00 PM",
+        "description": ""
+      },
+      {
+        "name": "Concert",
+        "image": "/events/Day5/concert.jpg",
+        "date": "2022-09-16 05:00 PM",
+        "description": ""
+      }
+    ]
+  }
+]

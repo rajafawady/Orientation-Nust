@@ -11,7 +11,7 @@ const Container = styled(motion.div)`
 `;
 
 
-export const AnimationPropExample = () => {
+const AnimationPropExample = () => {
   return (
   <div className="flex justify-center">
       <Container
@@ -25,3 +25,5 @@ export const AnimationPropExample = () => {
     </div>
   );
 };
+
+export default AnimationPropExample;

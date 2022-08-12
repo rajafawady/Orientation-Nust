@@ -25,7 +25,7 @@ const Modal = ({ data, schools, lifeAtNUST, type }) => {
     return (
         <>
             <div onClick={handleClick}
-                className='absolute top-0 left-0 w-full z-50 overflow-y-auto max-h-full bg-prussian-blue bg-opacity-80'>
+                className='absolute top-0 left-0 w-full z-50 overflow-y-auto h-full bg-prussian-blue bg-opacity-80'>
                 <div className='flex justify-center items-center'>
                     <div className={`my-12 w-11/12 md:w-2/3 lg:w-1/2 rounded-3xl overflow-hidden ${theme === 'dark' ? 'bg-black' : 'bg-white'}`}>
                         <div className='w-full h-96 bg-cover bg-no-repeat bg-center p-6'

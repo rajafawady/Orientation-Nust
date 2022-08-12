@@ -6,7 +6,7 @@ const Card = ({className, children, image, type, id}) => {
         <Link href={`/gallery/${type.toLowerCase().replace(/\s/g, '-')}/${id}`}><a>
             <div
                 style={{
-                    background: `linear-gradient(to top, rgba(114,2,64,0.2), rgba(114,2,64,0.2)), url(${image}) no-repeat top center`,
+                    background: `linear-gradient(to top, rgba(114,2,64,0.1), rgba(114,2,64,0.1)), url(${image}) no-repeat top center`,
                     backgroundSize: 'cover'
                 }}
                 className={`cursor-pointer p-6 w-full h-96 rounded-2xl bg-cover relative overflow-hidden ${className} transition duration-300 ease-in-out`}>

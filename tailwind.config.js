@@ -22,6 +22,22 @@ module.exports = {
         brittany: ["Brittany-Signature"],
 
       },
+      keyframes: {
+        expand: {
+            '0%': {
+                transform: 'scale(1.1)',
+            },
+            '50%': {
+                transform: 'scale(0.98)',
+            },
+            '100%': {
+                transform: 'scale(1.1)',
+            }
+        }
+    },
+    animation: {
+        expand: 'expand 1s ease-in-out infinite',
+    },
     },
   },
   plugins: [],

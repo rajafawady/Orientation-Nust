@@ -98,7 +98,7 @@ ul {
   position: absolute;
   z-index: 30;
   top: 100px;
-  width: 230px;
+  width: 300px;
 }
 
 li {
@@ -185,6 +185,27 @@ li {
   }
 }
 
+.text-10xl{
+  font-size: 6rem;
+  line-height: 0.9;
+}
+
+.faq-grid{
+  grid-template-columns: 1fr 4fr;
+}
+
+@media screen and (max-width: 1536px) {
+  .faq-grid{
+      grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .faq-grid{
+      grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .schools-grid-1, .schools-grid-2{
       grid-template-columns: 1fr;
@@ -194,4 +215,62 @@ li {
 .width-container{
   max-width: 1300px;
   margin:0 auto;
+}
+
+.main-content{
+  height: 100vh;
+  background:  linear-gradient(to top, rgba(114,2,64,0.2), rgba(0,0,0,0.2)), url('/background-main.jpeg') no-repeat top center;
+  background-size: cover;
+}
+
+.dark-content{
+  height: 100vh;
+  background:  linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/background-main.jpeg') no-repeat top center;
+  background-size: cover;
+}
+
+.opening-text{
+  animation: fadeIn 5s,1;
+}
+
+.date-text{
+  animation: slideLeft 1s, 1;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.nust-map{
+  background: linear-gradient(to top, rgba(114,2,64,0.2), rgba(0,0,0,0.4)),url("/nust.jpeg");
+}
+
+@keyframes slideLeft {
+  0% { margin-left: -2000px; }
+  100% { margin-left: 0; }
+}
+@media screen and (max-width:600px) {
+  .main-content{
+    height: 90vh;
+    background:  linear-gradient(to top, rgba(114,2,64,0.6), rgba(0,0,0,0.8)), url('/background-main.jpeg') no-repeat top center;
+    background-size: cover;
+  }
+  
+  .dark-content{
+    height: 90vh;
+    background:  linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/background-main.jpeg') no-repeat top center;
+    background-size: cover;
+  }
+}
+
+.event-grid{
+  grid-template-columns: 16rem 1fr;
+}
+
+@media screen and (max-width: 1024px){
+  .event-grid{
+      grid-template-columns: 12rem 1fr;
+  }
 }
