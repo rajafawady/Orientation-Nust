@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         montserrat: ["Montserrat"],
+        mont: ["Montserrat-Light"],
         vogue: ["Vogue"],
         brittany: ["Brittany-Signature"],
 
