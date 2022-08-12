@@ -105,7 +105,7 @@ function Wordle() {
           The word is a common term used in NUST.
           <ol className="pt-12 date-text">
           <li> A <span className=" font-bold"> &nbsp;gray&nbsp;</span> box shows wrong guess.</li>
-          <li> A <span className=" font-bold"> &nbsp;pink&nbsp;</span> box shows the placement isn't correct.</li>
+          <li> A <span className=" font-bold"> &nbsp;pink&nbsp;</span> box shows the placement is not correct.</li>
           <li>A <span className=" font-bold">&nbsp;purple&nbsp;</span> box shows correct guess.</li>
           </ol>
           </div>
