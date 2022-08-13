@@ -280,3 +280,13 @@ li {
       grid-template-columns: 12rem 1fr;
   }
 }
+
+.timer-div{
+  height: 80vh;
+}
+
+@media screen and(max-width:700px) {
+  .timer-div{
+    height: 70vh;
+  }   
+}

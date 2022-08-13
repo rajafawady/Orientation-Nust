@@ -9,13 +9,13 @@ import MyComponent from '../Map/Map'
 export default function Main() {
   return (
     <>
-    <div className='w-full flex justify-center'>
+    <div className='w-full timer-div flex justify-center'>
       <Timer/>
-      </div>
+    </div>
     <div className='events'>
     
     <Events events={events}/>
-    <div className='w-full flex flex-col items-center justify-center mt-40 md:mt-20 '>
+    <div className='w-full flex flex-col items-center'>
    
     <div className='nust-map w-full flex justify-center py-12'>
     <MyComponent />

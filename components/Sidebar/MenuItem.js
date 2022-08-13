@@ -33,8 +33,10 @@ export const MenuItem = ({ i }) => {
     <div className="flex items-center">
       
       <Link href={i.href}>
+      <a>
       <div className="flex justify-center items-center my-2">
       <div className="icon-placeholder" >
+      
       <FontAwesomeIcon icon={icon} size="2x" color="white" />
       </div>
 
@@ -42,6 +44,7 @@ export const MenuItem = ({ i }) => {
           {i.name}
         </div>
         </div>
+        </a>
       </Link>
     </div>
     </motion.li>
