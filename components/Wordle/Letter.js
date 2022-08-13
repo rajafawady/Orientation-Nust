@@ -18,7 +18,7 @@ function Letter({ letterPos, attemptVal }) {
       setDisabledLetters((prev) => [...prev, letter]);
     }
   }, [currAttempt.attempt]);
-  return <div className={`text-white shadow-lg shadow-tyrian-purple rounded-md border
+  return <div className={` shadow-lg shadow-tyrian-purple rounded-md border
     border-gray-700 h-14 w-14 sm:h-16 sm:w-16 m-1 grid place-items-center font-montserrat 
   text-2xl sm:text-3xl ${letterState}`}>{letter}</div>;
 }
