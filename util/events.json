@@ -4,19 +4,19 @@
     "activities": [
       {
         "name": "Opening Ceremony",
-        "image": "/events/Day1/opening.jpg",
+        "image": "/events/Day1/opening.jpeg",
         "date": "2022-09-12 09:00 AM",
         "description": ""
       },
       {
         "name": "Interaction with OG",
-        "image": "/events/Day1/og.jpg",
+        "image": "/events/Day1/og.jpeg",
         "date": "2022-09-12 02:00 PM",
         "description": ""
       },
       {
         "name": "Batch Photo",
-        "image": "/events/Day1/batch-day.jpg",
+        "image": "/events/Day1/batch-day.jpeg",
         "date": "2022-09-12 05:00 PM",
         "description": ""
       }
@@ -33,13 +33,13 @@
       },
       {
         "name": "OG Activities",
-        "image": "/events/Day2/og.jpg",
+        "image": "/events/Day2/og.jpeg",
         "date": "2022-09-13 02:00 PM",
         "description": ""
       },
       {
         "name": "Sports Gala",
-        "image": "/events/Day2/sports.jpg",
+        "image": "/events/Day2/sports.jpeg",
         "date": "2022-09-13 05:00 PM",
         "description": ""
       }
@@ -50,19 +50,19 @@
     "activities": [
       {
         "name": "School visits",
-        "image": "/events/Day3/school.jpg",
+        "image": "/events/Day3/school.jpeg",
         "date": "2022-09-14 09:00 AM",
         "description": ""
       },
       {
         "name": "OG Activities",
-        "image": "/events/Day3/og.jpg",
+        "image": "/events/Day3/og.jpeg",
         "date": "2022-09-14 02:00 PM",
         "description": ""
       },
       {
         "name": "Sports Gala",
-        "image": "/events/Day3/sports.jpg",
+        "image": "/events/Day3/sports.jpeg",
         "date": "2022-09-14 05:00 PM",
         "description": ""
       }
@@ -73,7 +73,7 @@
     "activities": [
       {
         "name": "School Visits",
-        "image": "/events/Day4/school.jpg",
+        "image": "/events/Day4/school.jpeg",
         "date": "2022-09-15 09:00 AM",
         "description": ""
       },
@@ -85,7 +85,7 @@
       },
       {
         "name": "ON Fest",
-        "image": "/events/Day4/fest.jpg",
+        "image": "/events/Day4/fest.jpeg",
         "date": "2022-09-15 05:00 PM",
         "description": ""
       }
@@ -96,7 +96,7 @@
     "activities": [
       {
         "name": "School Visits",
-        "image": "/events/Day5/school.jpg",
+        "image": "/events/Day5/school.jpeg",
         "date": "2022-09-16 09:00 AM",
         "description": ""
       },

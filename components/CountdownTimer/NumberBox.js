@@ -7,7 +7,7 @@ export const NumberBox = ({ num, unit, flip }) => {
             <div className=" relative bg-transparent flex flex-col items-center justify-center rounded-lg w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32  text-2xl md:text-4xl mt-4 ">
                 <div className="rounded-t-lg rounded-b-lg bg-white dark:bg-tyrian-purple w-full h-full"></div>
 
-                <div className="text-4xl absolute text-tyrian-purple dark:text-white z-10 font-bold font-redhat md:text-7xl font-mono ">
+                <div className="text-4xl absolute text-tyrian-purple dark:text-white z-3 font-bold font-redhat md:text-7xl font-mono ">
                     {num}
                 </div>
 
