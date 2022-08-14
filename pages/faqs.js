@@ -13,7 +13,7 @@ const FAQ = ({faqs}) => {
     }
 
     return (
-        <Layout>
+        <Layout title={"FAQs"}>
             <div className='mt-24 px-8'>
                 <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center'>
                     A <span className='text-tyrian-purple'>Few Things</span> Students<br/>Ask About <span
