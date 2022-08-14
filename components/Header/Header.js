@@ -1,12 +1,7 @@
 import React from "react";
+import Music from "../Music/Music";
 import SwitchTheme from "./SwitchTheme";
 import { SidebarNav } from "../Sidebar/Sidebar";
-import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
-
-const DynamicMusic = dynamic(() => import("../Music/Music"), {
-  suspense: true,
-})
 
 export default function Header() {
   return (
@@ -22,9 +17,7 @@ export default function Header() {
         <div className='w-1/3 md:w-1/4 flex justify-end items-center'>
           <div className=' mr-14 md:pr-5'>
 
-          <Suspense fallback={`Loading...`}>
-      <DynamicMusic />
-    </Suspense>
+            <Music />
           </div>
           <div>
             <SwitchTheme />
