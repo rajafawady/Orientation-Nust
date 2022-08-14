@@ -5,10 +5,9 @@ import { useContext } from 'react'
 import { ClickContext } from '../context/GlobalProvider'
 
 import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
 
 const DynamicHeader = dynamic(() => import('./Header/Header'), {
-  suspense: true,
+  ssr:false
 })
 export default function Layout({ children, title, homePage }) {
   const {click} = useContext(ClickContext);
@@ -19,9 +18,8 @@ export default function Layout({ children, title, homePage }) {
         <title>{title}</title>
 
     </Head>
-    <Suspense fallback={`Loading...`}>
-      <DynamicHeader />
-    </Suspense>
+    
+    <DynamicHeader />
     
     
     {children}
