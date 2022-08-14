@@ -64,18 +64,18 @@
     .logodiv{
         width: 200px;
         height: 200px;
-        
     }
 
 
     .logoSmall{
+        display: flex;
         position: absolute;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         z-index: 3;
         background: white;
-        margin-left: 250px;
-        margin-top: 480px;
+        margin-left: 220px;
+        margin-top: 450px;
         transition: all 2s;
     }
 }

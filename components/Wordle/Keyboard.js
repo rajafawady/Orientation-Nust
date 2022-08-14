@@ -64,7 +64,7 @@ function Keyboard() {
   return (
     <div className="flex flex-col">
       <div
-        className={`bg-tyrian-purple mx-auto p-1.5 rounded-md cursor-pointer md:hidden hover:bg-ultra-red transition-colors
+        className={`bg-tyrian-purple mx-auto p-1.5 rounded-md cursor-pointer md:hidden dark:bg-ultra-red transition-colors
         sm:translate-x-60 sm:-translate-y-96 ${styles.btn}
         `}
         onClick={() => {
