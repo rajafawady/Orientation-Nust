@@ -87,14 +87,14 @@ function Keyboard() {
             <div className={`flex justify-center m-1 `}>
               {keys1.map((key) => {
                 return (
-                  <Key keyVal={key} disabled={disabledLetters.includes(key)} />
+                  <Key keyVal={key} disabled={disabledLetters.includes(key)} key={key} />
                 );
               })}
             </div>
             <div className={`flex justify-center m-1 `}>
               {keys2.map((key) => {
                 return (
-                  <Key keyVal={key} disabled={disabledLetters.includes(key)} />
+                  <Key keyVal={key} disabled={disabledLetters.includes(key)} key={key} />
                 );
               })}
             </div>
@@ -102,7 +102,7 @@ function Keyboard() {
               <Key keyVal={"Enter"} bigKey />
               {keys3.map((key) => {
                 return (
-                  <Key keyVal={key} disabled={disabledLetters.includes(key)} />
+                  <Key keyVal={key} disabled={disabledLetters.includes(key)} key={key} />
                 );
               })}
               <Key keyVal={"Delete"} />

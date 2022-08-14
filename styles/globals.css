@@ -250,7 +250,7 @@ li {
 
 
 .nust-map{
-  background: linear-gradient(to top, rgba(114,2,64,0.2), rgba(0,0,0,0.4)),url("/nust.jpeg");
+  background: linear-gradient(to top, rgba(114,2,64,0.2), rgba(0,0,0,0.4)),url("/nust.jpeg") no-repeat top center;
 }
 
 @keyframes slideLeft {
@@ -260,13 +260,13 @@ li {
 @media screen and (max-width:600px) {
   .main-content{
     height: 90vh;
-    background:  linear-gradient(to top, rgba(114,2,64,0.6), rgba(0,0,0,0.8)), url('/background-main.jpeg') no-repeat top center;
+    background:  linear-gradient(to top, rgba(114,2,64,0.6), rgba(0,0,0,0.8)), url('/background-main.webp') no-repeat top center;
     background-size: cover;
   }
   
   .dark-content{
     height: 90vh;
-    background:  linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/background-main.jpeg') no-repeat top center;
+    background:  linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/background-main.webp') no-repeat top center;
     background-size: cover;
   }
 }
