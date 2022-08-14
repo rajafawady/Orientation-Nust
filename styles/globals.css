@@ -250,7 +250,7 @@ li {
 
 
 .nust-map{
-  background: linear-gradient(to top, rgba(114,2,64,0.2), rgba(0,0,0,0.4)),url("/nust.jpeg") no-repeat top center;
+  background: linear-gradient(to top, rgba(114,2,64,0.2), rgba(0,0,0,0.4)),url("/nust.webp") no-repeat top center;
 }
 
 @keyframes slideLeft {
