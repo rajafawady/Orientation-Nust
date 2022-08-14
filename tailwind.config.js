@@ -7,7 +7,6 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-
     extend: {
       colors: {
         "pale-pink": "#F9D8D7",
@@ -21,24 +20,26 @@ module.exports = {
         mont: ["Montserrat-Light"],
         vogue: ["Vogue"],
         brittany: ["Brittany-Signature"],
-
       },
       keyframes: {
         expand: {
-            '0%': {
-                transform: 'scale(1.1)',
-            },
-            '50%': {
-                transform: 'scale(0.98)',
-            },
-            '100%': {
-                transform: 'scale(1.1)',
-            }
-        }
-    },
-    animation: {
-        expand: 'expand 1s ease-in-out infinite',
-    },
+          "0%": {
+            transform: "scale(1.1)",
+          },
+          "50%": {
+            transform: "scale(0.98)",
+          },
+          "100%": {
+            transform: "scale(1.1)",
+          },
+        },
+      },
+      animation: {
+        expand: "expand 1s ease-in-out infinite",
+      },
+      screens: {
+        'xs': '400px',
+      },
     },
   },
   plugins: [],

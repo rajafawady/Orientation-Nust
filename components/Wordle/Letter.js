@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from "react";
 import { AppContext } from ".";
-import styles from "./game.module.css";
 
 function Letter({ letterPos, attemptVal }) {
   const { board, setDisabledLetters, currAttempt, correctWord } =
@@ -11,16 +10,22 @@ function Letter({ letterPos, attemptVal }) {
     !correct && letter !== "" && correctWord.toUpperCase().includes(letter);
   const letterState =
     currAttempt.attempt > attemptVal &&
-    (correct ? "bg-tyrian-purple" : almost ? "bg-ultra-red" : "bg-[#3a393c]");
+    (correct ? "bg-tyrian-purple border-0" : almost ? "bg-ultra-red border-0" : "bg-[#3a393c] border-0");
 
   useEffect(() => {
     if (letter !== "" && !correct && !almost) {
       setDisabledLetters((prev) => [...prev, letter]);
     }
   }, [currAttempt.attempt]);
-  return <div className={` shadow-lg shadow-tyrian-purple rounded-md border
-    border-gray-700 h-14 w-14 sm:h-16 sm:w-16 m-1 grid place-items-center font-montserrat 
-  text-2xl sm:text-3xl ${letterState}`}>{letter}</div>;
+  return (
+    <div
+      className={` shadow-lg rounded-md shadow-tyrian-purple dark:shadow-none
+    dark:border-gray-700  h-10 w-10 sm:h-14 sm:w-14 lg:h-16 lg:w-16 m-1 grid place-items-center font-montserrat 
+   text-lg sm:text-2xl lg:text-3xl  ${letterState} ${letterState? letterState : "border-2"}`}
+    >
+      {letter}
+    </div>
+  );
 }
 
 export default Letter;

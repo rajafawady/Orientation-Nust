@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { AppContext } from ".";
 import styles from "./game.module.css";
+import { TbBackspace } from "react-icons/tb";
 
 function Key({ keyVal, bigKey, disabled }) {
   const { gameOver, onSelectLetter, onDelete, onEnter } =
     useContext(AppContext);
 
   const selectLetter = () => {
-    console.log(keyVal, ' is a big key? ', bigKey);
+    console.log(keyVal, " is a big key? ", bigKey);
     if (gameOver.gameOver) return;
     if (keyVal === "Enter") {
       console.log("entr pressed");
@@ -20,15 +21,14 @@ function Key({ keyVal, bigKey, disabled }) {
   };
   return (
     <div
-      className={`m-1 rounded-md grid place-items-center duration-100
-       hover:bg-opacity-70 transition-colors shadow-prussian-blue 
-       shadow-xl bg-[#4490ca] cursor-pointer font-montserrat
-       sm:w-12 sm:h-14 w-8 h-10 sm:text-xl text-base
-        ${styles.key} ${bigKey ? styles.big : disabled && "bg-[#204c74]"} `}
+      className={`m-0.5 sm:m-1 rounded-md grid place-items-center duration-100
+       hover:bg-opacity-100 transition-colors shadow-md shadow-tyrian-purple bg-ultra-red 
+       bg-opacity-80 cursor-pointer font-montserrat 
+       sm:w-12 sm:h-14 w-6 h-10 sm:text-lg text-base
+        ${styles.key} ${bigKey ? styles.big : disabled && "bg-[#121212]"} `}
       onClick={selectLetter}
     >
-      
-      {keyVal}
+      {keyVal === "Delete" ? <TbBackspace size={25} color="white" /> : keyVal}
     </div>
   );
 }

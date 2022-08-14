@@ -19,9 +19,24 @@
 }
 
 .big {
-  width: 100px;
+  width: 60px;
 }
 
 .disabled{
   background-color: #204c75;
 }
+
+@media screen and (min-width: 400px) and (max-width: 639px) {
+  .btn {
+    transform: translate(160px, -288px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn {
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+}
+  
+  

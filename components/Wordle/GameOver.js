@@ -14,7 +14,7 @@ function GameOver() {
   } = useContext(AppContext);
 
   return (
-    <div className={`text-3xl font-montserrat`}>
+    <div className={`text-xl lg:text-2xl xl:text-3xl font-montserrat`}>
       <h3>
         {gameOver.guessedWord
           ? "You Correctly Guessed the Wordle"

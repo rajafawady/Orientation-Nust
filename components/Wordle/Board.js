@@ -3,7 +3,7 @@ import Letter from "./Letter";
 
 function Board() {
   return (
-    <div className={`flex flex-col border bg-white dark:bg-[#121212] dark:bg-opacity-75 bg-opacity-50 dark:border-white border-black p-1`}>
+    <div className={`flex flex-col bg-white dark:bg-[#121212] dark:bg-opacity-75 bg-opacity-50 p-1`}>
       {" "}
       <div className={`flex-[20%] flex`}>
         <Letter letterPos={0} attemptVal={0} />

@@ -1,9 +1,9 @@
-import styles from "./game.module.css";
 import Board from "./Board";
 import Keyboard from "./Keyboard";
 import { boardDefault, generateWordSet } from "./Words";
 import React, { useState, createContext, useEffect } from "react";
 import GameOver from "./GameOver";
+import { MdOutlineKeyboard } from "react-icons/md";
 
 export const AppContext = createContext();
 
@@ -87,39 +87,55 @@ function Wordle() {
         gameOver,
       }}
     >
-      <div className={` mx-auto text-center w-full  flex flex-col`}>
-        <div
-          className={`h-24 w-full m-0 border-b-gray-600 grid place-items-center ${styles.nav}`}
-        >
-          <h1 className={`m-0  text-tyrian-purple text-6xl font-brittany font-bold dark:text-white`}>
+      <div className=" mx-auto text-center w-full  flex flex-col">
+        <div className="h-24 w-full m-0 border-b-gray-600 grid place-items-center ">
+          <h1 className="m-0  text-tyrian-purple text-6xl font-brittany font-bold dark:text-white">
             WORDLE
           </h1>
         </div>
-        <div className="flex flex-col md:flex-row px-2 md:px-24 pt-12">
-        <div className="w-full md:w-1/2  text-left pl-8 pt-4 bg-tyrian-purple shadow-2xl rounded-lg">
-          <div className="text-4xl font-bold text-white opening-text">
-          How to play! 
+        <div className="flex flex-col md:flex-row px-4 justify-center lg:px-20 pt-12">
+          <div className="text-center md:text-left p-6 lg:p-8 bg-tyrian-purple shadow-2xl rounded-lg m-auto">
+            <div className="text-4xl font-bold text-white opening-text">
+              How to play?
+            </div>
+            <div className="text-base lg:text-xl text-white pt-4 ">
+              <ol className="">
+                <div className="my-4" >You have six attempts to guess the correct word.</div>
+                <div className="my-4" >The word is a common term used in NUST.</div>
+                <div className="my-4" >
+                  A <span className=" font-bold"> &nbsp;gray&nbsp;</span> box
+                  shows wrong guess.
+                </div>
+                <div className="my-4" >
+                  A <span className=" font-bold"> &nbsp;pink&nbsp;</span> box
+                  shows the placement is not correct.
+                </div>
+                <div className="my-4" >
+                  A <span className=" font-bold">&nbsp;purple&nbsp;</span> box
+                  shows correct guess.
+                </div>
+                <div className="block md:hidden">
+                  Press{" "}
+                  <MdOutlineKeyboard
+                    size={20}
+                    color="white"
+                    className="inline"
+                  />{" "}
+                  to open keyboard.
+                </div>
+              </ol>
+            </div>
           </div>
-          <div className="text-base md:text-xl date-text text-white pt-8">
-          You have six attempts to guess the correct word. 
-          The word is a common term used in NUST.
-          <ol className="pt-12 date-text">
-          <li> A <span className=" font-bold"> &nbsp;gray&nbsp;</span> box shows wrong guess.</li>
-          <li> A <span className=" font-bold"> &nbsp;pink&nbsp;</span> box shows the placement is not correct.</li>
-          <li>A <span className=" font-bold">&nbsp;purple&nbsp;</span> box shows correct guess.</li>
-          </ol>
+          <div className="flex flex-col items-center mt-8 md:mt-0 justify-evenly w-full md:w-1/2">
+            <Board />
+            <div className="mt-2 sm:mt-6">
+              {gameOver.gameOver ? (
+                <GameOver />
+              ) : (
+                <Keyboard />
+              )}
+            </div>
           </div>
-
-        </div>
-        <div
-          className={`flex flex-col items-center pt-4 mt-8 md:mt-0 justify-evenly w-full md:w-1/2`}
-        >
-          <Board />
-          <div className="mt-6">
-            {gameOver.gameOver ? <GameOver /> : <Keyboard />}
-            {/* {gameOver.gameOver && <GameOver /> } */}
-          </div>
-        </div>
         </div>
       </div>
     </AppContext.Provider>
