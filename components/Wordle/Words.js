@@ -13,7 +13,7 @@ export const generateWordSet = async () => {
   await fetch("/wordle-bank.txt")
     .then((response) => response.text())
     .then((result) => {
-      const wordArr = result.split("\r\n");
+      const wordArr = result.split("\n");
       let randNum = Math.floor(Math.random() * wordArr.length);
       todaysWord = wordArr[randNum];
       wordSet = new Set(wordArr);
