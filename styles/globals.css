@@ -259,13 +259,13 @@ li {
 }
 @media screen and (max-width:600px) {
   .main-content{
-    height: 90vh;
+    height: 100vh;
     background:  linear-gradient(to top, rgba(114,2,64,0.6), rgba(0,0,0,0.8)), url('/background-main.webp') no-repeat top center;
     background-size: cover;
   }
   
   .dark-content{
-    height: 90vh;
+    height: 100vh;
     background:  linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/background-main.webp') no-repeat top center;
     background-size: cover;
   }
