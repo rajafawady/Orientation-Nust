@@ -3,12 +3,14 @@ import styles from './Music.module.css'
 import music from '../../assets/audio/NMX ON.mp3'
 import { useContext } from 'react';
 import { ClickContext } from '../../context/GlobalProvider'
+import { useRouter } from 'next/router';
 
 export default function Music() {
+  const router = useRouter();
   const {click} = useContext(ClickContext)
   const [isPlaying, setIsPlaying] = useState(false);
   const musicRef = useRef(null);
-
+  
   const handleMusic = () => {
     setIsPlaying(!isPlaying);
 
@@ -27,9 +29,9 @@ export default function Music() {
     </div>
     <div className={styles.music} onClick={handleMusic} >
       <span className={`bg-tyrian-purple dark:bg-ultra-red`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
-      <span className={`${!click? "bg-ultra-red": "bg-white"} dark:bg-pale-pink`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
+      <span className={`${click & router.asPath === "/" ?  "bg-white" :"bg-ultra-red"} dark:bg-pale-pink`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <span className={`bg-tyrian-purple dark:bg-ultra-red`}  style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
-      <span className={`${!click? "bg-ultra-red": "bg-white"} dark:bg-pale-pink`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
+      <span className={`${click & router.asPath === "/" ?  "bg-white" :"bg-ultra-red"} dark:bg-pale-pink`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <span className={`bg-tyrian-purple dark:bg-ultra-red`}  style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <audio src={music} ref={musicRef}  loop />
     </div>

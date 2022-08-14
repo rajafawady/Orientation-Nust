@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import styles from './FlipCard.module.css'
 
@@ -45,7 +46,7 @@ const VPcards = [
         "id": 5,
         "name": "Hamza Saeed Rao",
         "role": "VP Resources",
-        "image": "/EC-Pics/Hamza Saeed Rao.jpg",
+        "image": "/EC-Pics/Hamza Saeed Rao.jpeg",
         "one-liner": "Follow your dreams, Keep sleeping",
         "school": "NBS",
         "batch": "2019"
@@ -70,7 +71,7 @@ export default function FlipCards() {
                     <div key={card.id} className={`${styles.flipCard}  md:h-[400px] mb-12 rounded overflow-hidden shadow-xl mx-4`}>
                         <div className={styles.flipCardInner}>
                             <div className={`${styles.front} `}>
-                                <img className="w-full h-full" src={card.image} />
+                            <Image src={card.image} layout="fill" alt={card.name} />
                             </div>
                             <div className={`${styles.back}`}>
                                 <div className='flex h-full flex-col justify-center'>

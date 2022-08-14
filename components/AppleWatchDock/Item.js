@@ -2,6 +2,7 @@ import * as React from "react";
 import { motion, useMotionValue } from "framer-motion";
 import { icon } from "./settings";
 import { useIconTransform } from "./use-icon-transform";
+import Image from "next/image";
 
 export function Item({ row, col, planeX, planeY, image }) {
   const x = useMotionValue(0);
@@ -39,7 +40,7 @@ export function Item({ row, col, planeX, planeY, image }) {
         background: "black",
       }}
     >
-      <img className="rounded-full w-full h-full pointer-events-none" src={image}  />
+      <Image src={image} layout="fill" className="rounded-full pointer-events-none"  />
     </motion.div>
   );
 }

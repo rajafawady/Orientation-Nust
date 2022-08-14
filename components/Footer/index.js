@@ -6,7 +6,7 @@ import { IoLogoFoursquare } from "react-icons/io";
 const Footer = () => {
   return (
     <div
-      className={`flex text-white flex-col justify-center font-montserrat pt-10 mt-10
+      className={`flex text-white flex-col justify-center items-center font-montserrat pt-10 mt-10
       bg-gradient-to-b from-tyrian-purple to-[#681442] `}
     >
       {" "}

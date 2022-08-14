@@ -13,8 +13,8 @@
 
 .logoSmall{
     position: absolute;
-    margin-left: 1150px;
-    margin-top: 400px;
+    margin-left: 80%;
+    margin-top: 30%;
     width: 200px;
     height: 200px;
     z-index: 3;
@@ -28,6 +28,36 @@
 
 @keyframes mymove {
     100% {transform: rotate(360deg);}
+}
+
+@media screen and (max-width:1200px) {
+    .logodiv{
+        width: 220px;
+        height: 220px;
+        
+    }
+    .logoSmall{
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 55%;
+        width: 150px;
+        height: 150px;
+        z-index: 3;
+        background: white;
+        transition: all 2s;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .logodiv{
+        width: 220px;
+        height: 220px;
+        
+    }
+    .logoSmall{
+        display: none;
+    }
 }
 
 @media screen and (max-width:700px) {
