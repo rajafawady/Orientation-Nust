@@ -1,7 +1,6 @@
 import React from "react";
 import SocialCol from "./SocialCol";
 import ContactCol from "./ContactCol";
-import { IoLogoFoursquare } from "react-icons/io";
 
 const Footer = () => {
   return (
