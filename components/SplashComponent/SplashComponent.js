@@ -28,7 +28,7 @@ export default function SplashComponent() {
       </div>
       {!click ? <Socials /> : null}
       {!click ? (
-        <div className="hidden md:block">
+        <div className="">
           <ParticlesComponent />
         </div>
       ) : null}
