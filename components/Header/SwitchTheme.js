@@ -19,7 +19,7 @@ export default function SwitchTheme() {
         className="bg-gray-200 dark:bg-prussian-blue p-2 rounded-md hover:ring-2 hover:ring-lapis-lazuli"
         onClick={() => setTheme("light")}
       >
-        <SunIcon className="w-6 h-6 md:w-9 md:h-9" color="#f9d71c" />
+        <SunIcon className="w-9 h-9" color="#f9d71c" />
       </div>
     );
   } else {
@@ -28,7 +28,7 @@ export default function SwitchTheme() {
         className="bg-pale-pink p-2 rounded-md hover:ring-2 hover:ring-ultra-red"
         onClick={() => setTheme("dark")}
       >
-        <MoonIcon className="w-6 h-6 md:w-9 md:h-9" color="#720240" />
+        <MoonIcon className="w-9 h-9" color="#720240" />
       </div>
     );
   }
