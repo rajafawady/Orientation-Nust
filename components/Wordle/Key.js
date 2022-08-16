@@ -24,7 +24,7 @@ function Key({ keyVal, bigKey, disabled }) {
       className={`m-0.5 text-white sm:m-1 rounded-md grid place-items-center bg-tyrian-purple duration-100
        hover:bg-opacity-100 shadow-md  dark:bg-ultra-red 
       cursor-pointer font-montserrat 
-       sm:w-12 sm:h-14 w-6 h-10 sm:text-lg text-base
+      w-7 h-11 sm:w-12 sm:h-14  sm:text-lg text-base
         ${styles.key} ${bigKey ? styles.big : disabled && "bg-[#121212]"} `}
       onClick={selectLetter}
     >

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LogoSVG } from "../svgs";
 import styles from "./Splash.module.css";
 import ParticlesComponent from "../Particles/Particles";
@@ -9,6 +9,15 @@ import { ClickContext } from "../../context/GlobalProvider";
 export default function SplashComponent() {
   const { click, setClick } = useContext(ClickContext);
 
+  useEffect(()=>{
+      setTimeout(()=>showScreenToDumbUser, 10000);
+  }, []);
+
+  const showScreenToDumbUser = () => {
+    if(!click){
+      setClick(true)
+    }
+  }
   return (
     <>
       <div className="content-div absolute z-3  w-full">
