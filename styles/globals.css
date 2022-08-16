@@ -293,5 +293,9 @@ li {
 @media screen and(max-width:700px) {
   .timer-div{
     height: 70vh;
+  }
+  .content-div{
+    height: 90vh;
+    display: flex;
   }   
 }
