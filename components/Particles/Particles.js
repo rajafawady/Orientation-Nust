@@ -18,7 +18,7 @@ const ParticlesComponent = (props) => {
         maxWidth: 500,
         options: {
           particles: {
-            number: {limit: 50},
+            number: {limit: 30},
           },
         }
       }],
