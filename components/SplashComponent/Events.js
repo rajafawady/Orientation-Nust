@@ -18,9 +18,7 @@ const Events = ({ events }) => {
         </h1>
         <p className="text-xl font-normal text-center mt-4 opacity-70">
           View our event calendar to see upcoming events. Purchase tickets,{" "}
-          <br />
-          VIP Bar Cards, or reserve VIP tables with bottle service.
-        </p>
+          <br />        </p>
       </div>
 
       <div className="flex justify-center items-center mt-8 flex-wrap">
@@ -45,7 +43,7 @@ const Events = ({ events }) => {
             <div
               onClick={() => setSelectedActivity(activity)}
               key={i}
-              className={`w-48 h-48 lg:w-64 flex-grow lg:h-64 cursor-pointer border-ultra-red dark:border-white ${
+              className={`w-48 h-48 lg:w-64 flex-grow lg:h-64 cursor-pointer border-tyrian-purple dark:border-white ${
                 selectedActivity.name === activity.name
                   ? "border-4 border-b-0 md:border-b-4 md:border-r-0"
                   : "md:border-r-4 border-b-4 md:border-b-0"
@@ -58,7 +56,7 @@ const Events = ({ events }) => {
           ))}
         </div>
         <div
-          className="w-full bg-tyrian-purple border-4 md:border-l-0 border-t-0 md:border-t-4 bg-cover border-ultra-red dark:border-white bg-no-repeat responsive"
+          className="w-full bg-tyrian-purple border-4 md:border-l-0 border-t-0 md:border-t-4 bg-cover border-tyrian-purple dark:border-white bg-no-repeat responsive"
           style={{
             backgroundImage: `url(${selectedActivity.image})`,
             backgroundPosition: "center",

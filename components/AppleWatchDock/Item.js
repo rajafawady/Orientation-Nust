@@ -40,7 +40,7 @@ export function Item({ row, col, planeX, planeY, image }) {
         background: "black",
       }}
     >
-      <Image src={image} layout="fill" className="rounded-full pointer-events-none"  />
+      <Image src={image} layout="fill" objectFit="cover" className="rounded-full pointer-events-none"  />
     </motion.div>
   );
 }

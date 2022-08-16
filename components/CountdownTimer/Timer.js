@@ -51,8 +51,8 @@ const Timer = () => {
  
 
   return (
-    <div className="flex flex-col items-center pt-16">
-      <div className='opening-text font-brittany font-extrabold text-white text-4xl md:text-6xl lg:text-8xl'>
+    <div className="flex flex-col items-center  pt-16">
+      <div className='opening-text text-center font-brittany font-extrabold text-white text-4xl md:text-6xl lg:text-8xl'>
         Welcome to the Orientation 22
       </div>
       <div className='date-text mt-12 text-center font-sans font-bold text-white text-md md:text-xl lg:text-2xl'>

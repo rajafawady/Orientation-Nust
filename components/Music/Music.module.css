@@ -69,3 +69,12 @@
         background: bule;
     }
 }
+.hideOnSmallScreen{
+    display: block;
+}
+
+@media screen and (max-width:350px) {
+    .hideOnSmallScreen{
+        display: none;
+    }
+}

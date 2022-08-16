@@ -89,7 +89,7 @@ function Wordle() {
     >
       <div className=" mx-auto text-center w-full  flex flex-col">
         <div className="h-24 w-full m-0 border-b-gray-600 grid place-items-center ">
-          <h1 className="m-0  text-tyrian-purple text-6xl font-brittany font-bold dark:text-white">
+          <h1 className="m-0  text-tyrian-purple text-4xl md:text-6xl font-brittany font-bold dark:text-white">
             WORDLE
           </h1>
         </div>

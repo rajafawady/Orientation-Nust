@@ -9,7 +9,7 @@ import MyComponent from '../Map/Map'
 export default function Main() {
   return (
     <>
-    <div className='w-full timer-div flex justify-center'>
+    <div className='w-full timer-div flex justify-center items-center'>
       <Timer/>
     </div>
     <div className='events'>

@@ -25,14 +25,14 @@ export default function Music() {
     <>
     <div className='flex justify-evenly'>
     <div className={`w-12 rotate-90 ${!click? "text-tyrian-purple": "text-white"} dark:text-pale-pink ${styles.credits}`}>
-      Composed By NMX
+      Composed By NMS
     </div>
     <div className={styles.music} onClick={handleMusic} >
       <span className={`bg-tyrian-purple dark:bg-ultra-red`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <span className={`${click & router.asPath === "/" ?  "bg-white" :"bg-ultra-red"} dark:bg-pale-pink`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <span className={`bg-tyrian-purple dark:bg-ultra-red`}  style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <span className={`${click & router.asPath === "/" ?  "bg-white" :"bg-ultra-red"} dark:bg-pale-pink`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
-      <span className={`bg-tyrian-purple dark:bg-ultra-red`}  style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
+      <span className={`bg-tyrian-purple dark:bg-ultra-red ${styles.hideOnSmallScreen}`}  style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <audio src={music} ref={musicRef}  loop />
     </div>
     </div>

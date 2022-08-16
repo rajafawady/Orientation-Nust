@@ -19,7 +19,7 @@ export default function Layout({ children, title, homePage }) {
 
     </Head>
     
-    <DynamicHeader />
+    <DynamicHeader homepage={homePage}/>
     
     
     {children}

@@ -6,9 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ClickProvider>
       <ThemeProvider attribute='class'>
-
         <Component {...pageProps} />
-
       </ThemeProvider>
     </ClickProvider>
   );

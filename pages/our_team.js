@@ -13,7 +13,7 @@ const directorateText = "Every great event needs an even better team full of pas
 const team = () => {
   return (
     <>
-      <div className="">
+     
         <Layout title={"Our Team"}>
           <div className="mt-12">
 
@@ -35,7 +35,7 @@ const team = () => {
             </div>
           </div>
         </Layout>
-      </div>
+   
     </>
   );
 };

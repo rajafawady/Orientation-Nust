@@ -37,7 +37,7 @@ const VPcards = [
         "id": 4,
         "name": "Rejja Irfan",
         "role": "VP Media",
-        "image": "/EC-Pics/Rejja Irfan.png",
+        "image": "/EC-Pics/Rejja Irfan.jpg",
         "one-liner": "Mujhe kya main tou SADA ki hun",
         "school": "SADA",
         "batch": "2019"
