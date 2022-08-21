@@ -1,40 +1,30 @@
 import React, { useState } from "react";
 import { Wheel } from "react-custom-roulette";
-import { Transition } from "@headlessui/react";
-// import { useTheme } from "next-themes";
-// const { theme } = useTheme();
 import { TbFidgetSpinner } from "react-icons/tb";
 import { IoReload } from "react-icons/io5";
+import PrizeDiv from "./PrizeDiv";
+import Btn from "./Btn";
+let spinCount = 0;
 const data = [
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "do some shit " },
-  { option: "1" },
-  { option: "2" },
-  { option: "3" },
-  { option: "4" },
-  { option: "5" },
-  { option: "6" },
-  { option: "7" },
-  { option: "8" },
-  { option: "9" },
-  { option: "10" },
-  { option: "11" },
-  { option: "12" },
-  { option: "13" },
-  { option: "14" },
-  { option: "15" },
-  { option: "16" },
-  { option: "17" },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
+  { option: "do some task " },
 ];
 
 const colors = [];
@@ -59,10 +49,16 @@ export default (/* { data } */) => {
   });
 
   const handleSpinClick = () => {
+    if(spinCount === 5) {
+      alert("You are out of spins!!!");
+      return;
+    }
     const prizeIndex = Math.floor(Math.random() * selected.length);
     setPrizeNumber(selected[prizeIndex].option);
     console.log("winning number is", selected[prizeIndex].option);
     setMustSpin(true);
+    spinCount++;
+    console.log('SPIN COUNT IS ', spinCount);
   };
 
   const onFinishedSpinning = () => {
@@ -84,12 +80,17 @@ export default (/* { data } */) => {
   console.log("selected ", selected);
   return (
     <>
-      <div className="flex flex-col ">
-        <div className="flex font-bold text-prussian-blue dark:text-tyrian-purple justify-center text-7xl font-brittany pb-20">
+      <div className="flex flex-col mb-10">
+        <div className="flex font-bold text-prussian-blue dark:text-tyrian-purple justify-center text-7xl  font-brittany pb-6 md:pb-20">
           Spinner
         </div>
         <div className="flex flex-col md:flex-row justify-evenly ">
-          <div className="flex items-center justify-center ">
+          <div className="flex flex-col items-center justify-center sm:px-0 px-2">
+            <PrizeDiv
+              spinDone={spinDone}
+              prizeNumber={prizeNumber}
+              hideOnMobile={false}
+            />
             <Wheel
               mustStartSpinning={mustSpin}
               prizeNumber={selected.findIndex((x) => x.option === prizeNumber)}
@@ -109,58 +110,33 @@ export default (/* { data } */) => {
               radiusLineWidth={2}
               fontSize={15}
               textDistance={50}
-              spinDuration={1}
+              spinDuration={0.1}
             />
           </div>
-          <div className="flex justify-center w-1/3">
-            <div className="flex flex-col items-center w-full">
-              <div
-                className={`basis-1/2 flex flex-col justify-center w-full 
-                bg-center bg-no-repeat  rounded-2xl
-                ${
-                  spinDone ? 'bg-[url("/focus.jpg")] bg-cover' : 'bg-[url("/s2w.png")] bg-contain'
-                } `}
-              >
-                <div className="font-montserrat text-white text-3xl text-center ">
-                  {spinDone ? (
-                    <div>
-                      You won <span className="text-5xl">{prizeNumber}</span>!
-                    </div>
-                  ) : (
-                    <></>
-                  )}
-                </div>
-              </div>
-              <div className="basis-1/2 pt-10">
-                <button
-                  className={`bg-prussian-blue dark:bg-tyrian-purple hover:bg-[#1e4b7c] 
-                  transition-colors duration-200
-                  text-white p-4 font-mont text-3xl font-bold rounded-xl
-                  ${!spinDone ? "block" : "hidden"}`}
-                  onClick={handleSpinClick}
-                  onMouseOver={() => setHover(true)}
-                  onMouseLeave={() => setHover(false)}
-                >
-                  <TbFidgetSpinner
-                    className={`inline mr-2 mb-1 ${hover && "animate-spin"}`}
-                  />
-                  Spin!
-                </button>
+          <div className="flex flex-col items-center w-full md:w-1/3">
+            <PrizeDiv
+              spinDone={spinDone}
+              prizeNumber={prizeNumber}
+              hideOnMobile={true}
+            />
+            <div className="basis-1/2 pt-10">
+              <Btn
+                show={!spinDone}
+                onClick={handleSpinClick}
+                hover={hover}
+                setHover={setHover}
+                Icon={TbFidgetSpinner}
+                text="Spin!"
+              />
 
-                <button
-                  className={`bg-prussian-blue dark:bg-tyrian-purple 
-                  text-white p-4 font-mont text-3xl font-bold rounded-xl
-                ${spinDone ? "block" : "hidden"}`}
-                  onClick={onFinishedSpinning}
-                  onMouseOver={() => setHover(true)}
-                  onMouseLeave={() => setHover(false)}
-                >
-                  <IoReload
-                    className={`inline mr-2 mb-1 ${hover && "animate-spin"}`}
-                  />
-                  Spin Again!
-                </button>
-              </div>
+              <Btn
+                show={spinDone}
+                onClick={onFinishedSpinning}
+                hover={hover}
+                setHover={setHover}
+                Icon={IoReload}
+                text="Spin Again!"
+              />
             </div>
           </div>
         </div>
