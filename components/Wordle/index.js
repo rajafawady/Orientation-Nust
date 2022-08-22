@@ -94,7 +94,7 @@ function Wordle() {
           </h1>
         </div>
         <div className="flex flex-col md:flex-row px-4 justify-center lg:px-20 pt-12">
-          <div className="text-center md:text-left p-6 lg:p-8 bg-tyrian-purple shadow-2xl rounded-lg m-auto">
+          <div className="text-center md:text-left p-6 lg:p-8 bg-tyrian-purple shadow-2xl rounded-lg">
             <div className="text-4xl font-bold text-white opening-text">
               How to play?
             </div>

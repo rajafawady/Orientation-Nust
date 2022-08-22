@@ -4,3 +4,6 @@ theta
 music
 dhaba
 retro
+khapa
+grade
+qalam

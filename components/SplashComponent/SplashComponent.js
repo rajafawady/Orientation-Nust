@@ -10,12 +10,14 @@ export default function SplashComponent() {
   const { click, setClick } = useContext(ClickContext);
 
   useEffect(()=>{
-      setTimeout(()=>showScreenToDumbUser, 10000);
+      setTimeout(()=>showScreenToDumbUser(), 10000);
   }, []);
 
   const showScreenToDumbUser = () => {
+    console.log(click);
+    
     if(!click){
-      setClick(true)
+      setClick()
     }
   }
   return (
@@ -26,7 +28,7 @@ export default function SplashComponent() {
             className={`flex justify-center cursor-pointer items-center shadow-2xl shadow-ultra-red rounded-full p-5 ${
               click ? styles.logoSmall : styles.logodiv
             }`}
-            onClick={setClick}
+            onClick={()=>setClick()}
           >
             <LogoSVG
               className={`animate-expand ${styles.logoSVG}`}

@@ -18,6 +18,5 @@ export const generateWordSet = async () => {
       todaysWord = wordArr[randNum];
       wordSet = new Set(wordArr);
     });
-  console.log("Correct word is ", todaysWord);
   return { wordSet, todaysWord };
 };
