@@ -1,11 +1,10 @@
-import React from 'react'
-import Events from './Events'
-import events from '../../util/events.json';
-import Timer from '../CountdownTimer/Timer';
-import Wordle from '../Wordle/index';
-import Footer from '../Footer/index'
-import MyComponent from '../Map/Map'
-
+import React from "react";
+import Events from "./Events";
+import events from "../../util/events.json";
+import Timer from "../CountdownTimer/Timer";
+import Wordle from "../Wordle/index";
+import Footer from "../Footer/index";
+import MyComponent from "../Map/Map";
 export default function Main() {
   return (
     <>
@@ -26,6 +25,7 @@ export default function Main() {
     </div>
     <Footer />
     </div>
+
     </>
-  )
+  );
 }

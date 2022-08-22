@@ -18,7 +18,6 @@ function Wordle() {
     guessedWord: false,
   });
   const onEnter = () => {
-    console.log("inside onentr");
     if (currAttempt.letter !== 5) return;
 
     let currWord = "";
@@ -26,12 +25,6 @@ function Wordle() {
       currWord += board[currAttempt.attempt][i];
     }
     setCurrAttempt({ attempt: currAttempt.attempt + 1, letter: 0 });
-
-    // if (wordSet.has(currWord.toLowerCase())) {
-    //   setCurrAttempt({ attempt: currAttempt.attempt + 1, letter: 0 });
-    // } else {
-    //   alert("Word not found");
-    // }
 
     if (currWord.toLocaleLowerCase() === correctWord) {
       setGameOver({ gameOver: true, guessedWord: true });
