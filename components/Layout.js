@@ -26,19 +26,13 @@ export default function Layout({ children, title, homePage }) {
         <title>{title}</title>
       </Head>
 
-<<<<<<< HEAD
-    </Head>
+
     
     <DynamicHeader homepage={homePage}/>
     
     
     {children}
    
-=======
-      <DynamicHeader />
->>>>>>> Ali
-
-      {children}
     </div>
   );
 }

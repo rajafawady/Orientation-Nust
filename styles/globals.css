@@ -112,6 +112,14 @@ ul {
   width: 300px;
 }
 
+.footer-ul{
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  top: 0;
+  width: max-content;
+}
+
 li {
   list-style: none;
   margin-bottom: 20px;

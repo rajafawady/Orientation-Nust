@@ -58,7 +58,7 @@ const episode = () => {
                 }flex px-2`}
               >
                 <Link href={`/on-station/episode/` + prevVideo.id}>
-                  <div className="my-auto cursor-pointer dark:text-pale-pink text-tyrian-purple  md:px-2  z-50">
+                  <div className="my-auto cursor-pointer dark:text-pale-pink text-tyrian-purple  md:px-2  z-3">
                     <FontAwesomeIcon icon={faCaretLeft} className="text-5xl sm:text-7xl md:text-8xl" />
                   </div>
                 </Link>

@@ -113,15 +113,13 @@ function Keyboard() {
               <Key keyVal={"Enter"} bigKey />
               {keys3.map((key) => {
                 return (
-<<<<<<< HEAD
-                  <Key keyVal={key} disabled={disabledLetters.includes(key)} key={key} />
-=======
+
                   <Key
                     key={key}
                     keyVal={key}
                     disabled={disabledLetters.includes(key)}
                   />
->>>>>>> Ali
+
                 );
               })}
               <Key keyVal={"Delete"} />
