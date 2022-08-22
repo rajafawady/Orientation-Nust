@@ -5,7 +5,6 @@ import Timer from "../CountdownTimer/Timer";
 import Wordle from "../Wordle/index";
 import Footer from "../Footer/index";
 import MyComponent from "../Map/Map";
-import Wheel from "../Wheel";
 export default function Main() {
   return (
     <>
@@ -21,7 +20,6 @@ export default function Main() {
         </div>
         <div className="mt-16">
           <Wordle />
-          <Wheel />
         </div>
         <Footer />
       </div>

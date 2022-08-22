@@ -14,7 +14,7 @@ export default function Home() {
           className={``}
         >
           <div className="">
-            {typeof window !== undefined && <Wheel /* data={data} */ />}
+            {typeof window !== undefined && <Wheel  data={data}  />}
           </div>
         </div>
       </Layout>
