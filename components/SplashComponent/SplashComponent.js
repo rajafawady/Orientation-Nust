@@ -6,20 +6,10 @@ import Socials from "../Socials/Socials";
 import Main from "./Main";
 import { useContext } from "react";
 import { ClickContext } from "../../context/GlobalProvider";
+
 export default function SplashComponent() {
   const { click, setClick } = useContext(ClickContext);
-
-  useEffect(()=>{
-      setTimeout(()=>showScreenToDumbUser(), 10000);
-  }, []);
-
-  const showScreenToDumbUser = () => {
-    console.log(click);
-    
-    if(!click){
-      setClick()
-    }
-  }
+  
   return (
     <>
       <div className="content-div absolute z-3  w-full">

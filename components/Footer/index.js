@@ -1,44 +1,5 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
-  ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
-  ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-  ],
   social: [
     {
       name: 'Facebook',
@@ -78,8 +39,10 @@ const navigation = {
   ],
 }
 
-export default function Example() {
+export default function Footer() {
   return (
+    <>
+    
     <footer className="bg-tyrian-purple mt-16" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
@@ -87,86 +50,40 @@ export default function Example() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Solutions</h3>
-                <ul role="list" className="footer-ul mt-4 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Support</h3>
-                <ul role="list" className="footer-ul mt-4 space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+            <div className="flex">
+              <div className="flex flex-col">
+                <h3 className="text-white text-3xl font-semibold uppercase">
+                  Contact US
+                </h3>
+                <p className="mt-2 text-lg text-slate-100">
+                  In case of any query contact us at:
+                </p>
+                <div className="text-white text-lg mt-4 font-bold">
+                liaison.orientation@nust.edu.pk <br /> Team Liaison, ON 2022.
+                </div>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Company</h3>
-                <ul role="list" className="footer-ul mt-4 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Legal</h3>
-                <ul role="list" className="footer-ul mt-4 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+
           </div>
           <div className="mt-8 xl:mt-0">
-            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
-              Subscribe to our newsletter
+            <h3 className="text-3xl font-semibold  text-white tracking-wider uppercase">
+              Be our Sponsor
             </h3>
-            <p className="mt-4 text-base text-gray-300">
-              The latest news, articles, and resources, sent to your inbox weekly.
+            <p className="mt-4 text-lg text-slate-100">
+              If you&apos;re interested in becoming a sponsor, please fill this form and our team will contact you soon!
             </p>
             <form className="mt-4 sm:flex sm:max-w-md">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                type="email"
-                name="email-address"
-                id="email-address"
-                autoComplete="email"
-                required
-                className="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
-                placeholder="Enter your email"
-              />
-              <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="w-full bg-white rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-tyrian-purple hover:bg-tyrian-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-2xl border-white border-2"
-                >
-                  Subscribe
-                </button>
+
+
+              <div className="mt-3 pt-4 rounded-md sm:mt-0 w-full sm:flex-shrink-0">
+                <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSdjyF-qEHOFOHfPKCUmY4MBPjdeVR36-pmwwkFaGnHb0S0MjQ/viewform?usp=sf_link">
+                  <button
+                    type="button"
+                    className="w-full h-16 bg-white rounded-md py-2 px-4 flex items-center justify-center text-xl font-bold text-tyrian-purple hover:bg-tyrian-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-2xl border-white border-2"
+                  >
+                    Become Our Sponsor
+                  </button>
+                </a>
               </div>
             </form>
           </div>
@@ -186,5 +103,6 @@ export default function Example() {
         </div>
       </div>
     </footer>
+    </>
   )
 }

@@ -32,9 +32,9 @@ const icons = [
   faHome,
   faBuildingUser,
   faPeopleGroup,
-  faCircleQuestion,
+  faTv, 
   faDharmachakra,
-  faTv,
+  faCircleQuestion,
 ];
 
 export const MenuItem = ({ i }) => {

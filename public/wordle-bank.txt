@@ -7,3 +7,6 @@ retro
 khapa
 grade
 qalam
+class
+nustu
+chill
