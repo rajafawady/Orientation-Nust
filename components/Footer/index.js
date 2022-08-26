@@ -48,28 +48,31 @@ export default function Footer() {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-            <div className="flex">
-              <div className="flex flex-col">
-                <h3 className="text-white text-3xl font-semibold uppercase">
+        <div className="md:grid md:grid-cols-3 md:gap-8">
+          <div className="md:grid md:grid-cols-2 md:gap-8 md:col-span-2">
+            <div className="mt-8 xl:mt-0">
+              <div >
+                <div className="text-white text-3xl font-semibold uppercase text-center md:text-left">
                   Contact US
-                </h3>
-                <p className="mt-2 text-lg text-slate-100">
+                </div>
+                <div className="mt-2 text-lg text-slate-100 text-center md:text-left">
                   In case of any query contact us at:
-                </p>
-                <div className="text-white text-lg mt-4 font-bold">
-                liaison.orientation@nust.edu.pk <br /> Team Liaison, ON 2022.
+                </div>
+                <div className="text-white text-lg mt-4 font-bold text-center md:text-left">
+                liaison.orientation@nust.edu.pk
+                </div>
+                <div className="text-white text-lg mt-4 font-bold text-center md:text-left">
+                Team Liaison, ON 2022.
                 </div>
               </div>
             </div>
 
           </div>
           <div className="mt-8 xl:mt-0">
-            <h3 className="text-3xl font-semibold  text-white tracking-wider uppercase">
+            <h3 className="text-3xl font-semibold text-center md:text-left text-white tracking-wider uppercase">
               Be our Sponsor
             </h3>
-            <p className="mt-4 text-lg text-slate-100">
+            <p className="mt-4 text-lg text-slate-100 text-center md:text-left">
               If you&apos;re interested in becoming a sponsor, please fill this form and our team will contact you soon!
             </p>
             <form className="mt-4 sm:flex sm:max-w-md">
@@ -88,8 +91,11 @@ export default function Footer() {
             </form>
           </div>
         </div>
-        <div className="mt-8 border-t border-white pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
+        <div className="mt-8 md:mt-8 border-t border-white md:pt-8 md:flex md:items-center md:justify-between">
+        <p className="mt-8 text-base text-white md:mt-0 text-center md:order-1">
+            &copy; 2022 Orientation, NUST. All rights reserved.
+          </p>
+          <div className="flex justify-center space-x-6 md:order-2 mt-6 md:mt-0">
             {navigation.social.map((item) => (
               <a key={item.name} href={item.href} className="text-white hover:text-gray-300">
                 <span className="sr-only">{item.name}</span>
@@ -97,9 +103,7 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-base text-white md:mt-0 md:order-1">
-            &copy; 2022 Orientation, NUST. All rights reserved.
-          </p>
+         
         </div>
       </div>
     </footer>

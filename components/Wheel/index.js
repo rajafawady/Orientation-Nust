@@ -36,7 +36,7 @@ colors["palePink"] = "rgb(249, 216, 215)";
 colors["lapisLazuli"] = "rgb(18, 98, 158)";
 colors["prussianBlue"] = "rgb(17, 46, 73)";
 
-export default ( { data } ) => {
+export default function SpinnerWheel ( { data } ) {
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
   const [spinDone, setSpinDone] = useState(false);

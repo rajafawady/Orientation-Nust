@@ -9,6 +9,8 @@ import {
   faCircleQuestion,
   faTv,
   faDharmachakra,
+  faDownload,
+  faHistory
 } from "@fortawesome/free-solid-svg-icons";
 
 const variants = {
@@ -32,8 +34,10 @@ const icons = [
   faHome,
   faBuildingUser,
   faPeopleGroup,
+  faHistory,
   faTv, 
   faDharmachakra,
+  faDownload,
   faCircleQuestion,
 ];
 

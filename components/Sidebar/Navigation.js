@@ -37,15 +37,26 @@ const itemIds = [
   },
   {
     "id": 3,
+    "name":"Legacy",
+    "href":"/history",
+  },
+  {
+    "id": 4,
     "name":"ON Station",
     "href":"/on-station/episode/1",
   },
   {
-    "id": 4,
+    "id": 5,
     "name":"Spinner",
     "href":"/spinner",
-  },{
-    "id": 5,
+  },
+  {
+    "id": 6,
+    "name":"Downloads",
+    "href":"/downloads",
+  },
+  {
+    "id": 7,
     "name":"FAQs",
     "href":"/faqs",
   },
