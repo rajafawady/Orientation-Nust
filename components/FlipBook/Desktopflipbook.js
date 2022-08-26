@@ -41,7 +41,6 @@ function Desktopflipbook({coverpage, history, lastpage }) {
       })
     }
   }
-
   return (
     <motion.div className={`box-border grid place-items-center w-4/6 h-screen p-2`} variants={bookPosition} animate={current} initial="hidden">
       <HTMLFlipBook width={600} height={700} size={'stretch'} showCover={true} ref={book} onFlip={onFilp}>
