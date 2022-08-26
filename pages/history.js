@@ -1,8 +1,7 @@
 import Layout from "../components/Layout";
 import React from "react";
 import Desktopflipbook from "../components/FlipBook/DesktopFlipBook";
-import ParticlesComponent from "../components/Particles/Particles";
-import Mobileflipbook from "../components/FlipBook/Mobileflipbook";
+import Mobileflipbook from "../components/FlipBook/MobileFlipBook";
 import ON from '../util/history.json'
 import { useMediaQuery } from "react-responsive";
 
