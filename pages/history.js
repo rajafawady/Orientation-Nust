@@ -11,12 +11,10 @@ const History = ({ coverpage, history, lastpage }) => {
         return (
                 <>
                         <Layout>
-                        <div className="overflow-hidden hidden md:block">
+                        <div className="overflow-hidden mt-16 md:mt-0 celebration-div">
                                 <Desktopflipbook coverpage={coverpage} history={history} lastpage={lastpage}></Desktopflipbook>
                         </div>
-                        <div className="md:hidden">
-                        <Mobileflipbook coverpage={coverpage} history={history} lastpage={lastpage}></Mobileflipbook>
-                        </div>
+                        
                         </Layout>
                         
                 </>

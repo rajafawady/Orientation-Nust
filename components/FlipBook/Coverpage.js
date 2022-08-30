@@ -2,43 +2,50 @@ import React, { useState, forwardRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import styles from "./Flipbook.module.css"
+import { LogoSVG } from '../svgs'
 
-const Page = React.forwardRef(({coverpage}, ref) => {
+const Page = ({ coverpage, visibility }, ref) => {
     return (
-        <div className= {`w-6/12 h-96 flex flex-col bg-tyrian-purple font-serif ${styles.coverPage}`} ref={ref}>
-            <div className={`border-sky-500 w-full h-full flex flex-col p-2 ${styles.coverPage}`}>
-                <motion.div className=" w-full h-5/6 m-auto flex flex-col justify-center items-center font-bold text-2xl" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 2 }}>
-                    
-                    <div className={`w-full h-2/5 relative ${styles.imageDiv}`} >
-                        <motion.div className='border-2 w-3/6 h-5/6 absolute top-4 left-1' whileHover={{ scale: 1.1 }}>
-                            <Image layout='fill' className=' object-cover' src={coverpage.images[0]}></Image>
-                        </motion.div>
-                        <motion.div className='border-2 w-2/6 h-4/6 absolute right-5 top-4' whileHover={{ scale: 1.1 }}>
-                            <Image layout='fill' className=' object-cover' src={coverpage.images[1]}></Image>
-                        </motion.div>
-                    </div>
 
-                    <div className=' w-full h-1/5 flex flex-col justify-center items-center'>Orientation History</div>
-                    
-                    <div className={`w-full h-2/5 relative ${styles.imageDiv}`}>
-                        <motion.div className='border-2 w-2/6 h-3/6 absolute left-5 top-1/4' whileHover={{ scale: 1.1 }}>
-                            <Image layout='fill' className=' object-cover' src={coverpage.images[2]}></Image>
-                        </motion.div>
-                        <motion.div className='border-2 w-1/6 h-2/6 absolute top-4 left-2/4' whileHover={{ scale: 1.1 }}>
-                            <Image layout='fill' className=' object-cover' src={coverpage.images[3]}></Image>
-                        </motion.div>
-                        <motion.div className='border-2 w-1/6 h-2/6 absolute top-4 left-3/4' whileHover={{ scale: 1.1 }}>
-                            <Image layout='fill' className=' object-cover' src={coverpage.images[4]}></Image>
-                        </motion.div>
-                        <motion.div className='border-2 w-1/6 h-2/6 absolute bottom-3 right-1/4' whileHover={{ scale: 1.1 }}>
-                            <Image layout='fill' className=' object-cover' src={coverpage.images[5]}></Image>
-                        </motion.div>
+        <div className={`w-full shadow-2xl   ${visibility ? styles.coverPage : null} text-white`} ref={ref}>
+            <div className={`w-1/6 h-full flex flex-col justify-end items-end  ${styles.bookShape}`} >
+                <div className={`w-5/6 h-12 md:h-16 ${styles.bookPages} mb-2`}>
+                    <div className={`${styles.line2} w-full`}></div>
+                    <div className={`${styles.line} w-full`}></div>
+                    <div className={`${styles.line} w-full`}></div>
+                    <div className={`${styles.line2} w-full`}></div>
+                </div>
+
+            </div>
+
+            <div className={`h-full flex flex-col justify-between w-5/6 `}>
+                <div className='top'>
+
+                </div>
+                <div className='flex flex-col items-center justify-center'>
+                    <div className='bg-white'>
+                        <LogoSVG width={160} />
                     </div>
-                    
-                </motion.div>
+                    <div className='text-2xl md:text-4xl lg:text-6xl mt-6 font-vogue'>
+                        Legacy of
+                    </div>
+                    <div className='text-2xl md:text-4xl lg:text-6xl mt-6 font-vogue'>
+                        Orientation of NUST
+                    </div>
+                </div>
+
+
+                <div className={`${styles.remainingPages} w-full h-12 md:h-16 mb-2 flex flex-col`}>
+                    <div className={`${styles.line} w-full`}></div>
+                    <div className={`${styles.line} w-full`}></div>
+                    <div className={`${styles.line} w-full`}></div>
+                    <div className={`${styles.line} w-full`}></div>
+                </div>
             </div>
         </div>
-    )
-})
 
-export default Page
+
+    )
+}
+
+export default forwardRef(Page)

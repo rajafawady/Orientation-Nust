@@ -13,14 +13,12 @@ function Mobileflipbook({ coverpage, history, lastpage }) {
         },
         visible: {
             x: 0,
-            transition: {
-                delay: 0.5
-            }
+            
         }
     }
 
     return (
-        <motion.div className={`box-border grid h-screen place-items-center`} variants={bookPosition} animate="visible" initial="hidden">
+        <motion.div className={`box-border grid h-screen place-items-center border-2`} variants={bookPosition} animate="visible" initial="hidden">
             <div>
                 <HTMLFlipBook width={350} height={450} size={'fixed'} showCover={true}>
                     <Coverpage coverpage={coverpage}></Coverpage>

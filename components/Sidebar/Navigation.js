@@ -47,8 +47,8 @@ const itemIds = [
   },
   {
     "id": 5,
-    "name":"Spinner",
-    "href":"/spinner",
+    "name":"OG Activites",
+    "href":"/og-activities",
   },
   {
     "id": 6,

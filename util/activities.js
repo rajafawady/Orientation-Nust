@@ -1,63 +1,63 @@
 const activities = [
   {
-    option: "1"
+    option: "do some exciting task 1"
   },
   {
-    option: "2"
+    option: "do some exciting task 2"
   },
   {
-    option: "3"
+    option: "do some exciting task 3"
   },
   {
-    option: "4"
+    option: "do some exciting task 4"
   },
   {
-    option: "5"
+    option: "do some exciting task 5"
   },
   {
-    option: "6"
+    option: "do some exciting task 6"
   },
   {
-    option: "7"
+    option: "do some exciting task 7"
   },
   {
-    option: "8"
+    option: "do some exciting task 8"
   },
   {
-    option: "9"
+    option: "do some exciting task 9"
   },
   {
-    option: "10"
+    option: "do some exciting task 10"
   },
   {
-    option: "11"
+    option: "do some exciting task 11"
   },
   {
-    option: "12"
+    option: "do some exciting task 12"
   },
   {
-    option: "13"
+    option: "do some exciting task 13"
   },
   {
-    option: "14"
+    option: "do some exciting task 14"
   },
   {
-    option: "15"
+    option: "do some exciting task 15"
   },
   {
-    option: "16"
+    option: "do some exciting task 16"
   },
   {
-    option: "17"
+    option: "do some exciting task 17"
   },
   {
-    option: "18"
+    option: "do some exciting task 18"
   },
   {
-    option: "19"
+    option: "do some exciting task 19"
   },
   {
-    option: "20"
+    option: "do some exciting task 20"
   }
 ]
 

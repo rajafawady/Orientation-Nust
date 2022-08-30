@@ -1,24 +1,21 @@
 import React from "react";
 
-const PrizeDiv = ({ spinDone, prizeNumber, hideOnMobile }) => {
+const PrizeDiv = ({ spinDone, hideOnMobile }) => {
   return (
     <div
-      className={`md:basis-1/2 flex-col justify-center 
-    md:w-full sm:w-3/4 w-full md:h-60 h-40 my-6
-    bg-center bg-no-repeat  rounded-2xl 
-    ${spinDone ? 'bg-[url("/focus.jpg")] bg-cover' : 'bg-[url("/s2w.png")] bg-contain'}
+      className={`md:py-0 py-4 md:w-full sm:w-3/4 w-full my-4 md:my-0
     ${hideOnMobile ? "hidden md:flex" : "flex md:hidden"}`}
     >
-      <div className="font-montserrat text-white text-lg sm:text-2xl md:text-xl lg:text-3xl text-center ">
-        {spinDone ? (
-          <div>
-            You won <span className="sm:text-4xl md:text-3xl lg:text-5xl text-2xl"><br/>{prizeNumber}</span>!
-          </div>
-        ) : (
-          <div className="">
-            {/* <img src="/s2w.png" className="h-56 mx-auto" /> */}
-          </div>
-        )}
+      <div
+        className={`text-base sm:text-xl md:text-base lg:text-xl
+        bg-tyrian-purple dark:bg-ultra-red
+        rounded-xl text-white font-mont text-center p-4`}
+      >
+        <div className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl mb-2 font-montserrat">
+          OG Activities
+        </div>
+        Orientation Guides will do some fun activities with the freshmen
+        students. Spin the wheel to find out which one you&apos;ll be doing!
       </div>
     </div>
   );

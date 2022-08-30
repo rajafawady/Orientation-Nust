@@ -319,3 +319,21 @@ li {
     display: block;
   }
 }
+
+.legacy-book{
+  position: relative;
+  z-index: 40;
+}
+
+.celebration-div{
+  background: url('/celebration.png');
+  background-size: 800px;
+  background-position:-10% 50%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width:1160px) {
+  .celebration-div{
+    background: none;
+  }
+}
