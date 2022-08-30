@@ -108,6 +108,7 @@ export const directorate = [
         "colIndex":3,
         "id":17,
         "image":"/directorate/Shaheer Khattak  - Shaheer Khattak.jpg"
+
     },
     
     {
