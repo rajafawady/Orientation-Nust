@@ -329,7 +329,7 @@ li {
   background: url('/celebration.png');
   background-size: 800px;
   background-position:-10% 50%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
 
 @media screen and (max-width:1160px) {
