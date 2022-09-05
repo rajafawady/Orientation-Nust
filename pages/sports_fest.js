@@ -10,7 +10,7 @@ const Sports_Fest = () => {
   return (
     <Layout title={"Sports Fest"} >
       <div className="flex flex-col dark:bg-[#181818]">
-        <div className="flex md:pl-16 pt-24 font-poppins pb-8 bg-[#380f26] dark:bg-prussian-blue text-white dark:text-white text-4xl md:text-4xl mb-6">
+        <div className="flex pl-8 md:pl-16 pt-24 font-poppins pb-8 bg-[#380f26] dark:bg-prussian-blue text-white dark:text-white text-4xl md:text-4xl mb-6">
           Sports Fest 
         </div>
 

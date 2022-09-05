@@ -9,7 +9,7 @@ const universityFixtures = [
   {
     category: "Basketball",
     icon: faBasketball,
-    note: "Each match will consist of 6min quarters with 1min break between each quarter.",
+    note: "Each match will consist of 6 min quarters with 1 min break between each quarter.",
     fixtures: [
       {
         home: {
@@ -83,7 +83,7 @@ const universityFixtures = [
   {
     category: "Futsal",
     icon: faFutbol,
-    note: "Each match will have a 15min half.",
+    note: "Each match will have a 15 min half.",
 
     fixtures: [
       {
