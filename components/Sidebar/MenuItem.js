@@ -9,10 +9,9 @@ import {
   faCircleQuestion,
   faTv,
   faDharmachakra,
-  faFutbol,
   faBasketball,
   faDownload,
-  faHistory,
+  //faHistory,
   faTshirt
 } from "@fortawesome/free-solid-svg-icons";
 import { faFutbolBall } from "@fortawesome/free-regular-svg-icons";
@@ -38,7 +37,6 @@ const icons = [
   faHome,
   faBuildingUser,
   faPeopleGroup,
-  faHistory,
   faTv, 
   faDharmachakra,
   faBasketball,
