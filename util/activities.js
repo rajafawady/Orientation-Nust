@@ -1,64 +1,91 @@
 const activities = [
   {
-    option: "do some exciting task 1"
+    option:"Arnold",
+    longOption: "Do 20 pushups"
   },
   {
-    option: "do some exciting task 2"
+    option:"Flirt",
+    longOption: "Sell a ballpoint to a random girl"
   },
   {
-    option: "do some exciting task 3"
+    option:"Bayblade",
+    longOption: "Spin around on one foot 5 times"
   },
   {
-    option: "do some exciting task 4"
+    option:"Crush",
+    longOption: "Confess your love to a water bottle"
   },
   {
-    option: "do some exciting task 5"
+    option:"Kiddo",
+    longOption: "Introduce yourself in a baby voice"
   },
   {
-    option: "do some exciting task 6"
+    option:"Tate",
+    longOption: "Do 10 sit ups"
   },
   {
-    option: "do some exciting task 7"
+    option:"Model",
+    longOption: "Do a catwalk"
   },
   {
-    option: "do some exciting task 8"
+    option:"Boomer",
+    longOption: "Tell a dad joke to a stranger"
   },
   {
-    option: "do some exciting task 9"
+    option:"Crazy",
+    longOption: "Laugh at everything we say"
   },
   {
-    option: "do some exciting task 10"
+    option:"Shakira",
+    longOption: "Dance to cheap thrills"
   },
   {
-    option: "do some exciting task 11"
+    option:"Nasir Khan Jan",
+    longOption: "Sing a song"
   },
   {
-    option: "do some exciting task 12"
+    option:"K-POP",
+    longOption: "Run around a group of people and scream \"me to strawberry hu\""
   },
   {
-    option: "do some exciting task 13"
+    option:"Dare",
+    longOption: "Do a prank call to your dad"
   },
   {
-    option: "do some exciting task 14"
+    option:"Reverse Date",
+    longOption: "Ask a girl to buy you a drink"
   },
   {
-    option: "do some exciting task 15"
+    option:"Sheela",
+    longOption: "Dance to cheap thrills Hindi Version"
   },
   {
-    option: "do some exciting task 16"
+    option:"Desires",
+    longOption: "Say something dirty to the person on your left"
   },
   {
-    option: "do some exciting task 17"
+    option:"Impulsive",
+    longOption: "Yell out the first word that comes to your mind"
   },
   {
-    option: "do some exciting task 18"
+    option:"Animal",
+    longOption: "Eat a snack without using your hands"
   },
   {
-    option: "do some exciting task 19"
+    option:"Cow",
+    longOption: "Try to put your whole fist in your mouth"
   },
   {
-    option: "do some exciting task 20"
-  }
+    option:"Flexible",
+    longOption: "Try to lick your elbow"
+  },
+  {
+    option:"Thunder Cat",
+    longOption: "Howl like a wolf for 30 seconds"
+  },
+  {
+    option:"SURPRISE",
+    longOption: "Dance without music for 1 minute"
+  },
 ]
-
 export default activities;

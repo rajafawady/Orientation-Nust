@@ -29,7 +29,7 @@ export default function Music() {
     </div>
     <div className={styles.music} onClick={handleMusic} >
       <span className={`bg-tyrian-purple dark:bg-ultra-red`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
-      <span className={`${click & router.asPath === "/" ?  "bg-white" :"bg-ultra-red"} dark:bg-pale-pink`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
+      <span className={`${click & (router.asPath === "/" || router.asPath==='/sports_fest') ?  "bg-white" :"bg-ultra-red"} dark:bg-pale-pink`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <span className={`bg-tyrian-purple dark:bg-ultra-red`}  style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <span className={`${click & router.asPath === "/" ?  "bg-white" :"bg-ultra-red"} dark:bg-pale-pink`} style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>
       <span className={`bg-tyrian-purple dark:bg-ultra-red ${styles.hideOnSmallScreen}`}  style={{ animationPlayState: isPlaying ? "running" : "paused" }}></span>

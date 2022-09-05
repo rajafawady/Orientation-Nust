@@ -37,8 +37,9 @@ export const SidebarNav = () => {
       custom={height}
       ref={containerRef}
     >
-      <motion.div className="background" variants={sidebar} />
-      <Navigation />
+      <motion.div className="background h-full overflow-x-hidden overflow-scroll" variants={sidebar}>
+        <Navigation />
+      </motion.div>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

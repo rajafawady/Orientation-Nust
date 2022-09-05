@@ -50,15 +50,26 @@ const itemIds = [
     "name":"OG Activites",
     "href":"/og-activities",
   },
+  ,
   {
-    "id": 6,
-    "name":"Downloads",
-    "href":"/downloads",
+    id: 6,
+    name: "Sports Fest",
+    href: "/sports_fest",
   },
   {
-    "id": 7,
-    "name":"FAQs",
-    "href":"/faqs",
+    id: 7,
+    name: "Downloads",
+    href: "/downloads",
+  },
+  {
+    id: 8,
+    name: "Merchandise",
+    href: "/merchandise",
+  },
+  {
+    id: 9,
+    name: "FAQs",
+    href: "/faqs",
   },
   
 ];

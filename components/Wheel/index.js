@@ -7,7 +7,6 @@ import Btn from "./Btn";
 import activities from "../../util/activities.js";
 import { useTheme } from "next-themes";
 
-let spinCount = 0;
 
 const colors = [];
 colors["tyrianPurple"] = "rgb(114, 2, 64)";
@@ -17,38 +16,43 @@ colors["lapisLazuli"] = "rgb(18, 98, 158)";
 colors["prussianBlue"] = "rgb(17, 46, 73)";
 
 const Spinner = () => {
-  let data = [...activities];
-  const { theme } = useTheme();
 
+  
+
+
+  const { theme } = useTheme();
+  const [data, setData] = useState([...activities])
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
+  const [longPrize, setLongPrize] = useState(0);
   const [spinDone, setSpinDone] = useState(false);
   const [hover, setHover] = useState(false);
   const [selected, setSelected] = useState(() => {
     let array = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 6; i++) {
       let random = data.splice(Math.floor(Math.random() * data.length), 1);
-      // let random = data.splice(i[0], 1);
       array.push(random[0]);
     }
     return array;
   });
 
-  const handleSpinClick = () => {
-    // console.log("handling spin click");
-    if (spinCount === 5) {
-      alert("You are out of spins!!!");
-      return;
+  useEffect(() => {
+    console.log(data.length)
+    if (data.length < 2) {
+      setData([...activities])
     }
+  }, [])
+
+  const handleSpinClick = () => {
     const prizeIndex = Math.floor(Math.random() * selected.length);
     setPrizeNumber(selected[prizeIndex].option);
-    // console.log("winning number is", selected[prizeIndex].option);
+    setLongPrize(selected[prizeIndex].longOption)
+    console.log("winning object is", selected[prizeIndex]);
     setMustSpin(true);
-    spinCount++;
-    // console.log("SPIN COUNT IS ", spinCount);
   };
 
   const onFinishedSpinning = () => {
+    console.log('global data is', selected)
     // console.log("running onFinishedSpinning");
     const randomIndex = selected.findIndex((x) => x.option === prizeNumber);
     const newNumber = data.splice(
@@ -64,6 +68,9 @@ const Spinner = () => {
       ];
     });
     setSpinDone(false);
+
+
+
   };
 
   return (
@@ -97,18 +104,13 @@ const Spinner = () => {
                 theme === "dark" ? colors.ultraRed : colors.tyrianPurple
               }
               outerBorderWidth={3}
-              // innerRadius={10}
-              // innerBorderColor={
-              //   theme === "dark" ? colors.ultraRed : colors.tyrianPurple
-              // }
-              // innerBorderWidth={2}
               radiusLineColor={
                 theme === "dark" ? colors.ultraRed : colors.tyrianPurple
               }
               radiusLineWidth={1}
-              fontSize={15}
+              fontSize={25}
               textDistance={50}
-              spinDuration={1}
+              spinDuration={0.1}
             />
             <div
               className={`flex flex-col items-center text-center justify-center 
@@ -123,11 +125,12 @@ const Spinner = () => {
                 <div className="">
                   Your Activity:{" "}
                   <span className="italic text-2xl lg:text-3xl">
-                    {prizeNumber}
+                    {longPrize}
                   </span>
                 </div>
               ) : (
-                <div className="">Spin to get an exciting activity!</div>
+                <div className="">Spin to get an exciting activity!
+                </div>
               )}
             </div>
           </div>
@@ -138,7 +141,7 @@ const Spinner = () => {
             <div className="mt-auto mb-4">
               <Btn
                 show={!spinDone}
-                onClick={handleSpinClick}
+                clickFunc={handleSpinClick}
                 hover={hover}
                 setHover={setHover}
                 Icon={TbFidgetSpinner}
@@ -147,7 +150,7 @@ const Spinner = () => {
 
               <Btn
                 show={spinDone}
-                onClick={onFinishedSpinning}
+                clickFunc={onFinishedSpinning}
                 hover={hover}
                 setHover={setHover}
                 Icon={IoReload}

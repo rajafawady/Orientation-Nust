@@ -1,6 +1,6 @@
 import React from "react";
 
-const Btn = ({ show, onClick, setHover, hover, text, Icon }) => {
+const Btn = ({ show, clickFunc, setHover, hover, text, Icon }) => {
   return (
     <div className="bg-black">
       {show && (
@@ -12,7 +12,7 @@ const Btn = ({ show, onClick, setHover, hover, text, Icon }) => {
                   sm:p-4 sm:text-3xl
                   p-2 text-2xl                  
                   ${show ? "block" : "hidden"}`}
-          onClick={onClick}
+          onClick={clickFunc}
           // onClick={handleSpinClick}
           onMouseOver={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
