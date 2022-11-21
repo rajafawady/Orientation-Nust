@@ -45,12 +45,12 @@ const itemIds = [
     "name":"ON Station",
     "href":"/on-station/episode/1",
   },
-  {
-    "id": 4,
-    "name":"OG Activites",
-    "href":"/og-activities",
-  },
-  ,
+  // {
+  //   "id": 4,
+  //   "name":"OG Activites",
+  //   "href":"/og-activities",
+  // },
+  
   {
     id: 5,
     name: "Sports Fest",
