@@ -13,7 +13,7 @@ const Card = ({ className, children, image, type, id, content }) => {
         >
           <p className="uppercase text-sm text-white">{type}</p>
           <h2 className="font-bold text-4xl text-white">{children}</h2>
-          <div class="textMain">
+          <div className="textMain">
             <p>{content}</p>
           </div>
         </div>
