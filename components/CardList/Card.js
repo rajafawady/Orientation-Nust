@@ -3,7 +3,7 @@ import Link from "next/link";
 const Card = ({ className, children, image, type, id, content }) => {
   return (
     <Link href={`/gallery/${type.toLowerCase().replace(/\s/g, "-")}/${id}`}>
-      <a>
+      <a className="linkk">
         <div
           style={{
             background: `linear-gradient(to top, rgba(114,2,64,0.1), rgba(114,2,64,0.1)), url(${image}) no-repeat top center`,
@@ -13,7 +13,9 @@ const Card = ({ className, children, image, type, id, content }) => {
         >
           <p className="uppercase text-sm text-white">{type}</p>
           <h2 className="font-bold text-4xl text-white">{children}</h2>
-          <p>{content}</p>
+          <div class="textMain">
+            <p>{content}</p>
+          </div>
         </div>
       </a>
     </Link>

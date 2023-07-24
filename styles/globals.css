@@ -341,3 +341,11 @@ li {
 .custom-font{
   font-family: "Poppins 500","Noto Sans Regular","Helvetica Neue",Arial,sans-serif;;
 }
+
+.linkk:hover .textMain {
+  display: block
+}
+
+.textMain{ 
+  display: none
+}
