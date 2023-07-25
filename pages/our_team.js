@@ -15,29 +15,23 @@ const team = () => {
     <>
      
         <Layout title={"Our Team"}>
+        
           <div className="mt-12">
 
-            {/* <img src="/svg/blue-svg/1.svg" width={200} className='fixed left-32 top-96' /> */}
-          <EC />
+          
 
-            <div className="md:flex justify-center w-full py-16 mt-16 bg-tyrian-purple dark:bg-gray-800">
-              <div className="sm:w-full md:w-2/3">
-                  <div className="pl-6 pr-6 pt-6">
-                    <span className="font-sans font-extrabold text-white text-5xl md:text-7xl ">Directorate</span>
-                  </div>
-                  <div className="pl-6 pr-6 pt-6">
-                    <TypeWriter Text={directorateText}/>
-                  </div>
-              </div>
-              <div className="sm:w-full md:w-1/3 flex justify-center">
-                <AppleWatchDock />
-              </div>
-            </div>
+            {/* <img src="/svg/blue-svg/1.svg" width={200} className='fixed left-32 top-96' /> */}
+             <EC />
+
+          
+
+            
           </div>
         </Layout>
    
     </>
   );
 };
+
 
 export default team;
