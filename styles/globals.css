@@ -367,13 +367,27 @@ li {
 /* Life at nust CSS */
 
 .school_link:hover .school_link_textMain {
-  display: block;
+  display: flex;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.25s linear;
 }
 
 .school_link_textMain {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
-
+.school_link_textTop {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
 .school__div {
   display: flex;
   justify-content: center;
@@ -411,7 +425,13 @@ li {
   grid-gap: 2rem;
   margin: 2rem 0;
 }
+.padding-lr-sm {
+  padding: 0.5rem 2rem 0rem 2rem;
+}
 
+.padding-lr {
+  padding: 1rem 2rem 1rem 2rem;
+}
 @media screen and (max-width: 1100px) {
   .schools-grid-1,
   .schools-grid-2 {
@@ -423,4 +443,21 @@ li {
   .schools-grid-2 {
     grid-template-columns: 1fr;
   }
+}
+
+.school__button {
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border: rgba(0, 0, 0, 0.448) 1px solid;
+  height: 2.8rem;
+  border-radius: 10%;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  backdrop-filter: blur(10px);
+}
+.school__button:hover {
+  background-color: #72024035;
 }
