@@ -9,13 +9,16 @@ const Card = ({ children, image, type, id, content }) => {
             backgroundColor: "rgba(114,2,64,0.1)",
             backgroundImage: `url(${image})`,
             backgroundSize: "cover",
+            display: "flex",
+            justifyContent: "end",
+            flexDirection: "column",
           }}
           className={` p-6 h-96 rounded-2xl  overflow-hidden`}
         >
           <p className="uppercase text-sm text-white">{type}</p>
           <h2 className="font-bold text-4xl text-white">{children}</h2>
           <div className="school_link_textMain">
-            <p>{content}</p>
+            <p>{content.split("", 150).join("") + "..."}</p>
           </div>
         </div>
       </a>
