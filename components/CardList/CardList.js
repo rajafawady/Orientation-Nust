@@ -8,12 +8,16 @@ const CardList = ({ schools, lifeAtNUST }) => {
       <div className="school__div">
         <h2 className="school__h2"> Schools </h2>
       </div>
-      <List list={schools} type="School" />
+      <div className="list">
+        <List list={schools} type="School" />
+      </div>
 
       <div className="school__div">
         <h2 className="school__h2"> Life At Nust </h2>
       </div>
-      <List list={lifeAtNUST} type="Life at NUST" />
+      <div className="list">
+        <List list={lifeAtNUST} type="Life at NUST" />
+      </div>
     </div>
   );
 };

@@ -18,7 +18,6 @@ const List = ({ list = [], type }) => {
                 type={type}
                 content={data.content}
                 id={data.id}
-                className={`item-${(i % 4) + 1}`}
                 key={data.id}
                 image={data.image}
               >

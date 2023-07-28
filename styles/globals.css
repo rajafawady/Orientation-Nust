@@ -211,27 +211,6 @@ li {
   font-size: 18rem;
 }
 
-.schools-grid-1 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 2rem;
-  margin: 2rem 0;
-}
-
-.schools-grid-2 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 2rem;
-  margin: 2rem 0;
-}
-
-@media screen and (max-width: 768px) {
-  .schools-grid-1,
-  .schools-grid-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .text-10xl {
   font-size: 6rem;
   line-height: 0.9;
@@ -249,13 +228,6 @@ li {
 
 @media screen and (max-width: 1280px) {
   .faq-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .schools-grid-1,
-  .schools-grid-2 {
     grid-template-columns: 1fr;
   }
 }
@@ -394,11 +366,11 @@ li {
 
 /* Life at nust CSS */
 
-.linkk:hover .textMain {
+.school_link:hover .school_link_textMain {
   display: block;
 }
 
-.textMain {
+.school_link_textMain {
   display: none;
 }
 
@@ -409,15 +381,11 @@ li {
   margin-block: 30px;
 }
 .school__h2 {
-  color: #720240;
+  color: rgb(97, 33, 65);
   font-weight: 800;
   text-transform: uppercase;
   font-family: sans-serif;
   font-size: 3rem;
-}
-
-.testing_fuckface {
-  border: solid 3px red;
 }
 
 .school__main {
@@ -428,4 +396,31 @@ li {
 .school__container {
   max-width: 1300px;
   padding: 2rem;
+}
+
+.schools-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+  margin: 2rem 0;
+}
+
+.schools-grid-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .schools-grid-1,
+  .schools-grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .schools-grid-1,
+  .schools-grid-2 {
+    grid-template-columns: 1fr;
+  }
 }

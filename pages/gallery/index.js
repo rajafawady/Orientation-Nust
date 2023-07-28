@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 const Gallery = ({ schools, lifeAtNUST }) => {
   return (
     <Layout title={"Life At NUST"}>
-      <div className="school__main testing_fuckface">
+      <div className="school__main">
         <div className="school__container ">
           <CardList schools={schools} lifeAtNUST={lifeAtNUST} />
         </div>
