@@ -5,17 +5,13 @@ import List from "./List";
 const CardList = ({ schools, lifeAtNUST }) => {
   return (
     <div id="cardList">
-      <div className="flex justify-center lg:text-7xl md:text-6xl text-5xl my-8 font-montserrat font-bold md:mb-20 md:mt-20 text-tyrian-purple dark:text-pale-pink">
-        <MeetOurTeam
-          placeholderText={[{ type: "heading1", text: "Schools" }]}
-        />
+      <div className="school__div">
+        <h2 className="school__h2"> Schools </h2>
       </div>
-
       <List list={schools} type="School" />
-      <div className="flex justify-center lg:text-7xl md:text-6xl text-5xl my-8 font-montserrat font-bold md:mb-20 md:mt-20 text-tyrian-purple dark:text-pale-pink">
-        <MeetOurTeam
-          placeholderText={[{ type: "heading1", text: "Life At NUST" }]}
-        />
+
+      <div className="school__div">
+        <h2 className="school__h2"> Life At Nust </h2>
       </div>
       <List list={lifeAtNUST} type="Life at NUST" />
     </div>

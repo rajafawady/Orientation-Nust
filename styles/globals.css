@@ -4,59 +4,58 @@
 
 @layer base {
   @font-face {
-    font-family: 'Brittany-Signature';
-    src: url('/fonts/Brittany-Signature.woff2') format('woff2');
+    font-family: "Brittany-Signature";
+    src: url("/fonts/Brittany-Signature.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/Montserrat.woff2') format('woff2');
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat.woff2") format("woff2");
     font-weight: 200;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Vogue';
-    src: url('/fonts/Vogue.woff2') format('woff2');
+    font-family: "Vogue";
+    src: url("/fonts/Vogue.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Montserrat-Light';
-    src: url('/fonts/Montserrat-Light.woff2') format('woff2');
+    font-family: "Montserrat-Light";
+    src: url("/fonts/Montserrat-Light.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
   }
 
   /* ------------------------------- */
   @font-face {
-    font-family: 'Lato-Bold';
-    src: url('/fonts/Lato-Bold.ttf') format('ttf');
+    font-family: "Lato-Bold";
+    src: url("/fonts/Lato-Bold.ttf") format("ttf");
   }
 
   @font-face {
-    font-family: 'Lato-Regular';
-    src: url('/fonts/Lato-Regular.ttf') format('ttf');
+    font-family: "Lato-Regular";
+    src: url("/fonts/Lato-Regular.ttf") format("ttf");
   }
 
   @font-face {
-    font-family: 'Lato-Light';
-    src: url('/fonts/Lato-Light.ttf') format('ttf');
+    font-family: "Lato-Light";
+    src: url("/fonts/Lato-Light.ttf") format("ttf");
   }
 
   @font-face {
-    font-family: 'Aspect-Range';
-    src: url('/fonts/Aspect-Range.ttf') format('ttf');
+    font-family: "Aspect-Range";
+    src: url("/fonts/Aspect-Range.ttf") format("ttf");
   }
 
   @font-face {
-    font-family: 'The-Jacklyn';
-    src: url('/fonts/TheJacklyn.ttf') format('ttf');
+    font-family: "The-Jacklyn";
+    src: url("/fonts/TheJacklyn.ttf") format("ttf");
   }
-
 }
 
 html,
@@ -82,11 +81,9 @@ a {
   }
 
   body {
-
     background: dark;
   }
 }
-
 
 nav {
   position: absolute;
@@ -201,8 +198,9 @@ li {
   background: white;
   top: 0;
   left: 0;
-  offset-path: path("M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
-    );
+  offset-path: path(
+    "M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
+  );
 }
 
 .text-stroke {
@@ -228,7 +226,6 @@ li {
 }
 
 @media screen and (max-width: 768px) {
-
   .schools-grid-1,
   .schools-grid-2 {
     grid-template-columns: 1fr 1fr;
@@ -257,7 +254,6 @@ li {
 }
 
 @media screen and (max-width: 600px) {
-
   .schools-grid-1,
   .schools-grid-2 {
     grid-template-columns: 1fr;
@@ -271,13 +267,15 @@ li {
 
 .main-content {
   height: 100vh;
-  background: linear-gradient(to top, rgba(114, 2, 64, 0.2), rgba(0, 0, 0, 0.2)), url('/background-main.webp') no-repeat top center;
+  background: linear-gradient(to top, rgba(114, 2, 64, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/background-main.webp") no-repeat top center;
   background-size: cover;
 }
 
 .dark-content {
   height: 100vh;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/background-main.webp') no-repeat top center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/background-main.webp") no-repeat top center;
   background-size: cover;
 }
 
@@ -299,9 +297,9 @@ li {
   }
 }
 
-
 .nust-map {
-  background: linear-gradient(to top, rgba(114, 2, 64, 0.2), rgba(0, 0, 0, 0.4)), url("/nust.webp") no-repeat top center;
+  background: linear-gradient(to top, rgba(114, 2, 64, 0.2), rgba(0, 0, 0, 0.4)),
+    url("/nust.webp") no-repeat top center;
 }
 
 @keyframes slideLeft {
@@ -314,16 +312,22 @@ li {
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .main-content {
     height: 100vh;
-    background: linear-gradient(to top, rgba(114, 2, 64, 0.6), rgba(0, 0, 0, 0.8)), url('/background-main.webp') no-repeat top center;
+    background: linear-gradient(
+        to top,
+        rgba(114, 2, 64, 0.6),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("/background-main.webp") no-repeat top center;
     background-size: cover;
   }
 
   .dark-content {
     height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/background-main.webp') no-repeat top center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/background-main.webp") no-repeat top center;
     background-size: cover;
   }
 }
@@ -371,26 +375,57 @@ li {
 }
 
 .celebration-div {
-  background: url('/celebration.png');
+  background: url("/celebration.png");
   background-size: 800px;
   background-position: -10% 50%;
   background-repeat: repeat-x;
 }
 
-@media screen and (max-width:1160px) {
+@media screen and (max-width: 1160px) {
   .celebration-div {
     background: none;
   }
 }
 
-.custom-font{
-  font-family: "Poppins 500","Noto Sans Regular","Helvetica Neue",Arial,sans-serif;;
+.custom-font {
+  font-family: "Poppins 500", "Noto Sans Regular", "Helvetica Neue", Arial,
+    sans-serif;
 }
+
+/* Life at nust CSS */
 
 .linkk:hover .textMain {
-  display: block
+  display: block;
 }
 
-.textMain{ 
-  display: none
+.textMain {
+  display: none;
+}
+
+.school__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 30px;
+}
+.school__h2 {
+  color: #720240;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+
+.testing_fuckface {
+  border: solid 3px red;
+}
+
+.school__main {
+  display: flex;
+  justify-content: center;
+}
+
+.school__container {
+  max-width: 1300px;
+  padding: 2rem;
 }

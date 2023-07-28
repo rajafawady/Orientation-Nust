@@ -4,8 +4,10 @@ import Layout from "../../components/Layout";
 const Gallery = ({ schools, lifeAtNUST }) => {
   return (
     <Layout title={"Life At NUST"}>
-      <div className="width-container">
-        <CardList schools={schools} lifeAtNUST={lifeAtNUST} />
+      <div className="school__main testing_fuckface">
+        <div className="school__container ">
+          <CardList schools={schools} lifeAtNUST={lifeAtNUST} />
+        </div>
       </div>
     </Layout>
   );
