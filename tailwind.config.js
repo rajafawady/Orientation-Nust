@@ -20,7 +20,13 @@ module.exports = {
         mont: ["Montserrat-Light"],
         vogue: ["Vogue"],
         brittany: ["Brittany-Signature"],
-        poppins: ["Poppins", "Noto Sans Regular", "Helvetica Neue", "sans-serif", "Arial"]
+        poppins: [
+          "Poppins",
+          "Noto Sans Regular",
+          "Helvetica Neue",
+          "sans-serif",
+          "Arial",
+        ],
       },
       keyframes: {
         expand: {
@@ -39,13 +45,17 @@ module.exports = {
         expand: "expand 1s ease-in-out infinite",
       },
       screens: {
-        'xs': '400px',
+        xs: "400px",
       },
     },
   },
+  daisyui: {
+    themes: ["light"],
+  },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio')
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
+    require("daisyui"),
   ],
 };
