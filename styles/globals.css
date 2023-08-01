@@ -8,19 +8,24 @@
         src: url('/fonts/Brittany-Signature.woff2') format('woff2');
         font-weight: 400;
         font-style: normal;
-    },
-@font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/Montserrat.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-},
-@font-face {
-    font-family: 'Vogue';
-    src: url('/fonts/Vogue.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
+    }
+
+    ,
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('/fonts/Montserrat.woff2') format('woff2');
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    ,
+    @font-face {
+        font-family: 'Vogue';
+        src: url('/fonts/Vogue.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+    }
+
     @font-face {
         font-family: 'Montserrat-Light';
         src: url('/fonts/Montserrat-Light.woff2') format('woff2');
@@ -34,7 +39,7 @@ body {
     padding: 0;
     margin: 0 auto;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -171,9 +176,8 @@ li {
     background: white;
     top: 0;
     left: 0;
-    offset-path: path(
-            "M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
-    );
+    offset-path: path("M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
+        );
 }
 
 .text-stroke {
@@ -199,7 +203,9 @@ li {
 }
 
 @media screen and (max-width: 768px) {
-    .schools-grid-1, .schools-grid-2 {
+
+    .schools-grid-1,
+    .schools-grid-2 {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -226,7 +232,9 @@ li {
 }
 
 @media screen and (max-width: 600px) {
-    .schools-grid-1, .schools-grid-2 {
+
+    .schools-grid-1,
+    .schools-grid-2 {
         grid-template-columns: 1fr;
     }
 }
@@ -238,7 +246,8 @@ li {
 
 .main-content {
     height: 100vh;
-    background: black url('/svg/bg.svg') no-repeat top center;
+    /* background: black url('/svg/bg.svg') no-repeat top center; */
+    background: black;
     background-size: cover;
 }
 
@@ -250,9 +259,9 @@ li {
 
 .opening-text {
     animation: fadeIn 2s, 1;
-    background: linear-gradient(to top, #C97295, rgba(255, 255, 255, 1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* background: linear-gradient(to top, #C97295, rgba(255, 255, 255, 1)); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
     width: 100%;
 }
 
@@ -264,6 +273,7 @@ li {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -278,6 +288,7 @@ li {
     0% {
         margin-left: -2000px;
     }
+
     100% {
         margin-left: 0;
     }
@@ -353,5 +364,44 @@ li {
 }
 
 .custom-font {
-    font-family: "Poppins 500", "Noto Sans Regular", "Helvetica Neue", Arial, sans-serif;;
+    font-family: "Poppins 500", "Noto Sans Regular", "Helvetica Neue", Arial, sans-serif;
+    ;
+}
+
+path {
+    display: inline;
+    fill-opacity: 0;
+    /* fill: #FFF; */
+    /* stroke: #FFF; */
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: bevel;
+    stroke-opacity: 1;
+    paint-order: stroke fill markers;
+    stroke-dasharray: 2700;
+    stroke-dashoffset: 2700;
+    animation: animateStroke 4s cubic-bezier(.25, .75, .3, 1.25) 1 forwards;
+    /* opacity: ; */
+}
+
+#meshBox {
+    animation: moveAside 4s linear forwards;
+    animation-delay: 4s
+}
+
+@keyframes animateStroke {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes moveAside {
+    to {
+        /* transform: translateX(100%); */
+        /* transform: translateX(20rem); */
+        /* left: 75%; */
+        /* height: 50rem; */
+        /* width: 50rem; */
+        transform: translate(-10%, -50%) scale(0.5);
+    }
 }
