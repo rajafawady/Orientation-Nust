@@ -6,8 +6,19 @@ const CardList = ({ schools, lifeAtNUST }) => {
   return (
     <div id="cardList">
       <div className="school__div">
-        <img src=""></img>
+        {/*         <img
+          src="vic_border_black_top.png"
+          alt="vic_border"
+          width="400px"
+        ></img>
+ */}{" "}
         <h2 className="school__h2"> Schools </h2>
+        {/*         <img
+          src="vic_border_black_bot.png"
+          alt="vic_border"
+          width="400px"
+        ></img>
+ */}{" "}
       </div>
 
       <div className="list">

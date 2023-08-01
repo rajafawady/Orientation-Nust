@@ -16,13 +16,19 @@ const Card = ({ children, image, type, id, content }) => {
           }}
           className={`h-96 rounded-2xl scrolllock`}
         >
-          {" "}
-          <div className="px-6 py-3 pb-3 font-bold text-4xl text-white"></div>
+          {/*           <div className="school_link_textTop">
+            <div className="px-6 py-3 pb-3 font-bold text-4xl text-white">
+              {children}
+            </div>
+          </div> */}
+
+          <div className=""></div>
           <div className="px-6 py-3 school_link_textMain">
             <p className=" font-bold text-white">{children}</p>
             <p>
               {content.split("", 99).join("") + "..."}
               <a className=""> (Click To Learn More)</a>{" "}
+              {/* <button className="school__button">Learn More</button> */}
             </p>
           </div>
         </div>

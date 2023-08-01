@@ -150,6 +150,7 @@ ul {
 
 li {
   list-style: none;
+  margin-top: 0px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -396,15 +397,16 @@ li {
 }
 .school__div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-block: 30px;
-  background-color: black;
-  margin-top: 0px;
-  padding: 4rem;
+  background-color: #720240;
+  margin: 0px;
+  padding: 1rem;
 }
 .school__h2 {
-  color: rgb(97, 33, 65);
+  color: white;
   font-weight: 800;
   text-transform: uppercase;
   font-family: sans-serif;
@@ -606,4 +608,20 @@ li {
 .custom-font {
   font-family: "Poppins 500", "Noto Sans Regular", "Helvetica Neue", Arial,
     sans-serif;
+}
+.school__button {
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border: rgba(0, 0, 0, 0.448) 1px solid;
+  height: 2.8rem;
+  border-radius: 10%;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  backdrop-filter: blur(10px);
+}
+.school__button:hover {
+  background-color: #72024035;
 }
