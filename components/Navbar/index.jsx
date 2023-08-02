@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { setTimeout } from 'timers';
 import Link from 'next/link';
 
-const Navbar = () => {
+const Navbar = ({ global }) => {
 	// const router = usePathname();
 	const router = useRouter();
 	const navbarRef = useRef(null);
@@ -46,9 +46,10 @@ const Navbar = () => {
 		};
 	}, [router]);
 
+	if (router.pathname === '/' && global) return null;
 	return (
 		// <div className='sticky top-0 -my-20 w-full z-50 h-16'>
-		<div className='sticky top-0  w-full z-50 h-16 '>
+		<div className='sticky top-0  w-full z-50 h-16 mb-10'>
 			<div
 				className=' rounded-xl border-2 border-black bg-white px-4 mx-20 shadow-md duration-[0.3s]'
 				ref={navbarRef}>

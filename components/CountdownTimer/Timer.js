@@ -44,8 +44,8 @@ const Timer = () => {
 	}, [time]);
 
 	return (
-		<div className=''>
-			<div className='flex flex-col items-center'>
+		<div className='h-screen flex flex-col items-center justify-center -my-10 '>
+			<div className='flex flex-col items-center justify-center'>
 				<div className='absolute h-3/4 w-3/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' id='meshBox'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
@@ -340,8 +340,8 @@ const Timer = () => {
 					5th - 9th September 2022 in NUST H12, Islamabad
 				</div>
 				<div></div>
+				<TimerContainer days={days} hours={hours} minutes={minutes} seconds={seconds} />
 			</div>
-			<TimerContainer days={days} hours={hours} minutes={minutes} seconds={seconds} />
 		</div>
 	);
 };

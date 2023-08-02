@@ -20,8 +20,8 @@ export default function Layout({ children, title, homePage }) {
 			</Head>
 			<div className={`${homePage ? (theme === 'dark' ? 'dark-content' : 'main-content') : null}`}>
 				{/* <div className={`${click & homePage ? (theme === 'dark' ? 'dark-content' : 'main-content') : null}`}> */}
-				<div>
-					<Navbar />
+				<div className='bg-black'>
+					<Navbar global={true} />
 					{/* <DynamicHeader homepage={homePage}/> */}
 					<div className=''>{children}</div>
 				</div>

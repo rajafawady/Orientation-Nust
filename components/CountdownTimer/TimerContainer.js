@@ -2,32 +2,32 @@
 // import { NumberBox } from "./NumberBox";
 //
 export const TimerContainer = ({ days, hours, minutes, seconds }) => (
-  <div className="grid grid-flow-col gap-1 text-center auto-cols-max absolute bottom-0 lg:left-0 left:1/2 m-4">
-    <div className="flex flex-col p-2 bg-[#3F2073] rounded-sm text-neutral-content">
-      <span className="countdown font-mono text-4xl">
-        <span style={{ "--value": days }}></span>
-      </span>
-      days
-    </div>
-    <div className="flex flex-col p-2 bg-[#3F2073] rounded-sm text-neutral-content">
-      <span className="countdown font-mono text-4xl">
-        <span style={{ "--value": hours }}></span>
-      </span>
-      hours
-    </div>
-    <div className="flex flex-col p-2 bg-[#3F2073] rounded-sm  text-neutral-content">
-      <span className="countdown font-mono text-4xl">
-        <span style={{ "--value": minutes }}></span>
-      </span>
-      min
-    </div>
-    <div className="flex flex-col p-2 bg-[#3F2073] rounded-sm  text-neutral-content">
-      <span className="countdown font-mono text-4xl">
-        <span style={{ "--value": seconds }}></span>
-      </span>
-      sec
-    </div>
-  </div>
+	<div className='grid grid-flow-col gap-1 text-center auto-cols-max absolute bottom-20 lg:left-0 left:1/2 m-4'>
+		<div className='flex flex-col p-2 bg-[#3F2073] rounded-sm text-neutral-content'>
+			<span className='countdown font-mono text-4xl'>
+				<span style={{ '--value': days }}></span>
+			</span>
+			days
+		</div>
+		<div className='flex flex-col p-2 bg-[#3F2073] rounded-sm text-neutral-content'>
+			<span className='countdown font-mono text-4xl'>
+				<span style={{ '--value': hours }}></span>
+			</span>
+			hours
+		</div>
+		<div className='flex flex-col p-2 bg-[#3F2073] rounded-sm  text-neutral-content'>
+			<span className='countdown font-mono text-4xl'>
+				<span style={{ '--value': minutes }}></span>
+			</span>
+			min
+		</div>
+		<div className='flex flex-col p-2 bg-[#3F2073] rounded-sm  text-neutral-content'>
+			<span className='countdown font-mono text-4xl'>
+				<span style={{ '--value': seconds }}></span>
+			</span>
+			sec
+		</div>
+	</div>
 );
 //   let daysFlip = false;
 //   let hoursFlip = false;
