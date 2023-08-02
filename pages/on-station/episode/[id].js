@@ -42,38 +42,42 @@ const Episode = () => {
               <div className="w-full lg:max-w-xs">
                 <h1 className="mb-2 text-2xl font-heading">More Videos</h1>
                 <div className="flex flex-col w-full">
-                  {videos
-                    .filter((video) => video.id !== id)
-                    .map((video) => (
-                      <div
-                        key={video.id}
-                        className="cursor-pointer hover:bg-pale-pink transition-colors w-full"
-                        onClick={() =>
-                          router.push(`/on-station/episode/${video.id}`)
-                        }
-                      >
-                        <div className="max-w-md lg:max-w-xs w-full flex gap-2 items-start p-2">
-                          <div className="relative overflow-hidden w-1/2 aspect-[16/9] ">
-                            <Image
-                              src={video.thumbnailUrl}
-                              // className="absolute top-0 left-0 bottom-0 right-0 w-full h-full"
-                              alt={video.title}
-                              layout="fill"
-                            />
-                          </div>
+                  {videos.map((video) => (
+                    <div
+                      key={video.id}
+                      className={`cursor-pointer transition-colors w-full
+                            ${
+                              video.id === id
+                                ? "bg-tyrian-purple text-white"
+                                : "hover:bg-pale-pink"
+                            }
+                        `}
+                      onClick={() =>
+                        router.push(`/on-station/episode/${video.id}`)
+                      }
+                    >
+                      <div className="max-w-md lg:max-w-xs w-full flex gap-2 items-start p-2">
+                        <div className="relative overflow-hidden w-1/2 aspect-[16/9] ">
+                          <Image
+                            src={video.thumbnailUrl}
+                            // className="absolute top-0 left-0 bottom-0 right-0 w-full h-full"
+                            alt={video.title}
+                            layout="fill"
+                          />
+                        </div>
 
-                          <div className="w-1/2">
-                            <h1 className="text-lg font-subHeading mb-2">
-                              {video.title}
-                            </h1>
-                            <p className="text-xs leading-3 font-body">
-                              {video.description.slice(0, 80)}
-                              {video.description.length > 80 && "..."}
-                            </p>
-                          </div>
+                        <div className="w-1/2">
+                          <h1 className="text-lg font-subHeading mb-2">
+                            {video.title}
+                          </h1>
+                          <p className="text-xs leading-3 font-body">
+                            {video.description.slice(0, 80)}
+                            {video.description.length > 80 && "..."}
+                          </p>
                         </div>
                       </div>
-                    ))}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
