@@ -27,7 +27,7 @@ const Card = ({ children, image, type, id, content }) => {
             <p className=" font-bold text-white">{children}</p>
             <p>
               {content.split("", 99).join("") + "..."}
-              <a className=""> (Click To Learn More)</a>{" "}
+              (Click To Learn More)
               {/* <button className="school__button">Learn More</button> */}
             </p>
           </div>
