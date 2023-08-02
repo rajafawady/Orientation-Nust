@@ -10,6 +10,7 @@ const Gallery = ({ schools, lifeAtNUST }) => {
         </div>
       </Layout>
     </div>
+
   );
 };
 

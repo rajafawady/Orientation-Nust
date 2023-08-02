@@ -2,13 +2,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First make sure you've got yarn installed and added to your enviorment paths. 
 
+Download and install the latest yarn.msi from here (make sure you already have node)
+https://classic.yarnpkg.com/latest.msi
+Then add:
+C:\Program Files (x86)\Yarn\bin
+To your path in enviorment variables.
+Then run:
 ```bash
-npm run dev
-# or
+yarn
+(or yarn install)
+
 yarn dev
 ```
+Congratulations you're done.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

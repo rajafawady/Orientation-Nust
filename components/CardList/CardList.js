@@ -27,4 +27,5 @@ const CardList = ({ schools, lifeAtNUST }) => {
   );
 };
 
+
 export default CardList;
