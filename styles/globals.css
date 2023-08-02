@@ -71,6 +71,29 @@ nav {
   top: 0;
 }
 
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(99, 144, 213, 0) 0%, #6390d5 100%);
+  filter: blur(110px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #C97295 0%, #602042 100%);
+  filter: blur(110px);
+}
+
+.white__gradient {
+  background: rgba(204, 204, 204, 0.6);
+  filter: blur(250px);
+}
+.text-gradient {
+  background: -webkit-linear-gradient(0deg, #602042ee
+  0%, #C97295 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent  
+ 
+}
+
+
 .background {
   position: fixed;
   top: 0;
@@ -162,6 +185,7 @@ li {
   height: 100vh;
   display: flex;
 }
+
 
 .box {
   width: 50px;
@@ -341,3 +365,4 @@ li {
 .custom-font{
   font-family: "Poppins 500","Noto Sans Regular","Helvetica Neue",Arial,sans-serif;;
 }
+
