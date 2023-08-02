@@ -383,7 +383,7 @@ li {
   flex-direction: column;
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.15s linear;
+  transition: opacity 0.4s linear;
 }
 
 .school_link_textMain {
