@@ -16,7 +16,6 @@ const Card = ({ children, image, type, id, content }) => {
           }}
           className={`rounded h-96`}
         >
-
           <div className=""></div>
           <div className="px-6 py-3 school_link_textMain h-full">
             <p className=" font-bold text-white">{children}</p>
