@@ -3,7 +3,7 @@ import Link from "next/link";
 const Card = ({ children, image, type, id, content }) => {
   return (
     <Link href={`/gallery/${type.toLowerCase().replace(/\s/g, "-")}/${id}`}>
-      <a className="school_link">
+      <a className="school_link drop-shadow-2xl shadow-lg">
         <div
           style={{
             backgroundColor: "rgba(114,2,64,0.1)",
@@ -14,22 +14,20 @@ const Card = ({ children, image, type, id, content }) => {
             flexDirection: "column",
             justifyContent: "space-between",
           }}
-          className={`h-96 rounded-2xl scrolllock`}
+          className={`rounded h-96`}
         >
-          <div className="school_link_textTop">
-            <div className="px-6 pt-3 uppercase text-sm text-white">{type}</div>
-            <div className="px-6 pb-3 font-bold text-4xl text-white">
-              {children}
-            </div>
-          </div>
-          <div className="px-6 py-3 school_link_textMain">
-            <p>{content.split("", 200).join("") + "..."} </p>
-            <button className="school__button">Learn More</button>
+
+          <div className=""></div>
+          <div className="px-6 py-3 school_link_textMain h-full">
+            <p className=" font-bold text-white">{children}</p>
+            <p>
+              {content.split("", 99).join("") + "..."}
+              (Click To Learn More)
+            </p>
           </div>
         </div>
       </a>
     </Link>
   );
 };
-
 export default Card;
