@@ -22,9 +22,9 @@ const CardList = ({ schools, lifeAtNUST }) => {
           <List list={lifeAtNUST} gap={true} type="Life at NUST" />
         </div>
       </div>
+      <div className="py-6"></div>
     </div>
   );
 };
-
 
 export default CardList;
