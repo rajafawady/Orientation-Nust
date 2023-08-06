@@ -585,56 +585,9 @@ li {
   opacity: ;
 } */
 
-#meshBox {
-  animation: moveAside 4s linear forwards;
-  animation-delay: 4s;
-}
-
-@keyframes animateStroke {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes moveAside {
-  to {
-    /* transform: translateX(100%); */
-    /* transform: translateX(20rem); */
-    /* left: 75%; */
-    /* height: 50rem; */
-    /* width: 50rem; */
-    transform: translate(-10%, -50%) scale(0.5);
-  }
-}
 
 /* Star animations */
-@keyframes scaleSmall {
-  0% {
-    transform: scale(0.02);
-  }
 
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0.02);
-  }
-}
-
-@keyframes scaleLarge {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(0.5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 
 .animate-scaleSmall {
   animation: scaleSmall 2s infinite;
@@ -644,6 +597,10 @@ li {
   animation: scaleLarge 2s infinite;
 }
 
+.animate-glow {
+  animation: glow 2s infinite;
+}
+
 
 
 @keyframes glow {
@@ -651,15 +608,42 @@ li {
     box-shadow: none;
   }
 
-  50% {
-    /* box-shadow: 2px 2px 2px 2px #0ff; */
-  }
 
   100% {
     box-shadow: none;
   }
 }
 
-.animate-glow {
-  animation: glow 2s infinite;
+@keyframes scaleSmall {
+  0% {
+    scale: 0.02;
+    /* transform: scale(0.02); */
+  }
+
+  50% {
+    scale: 1;
+    /* transform: scale(1); */
+  }
+
+  100% {
+    scale: 0.02;
+    /* transform: scale(0.02); */
+  }
+}
+
+@keyframes scaleLarge {
+  0% {
+    scale: 1;
+    /* transform: scale(1); */
+  }
+
+  50% {
+    scale: 0.02;
+    /* transform: scale(0.5); */
+  }
+
+  100% {
+    scale: 1;
+    /* transform: scale(1); */
+  }
 }
