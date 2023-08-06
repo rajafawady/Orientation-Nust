@@ -43,6 +43,10 @@ export default function MeetOurTeam({placeholderText}) {
           return <AnimatedText {...item} key={index} />;
         })}
       </div>
+
+     
+
+
     
     </motion.div>
   );
