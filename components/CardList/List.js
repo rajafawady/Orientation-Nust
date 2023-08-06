@@ -17,8 +17,8 @@ const List = ({ list = [], type, gap }) => {
 				const multiplier = window.scrollY - scrollY > 0 ? 1 : -1;
 				// const y = window.scrollY;
 				console.log(`translateY(${5 * (window.scrollY - scrollY)}rem)`);
-				ref.current.style.transform = `translateY(${0.5 * (window.scrollY - scrollY)}rem)`;
-				ref2.current.style.transform = `translateY(${0.5 * (window.scrollY - scrollY)}rem)`;
+				ref.current.style.transform = `translateY(${multiplier * 2 + multiplier}rem)`;
+				ref2.current.style.transform = `translateY(${multiplier * 2 + multiplier}rem)`;
 				scrollY = window.scrollY;
 			}
 		};
