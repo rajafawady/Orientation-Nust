@@ -7,9 +7,10 @@ import { ClickContext } from '../context/GlobalProvider';
 import dynamic from 'next/dynamic';
 import Navbar from './Navbar';
 
-const DynamicHeader = dynamic(() => import('./Header/Header'), {
-	ssr: false,
-});
+// const DynamicHeader = dynamic(() => import('./Header/Header'), {
+// 	ssr: false,
+// });
+
 export default function Layout({ children, title, homePage }) {
 	const { click } = useContext(ClickContext);
 	const { theme, setTheme } = useTheme();
@@ -20,7 +21,7 @@ export default function Layout({ children, title, homePage }) {
 			</Head>
 			<div className={`${homePage ? (theme === 'dark' ? 'dark-content' : 'main-content') : null}`}>
 				{/* <div className={`${click & homePage ? (theme === 'dark' ? 'dark-content' : 'main-content') : null}`}> */}
-				<div className='bg-black'>
+				<div className=''>
 					<Navbar global={true} />
 					{/* <DynamicHeader homepage={homePage}/> */}
 					<div className=''>{children}</div>

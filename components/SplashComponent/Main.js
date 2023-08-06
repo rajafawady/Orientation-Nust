@@ -13,9 +13,7 @@ export default function Main() {
 			{/* <div className='w-full timer-div flex justify-center items-center'> */}
 			<Timer />
 			{/* </div> */}
-			<Navbar global={false} />
-			<div className='h-screen bg-yellow-300'></div>
-			<div className='h-screen bg-blue-600'></div>
+
 			{/* <div className='events'>
 				<div className='w-full flex flex-col items-center'>
 					<div className='nust-map w-full flex justify-center py-12'>

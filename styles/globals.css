@@ -40,7 +40,7 @@ body {
     margin: 0 auto;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: black;
+    color: black;
 }
 
 a {
@@ -248,13 +248,13 @@ li {
 .main-content {
     height: 100vh;
     /* background: black url('/svg/bg.svg') no-repeat top center; */
-    background: black;
+    /* background: black; */
     background-size: cover;
 }
 
 .dark-content {
     height: 100vh;
-    background: black url('/svg/bg.svg') no-repeat top center;
+    /* background: black url('/svg/bg.svg') no-repeat top center; */
     background-size: cover;
 }
 
@@ -298,7 +298,7 @@ li {
 @media screen and (max-width: 600px) {
     .main-content {
         height: 100vh;
-        background: black url('/svg/bg.svg') no-repeat top center;
+        /* background: black url('/svg/bg.svg') no-repeat top center; */
         background-size: cover;
     }
 

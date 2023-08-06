@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { TimerContainer } from './TimerContainer';
 import Mesh from '../../assets/bg.svg';
-
+// import LogoAnimation from '../../assets/THINGY.mp4';
 const Timer = () => {
 	const [time, setTime] = useState(10);
 	const [days, setDays] = useState(0);
@@ -46,7 +46,7 @@ const Timer = () => {
 	return (
 		<div className='h-screen flex flex-col items-center justify-center -my-10 '>
 			<div className='flex flex-col items-center justify-center'>
-				<div className='absolute h-3/4 w-3/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' id='meshBox'>
+				{/* <div className='absolute h-3/4 w-3/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' id='meshBox'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						version='1.1'
@@ -332,7 +332,7 @@ const Timer = () => {
 								opacity='0.98'></path>
 						</g>
 					</svg>
-				</div>
+				</div> */}
 				<div className='opening-text z-20 py-7 text-center font-brittany font-extrabold text-white text-4xl md:text-6xl lg:text-8xl'>
 					{"Welcome to the Orientation '23"}
 				</div>
@@ -342,6 +342,13 @@ const Timer = () => {
 				<div></div>
 				<TimerContainer days={days} hours={hours} minutes={minutes} seconds={seconds} />
 			</div>
+			<video
+				autoPlay
+				muted
+				onEnded={() => console.log('I just ended')}
+				className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-scren w-screen bg-white'>
+				<source src='THINGY.mp4' />
+			</video>
 		</div>
 	);
 };
