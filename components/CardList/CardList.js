@@ -6,7 +6,7 @@ const CardList = ({ schools, lifeAtNUST }) => {
   return (
     <div id="cardList">
       <div className="school__div w-full">
-        <h2 className="school__h2"> Schools </h2>
+        <h1 class="header-1">Schools</h1>
       </div>
       <div className="list">
         <div className="school__container  lg:px-8 px-3 py-2">
@@ -15,7 +15,7 @@ const CardList = ({ schools, lifeAtNUST }) => {
       </div>
 
       <div className="school__div bg-black">
-        <h2 className="school__h2"> Life At Nust </h2>
+        <h1 class="header-1">Life At Nust</h1>
       </div>
       <div className="list">
         <div className="school__container lg:px-8 px-3 py-2">

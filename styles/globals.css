@@ -408,13 +408,6 @@ li {
   padding: 1rem;
 }
 
-.school__h2 {
-  font-weight: 800;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 3rem;
-}
-
 .blur {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
@@ -634,4 +627,27 @@ li {
 
 .school__button:hover {
   background-color: #72024035;
+}
+
+.header-1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: repeating-radial-gradient(
+    farthest-side at 5px 5px,
+    rgba(197, 0, 109, 0.6),
+    #250082,
+    rgba(213, 0, 117, 0.6)
+  );
+}
+
+.school__h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 3rem;
 }
