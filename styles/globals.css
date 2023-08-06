@@ -10,6 +10,7 @@
     font-style: normal;
   }
 
+  ,
   @font-face {
     font-family: "Montserrat";
     src: url("/fonts/Montserrat.woff2") format("woff2");
@@ -17,6 +18,7 @@
     font-style: normal;
   }
 
+  ,
   @font-face {
     font-family: "Vogue";
     src: url("/fonts/Vogue.woff2") format("woff2");
@@ -30,7 +32,6 @@
     font-weight: 400;
     font-style: normal;
   }
-
   /* ------------------------------- */
   @font-face {
     font-family: "Lato-Bold";
@@ -66,6 +67,7 @@ body {
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: black;
 }
 
 a {
@@ -151,7 +153,6 @@ ul {
 
 li {
   list-style: none;
-  margin-top: 0px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -366,14 +367,9 @@ li {
 
 /* Life at nust CSS */
 
-.school_link {
-  margin-bottom: 1rem !important;
-  margin-top: 1rem !important;
-}
-
 .school_link:hover .school_link_textMain {
   display: flex;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   justify-content: center;
@@ -381,7 +377,7 @@ li {
   flex-direction: column;
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.15s linear;
 }
 
 .school_link_textMain {
@@ -397,63 +393,52 @@ li {
 
 .school__div {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-block: 30px;
-  background-color: transparent;
-  margin: 0px;
-  padding: 1rem;
 }
 
 .school__h2 {
+  color: rgb(97, 33, 65);
   font-weight: 800;
   text-transform: uppercase;
   font-family: sans-serif;
   font-size: 3rem;
 }
 
-
-.blur {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  height: 100vh;
-  width: 50%;
-}
-
-.school__container {
+.school__main {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.col1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.col2 {
-  display: flex;
-  flex-direction: column;
+.school__container {
+  max-width: 1300px;
+  padding: 2rem;
 }
 
 .schools-grid-1 {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 2rem;
-  margin: 2rem;
+  margin: 2rem 0;
+}
+
+.schools-grid-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+  margin: 2rem 0;
 }
 
 .padding-lr-sm {
   padding: 0.5rem 2rem 0rem 2rem;
 }
 
-.padding-lr {
-  padding: 1rem 2rem 1rem 2rem;
-}
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 900px) {
-  .schools-grid-1 {
-    display: block;
+  .schools-grid-1,
+  .schools-grid-2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -493,20 +478,23 @@ li {
 
 .main-content {
   height: 100vh;
-  background: linear-gradient(to top, rgba(114, 2, 64, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/background-main.webp") no-repeat top center;
+  /* background: black url('/svg/bg.svg') no-repeat top center; */
+  /* background: black; */
   background-size: cover;
 }
 
 .dark-content {
   height: 100vh;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/background-main.webp") no-repeat top center;
+  /* background: black url('/svg/bg.svg') no-repeat top center; */
   background-size: cover;
 }
 
 .opening-text {
-  animation: fadeIn 5s, 1;
+  animation: fadeIn 2s, 1;
+  /* background: linear-gradient(to top, #C97295, rgba(255, 255, 255, 1)); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  width: 100%;
 }
 
 .date-text {
@@ -541,17 +529,13 @@ li {
 @media screen and (max-width: 600px) {
   .main-content {
     height: 100vh;
-    background: linear-gradient(to top,
-        rgba(114, 2, 64, 0.6),
-        rgba(0, 0, 0, 0.8)),
-      url("/background-main.webp") no-repeat top center;
+    /* background: black url('/svg/bg.svg') no-repeat top center; */
     background-size: cover;
   }
 
   .dark-content {
     height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("/background-main.webp") no-repeat top center;
+    background: black url("/svg/bg.svg") no-repeat top center;
     background-size: cover;
   }
 }
@@ -566,11 +550,7 @@ li {
   }
 }
 
-.timer-div {
-  height: 100vh;
-}
-
-@media screen and(max-width:700px) {
+@media screen and(max-width: 700px) {
   .timer-div {
     height: 70vh;
   }
@@ -581,13 +561,13 @@ li {
   }
 }
 
-@media screen and(min-width:640px) {
+@media screen and(min-width: 640px) {
   #canvas {
     display: inline;
   }
 }
 
-@media screen and(max-width:639px) {
+@media screen and(max-width: 639px) {
   #canvas {
     display: block;
   }
@@ -616,20 +596,81 @@ li {
     sans-serif;
 }
 
-.school__button {
-  padding-inline: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  border: rgba(0, 0, 0, 0.448) 1px solid;
-  height: 2.8rem;
-  border-radius: 10%;
-  font-size: 0.8rem;
-  margin-top: 1rem;
-  backdrop-filter: blur(10px);
+/* path {
+  display: inline;
+  fill-opacity: 0;
+  fill: #FFF;
+  stroke: #FFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: bevel;
+  stroke-opacity: 1;
+  paint-order: stroke fill markers;
+  stroke-dasharray: 2700;
+  stroke-dashoffset: 2700;
+  animation: animateStroke 4s cubic-bezier(0.25, 0.75, 0.3, 1.25) 1 forwards;
+  opacity: ;
+} */
+
+
+/* Star animations */
+
+
+.animate-scaleSmall {
+  animation: scaleSmall 2s infinite;
 }
 
-.school__button:hover {
-  background-color: #72024035;
+.animate-scaleLarge {
+  animation: scaleLarge 2s infinite;
+}
+
+.animate-glow {
+  animation: glow 2s infinite;
+}
+
+
+
+@keyframes glow {
+  0% {
+    box-shadow: none;
+  }
+
+
+  100% {
+    box-shadow: none;
+  }
+}
+
+@keyframes scaleSmall {
+  0% {
+    scale: 0.02;
+    /* transform: scale(0.02); */
+  }
+
+  50% {
+    scale: 1;
+    /* transform: scale(1); */
+  }
+
+  100% {
+    scale: 0.02;
+    /* transform: scale(0.02); */
+  }
+}
+
+@keyframes scaleLarge {
+  0% {
+    scale: 1;
+    /* transform: scale(1); */
+  }
+
+  50% {
+    scale: 0.02;
+    /* transform: scale(0.5); */
+  }
+
+  100% {
+    scale: 1;
+    /* transform: scale(1); */
+  }
 }
