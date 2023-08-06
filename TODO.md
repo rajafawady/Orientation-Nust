@@ -1,0 +1,4 @@
+- [ ] change theme
+- [ ] remove old fonts
+- [ ] remove dark theme
+- [ ] add footer in util pages
