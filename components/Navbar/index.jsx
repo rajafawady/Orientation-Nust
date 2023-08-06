@@ -40,8 +40,10 @@ const Navbar = ({ global }) => {
 		}
 
 		window.onscroll = scrollFunction;
+		console.log('nav on');
 
 		return () => {
+			console.log('nav off');
 			window.onscroll = null;
 		};
 	}, [router]);
