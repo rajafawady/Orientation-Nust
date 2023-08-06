@@ -20,7 +20,7 @@ const Card = ({ children, image, type, id, content }) => {
           <div className="px-6 py-3 school_link_textMain h-full">
             <p className="text-2xl font-bold text-white">{children}</p>
             <p>
-              {content.split("", 99).join("") + "..."}
+              {content.split("", 200).join("") + "..."}
               {/* (Explore) */}
             </p>
           </div>
