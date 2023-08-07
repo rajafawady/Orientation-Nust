@@ -22,7 +22,9 @@ export default function Layout({ children, title, homePage }) {
 			{/* <div className={`${click & homePage ? (theme === 'dark' ? 'dark-content' : 'main-content') : null}`}> */}
 			<div className='min-h-full'>
 				<Navbar />
-				<div>{children}</div>
+				<div className='w-full flex justify-center'>
+					<div className='container'>{children}</div>
+				</div>
 			</div>
 		</>
 	);
