@@ -8,8 +8,8 @@ const Logo = () => {
 		const dome = domeRef.current;
 		// const x = (centerCords.x - window.event.clientX * 7) / window.innerWidth + '%';
 		// const y = (centerCords.y - window.event.clientY * 7) / window.innerHeight + '%';
-		const x = ((centerCords.x - window.event.clientX) * 15) / window.innerWidth + 'px';
-		const y = ((centerCords.y - window.event.clientY) * 15) / window.innerHeight + 'px';
+		const x = ((centerCords.x - window.event.clientX) * 20) / window.innerWidth + 'px';
+		const y = ((centerCords.y - window.event.clientY) * 20) / window.innerHeight + 'px';
 		// const y = centerCords.y - window.event.clientY + '%';
 		console.log({ x, y });
 		dome.style.transform = `translate(-${x}, -${y})`;
@@ -30,7 +30,7 @@ const Logo = () => {
 	}, []);
 
 	return (
-		<div className='h-72 w-72 relative bg-white flex items-end justify-center'>
+		<div className='h-64 w-64 xl:h-72 xl:w-72 relative shrink-0 bg-white flex items-end justify-center'>
 			<img src='Logo Assets/FaC.png' className='h-full w-full absolute ' alt='' />
 			<img
 				src='Logo Assets/DnS.png'
