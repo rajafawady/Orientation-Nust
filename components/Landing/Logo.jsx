@@ -6,13 +6,12 @@ const Logo = () => {
 	const followCursor = () => {
 		if (typeof window == 'undefined') return;
 		const dome = domeRef.current;
-		// const x = (centerCords.x - window.event.clientX * 7) / window.innerWidth + '%';
-		// const y = (centerCords.y - window.event.clientY * 7) / window.innerHeight + '%';
-		const x = ((centerCords.x - window.event.clientX) * 20) / window.innerWidth + 'px';
-		const y = ((centerCords.y - window.event.clientY) * 20) / window.innerHeight + 'px';
-		// const y = centerCords.y - window.event.clientY + '%';
-		console.log({ x, y });
-		dome.style.transform = `translate(-${x}, -${y})`;
+		const xDist = (centerCords.x - window.event.clientX) / 150;
+		const yDist = (centerCords.y - window.event.clientY) / 150;
+		const x = 50 - xDist + '%';
+		const y = 50 - yDist + '%';
+		dome.style.left = x;
+		dome.style.top = y;
 	};
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -30,11 +29,11 @@ const Logo = () => {
 	}, []);
 
 	return (
-		<div className='h-64 w-64 xl:h-72 xl:w-72 relative shrink-0 bg-white flex items-end justify-center'>
+		<div className='h-64 w-64 xl:h-72 xl:w-72 relative shrink-0 flex items-end justify-center'>
 			<img src='Logo Assets/FaC.png' className='h-full w-full absolute ' alt='' />
 			<img
 				src='Logo Assets/DnS.png'
-				className='transition-transform absolute h-9/12 w-9/12'
+				className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 h-9/12 w-9/12'
 				alt=''
 				ref={domeRef}
 			/>

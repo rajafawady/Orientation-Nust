@@ -150,9 +150,15 @@ const Links = () => {
 					{section?.items?.length > 0 ? (
 						<>
 							<div
-								className={`text-gray-700 font-semibold uppercase mb-1 cursor-pointer`}
+								className={`text-gray-700 font-semibold uppercase mb-1 cursor-pointer flex items-center gap-2 hover:bg-gray-200 p-2 rounded-sm group`}
 								onClick={() => handleSectionClick(index)}>
-								{section.heading}
+								<h4>{section.heading}</h4>
+								<div
+									className={`${
+										openSection === index ? 'rotate-[360deg]' : ''
+									} transition-transform duration-1000`}>
+									<img src='icons/caret.png' className='h-5 w-auto object-contain' alt='' />
+								</div>
 							</div>
 							{openSection === index && (
 								<div className='absolute left-0 my-2 w-max max-w-xs bg-white border rounded-md shadow'>
@@ -197,7 +203,6 @@ const Links = () => {
 
 const LinksHamburger = () => {
 	const [openSection, setOpenSection] = useState(null);
-
 	const sections = [
 		{
 			heading: 'Home',
@@ -206,36 +211,43 @@ const LinksHamburger = () => {
 			disabled: false,
 		},
 		{
-			heading: 'Life At NUST',
-			link: '/gallery',
-			items: [],
-			disabled: false,
-		},
-		{
-			heading: 'Faqs',
-			link: '/faqs',
-			items: [],
-			disabled: false,
-		},
-		{
-			heading: 'Misc',
+			heading: 'About Us',
 			items: [
-				{ id: 2, name: 'Donations', link: '/donations', disabled: true },
-				{ id: 3, name: 'Downloads', link: '/downloads', disabled: true },
+				{
+					id: 1,
+					name: 'Life At NUST',
+					link: '/gallery',
+				},
+				{
+					id: 2,
+					name: 'Our Team',
+					link: '/our_team',
+				},
+			],
+			disabled: false,
+		},
+		{
+			heading: 'Events',
+			items: [
+				{
+					id: 1,
+					name: 'Sports Fest',
+					link: '/sports_fest',
+				},
 			],
 		},
 		{
-			heading: 'NUST',
+			heading: 'ON Station',
+			link: '/on-station',
+		},
+		{
+			heading: 'Resources',
 			items: [
-				{ id: 6, name: 'Merch', link: '/merchandise', disabled: true },
-				{ id: 7, name: 'Activities', link: '/og-activites', disabled: true },
-				{ id: 8, name: 'Team', link: '/our_team', disabled: false },
-				{ id: 9, name: 'Sports Fest', link: '/sports_fest', disabled: true },
+				{ id: 3, name: 'Downloads', link: '/downloads', disabled: true },
 				{
-					id: 10,
-					name: 'ON Station',
-					link: '/on-station',
-					disabled: false,
+					id: 4,
+					name: 'Mechandise',
+					link: '/merchandise',
 				},
 			],
 		},
@@ -252,7 +264,7 @@ const LinksHamburger = () => {
 		<div className='flex flex-col'>
 			{sections.map((section, index) => (
 				<div key={section.heading} className='ml-4 relative'>
-					{section.items.length > 0 ? (
+					{section?.items?.length > 0 ? (
 						<>
 							<div
 								className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${

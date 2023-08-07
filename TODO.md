@@ -2,3 +2,4 @@
 - [ ] remove old fonts
 - [ ] remove dark theme
 - [ ] add footer in util pages
+- [ ] fix nav on mobile

@@ -27,10 +27,12 @@ const Page1 = () => {
 					<div className='z-20 font-latoBold max-w-3xl text-4xl md:text-6xl lg:text-8xl '>
 						Welcome to Orientation &apos;23
 					</div>
-					<div className='max-w-3xl text-xl text-justify font-latoRegular'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde ducimus explicabo
-						laudantium reiciendis ipsam tempore pariatur odit dolorum at totam exercitationem illo quidem
-						minima vero numquam a, omnis corrupti.
+					<div className='max-w-3xl text-base font-semibol md:text-xl text-justify font-latoRegular'>
+						Welcome to the NUST Orientation! Our dynamic orientation program is designed to provide you with
+						a seamless transition into university life. With the support of our passionate orientation
+						guides and dedicated team, you'll discover the essence of NUST's academic excellence, diverse
+						campus life, and the strong sense of community that awaits you. Get ready for an experience of a
+						lifetime. We wish you the best of luck!
 					</div>
 				</div>
 				<Logo />
