@@ -17,7 +17,7 @@ const Logo = () => {
 				x: window.innerWidth / 2,
 				y: window.innerHeight / 2,
 			};
-			window.addEventListener('mousemove', followCursor);
+			// window.addEventListener('mousemove', followCursor);
 		}
 		return () => {
 			if (typeof window !== 'undefined') {
@@ -27,15 +27,15 @@ const Logo = () => {
 	}, []);
 
 	return (
-		<div className='h-72 w-72 relative bg-white flex items-center justify-center'>
-			<img src='Logo Assets/Crescent PNG.png' className='h-full w-full absolute ' alt='' />
+		<div className='h-72 w-72 relative bg-white flex items-end justify-center'>
+			<img src='Logo Assets/FaC.png' className='h-full w-full absolute ' alt='' />
 			<img
-				src='Logo Assets/DOME PNG.png'
-				className='transition-transform absolute w-56 h-56'
+				src='Logo Assets/DnS.png'
+				className='transition-transform absolute h-10/12 w-10/12'
 				alt=''
 				ref={domeRef}
 			/>
-			<img src='Logo Assets/Fire PNG.png' className='h-full w-full absolute' alt='' />
+			{/* <img src='Logo Assets/Fire PNG.png' className='h-full w-full absolute' alt='' /> */}
 		</div>
 	);
 };
