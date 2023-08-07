@@ -27,6 +27,10 @@ module.exports = {
           "sans-serif",
           "Arial",
         ],
+        latoRegular: ["Lato-Regular"],
+        latoBold: ["Lato-Bold"],
+        latoLight: ["Lato-Light"],
+        aspectRange: ["Aspect-Range"]
       },
       keyframes: {
         expand: {
