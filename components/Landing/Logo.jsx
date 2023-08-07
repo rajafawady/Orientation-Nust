@@ -6,10 +6,13 @@ const Logo = () => {
 	const followCursor = () => {
 		if (typeof window == 'undefined') return;
 		const dome = domeRef.current;
-		const x = (centerCords.x - window.event.clientX * 7) / window.innerWidth + '%';
-		const y = (centerCords.y - window.event.clientY * 7) / window.innerHeight + '%';
+		// const x = (centerCords.x - window.event.clientX * 7) / window.innerWidth + '%';
+		// const y = (centerCords.y - window.event.clientY * 7) / window.innerHeight + '%';
+		const x = ((centerCords.x - window.event.clientX) * 15) / window.innerWidth + 'px';
+		const y = ((centerCords.y - window.event.clientY) * 15) / window.innerHeight + 'px';
+		// const y = centerCords.y - window.event.clientY + '%';
 		console.log({ x, y });
-		dome.style.transform = `translate(${x}, ${y})`;
+		dome.style.transform = `translate(-${x}, -${y})`;
 	};
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -17,7 +20,7 @@ const Logo = () => {
 				x: window.innerWidth / 2,
 				y: window.innerHeight / 2,
 			};
-			// window.addEventListener('mousemove', followCursor);
+			window.addEventListener('mousemove', followCursor);
 		}
 		return () => {
 			if (typeof window !== 'undefined') {
@@ -31,7 +34,7 @@ const Logo = () => {
 			<img src='Logo Assets/FaC.png' className='h-full w-full absolute ' alt='' />
 			<img
 				src='Logo Assets/DnS.png'
-				className='transition-transform absolute h-10/12 w-10/12'
+				className='transition-transform absolute h-9/12 w-9/12'
 				alt=''
 				ref={domeRef}
 			/>
