@@ -50,9 +50,7 @@ const Navbar = () => {
 
 	return (
 		<div className='sticky top-0 w-full z-50 h-16 mt-10'>
-			<div
-				className=' rounded-xl bg-white px-4 mx-20 shadow-md duration-[0.3s]'
-				ref={navbarRef}>
+			<div className=' rounded-xl bg-white px-4 mx-20 shadow-md duration-[0.3s]' ref={navbarRef}>
 				<div className='flex items-center justify-between py-4 '>
 					<Link href='/'>
 						<Logo height='h-[60px]' width='w-[60px]' specialClasses='-my-3' />
@@ -85,245 +83,220 @@ const Navbar = () => {
 
 export default Navbar;
 const Links = () => {
-  const [openSection, setOpenSection] = useState(null);
-
-  const sections = [
-	{
-		heading: "Home",
-		link: "/",
-		items: [],
-		disabled: false
-	},
-	{
-		heading: "Life At NUST",
-		link: "/gallery",
-		items: [],
-		disabled: false
-
-	},
-	{
-		heading: "Faqs",
-		link: "/faqs",
-		items: [],
-		disabled: false
-	},
-  {
-	heading: 'Misc',
-	items: [
-	  { id: 2, name: 'Donations', link: '/donations', 
-	  disabled: true
-	},
-	  { id: 3, name: 'Downloads', link: '/downloads',
-	  disabled: true
-	},
-	],
-  },
-  {
-	heading: 'NUST',
-	items: [
-	  { id: 6, name: 'Merch', link: '/merchandise',
-	  disabled: true
-	},
-	  { id: 7, name: 'Activities', link: '/og-activites',
-	  disabled: true
-	},
-	  { id: 8, name: 'Team', link: '/our_team',
-	  disabled: false
-	},
-	  { id: 9, name: 'Sports Fest', link: '/sports_fest',
-	  disabled: true
-	},
-	{
-		id:10, name: "ON Station", link: '/on-station',
-		disabled: false
-	}
-	],
-  },
-];
-
-  const handleSectionClick = (index) => {
-    if (openSection === index) {
-      setOpenSection(null);
-    } else {
-      setOpenSection(index);
-    }
-  };
-
-  return (
-    <div className="relative flex flex-row justify-around items-center">
-      {sections.map((section, index) => (
-        <div key={section.heading} className="ml-4 relative">
-          {section.items.length > 0 ? (
-            <>
-              <div
-                className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
-                  openSection === index ? "text-[#476dae]" : ""
-                }`}
-                onClick={() => handleSectionClick(index)}
-              >
-                {section.heading}
-              </div>
-              {openSection === index && (
-                <div className="absolute left-0 mt-2 bg-white border rounded shadow">
-                  {section.items.map((item) => (
-                    <div key={item.id} className="mx-2 p-2">
-                      {item.disabled ? (
-                        <div
-                          className="text-gray-400 font-semibold"
-                          // Prevent click events on disabled items
-                        >
-                          {item.name}
-                        </div>
-                      ) : (
-                        <Link
-                          href={`${item.link}`}
-                          className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter text-gray-800 hover:text-[#476dae]`}
-                        >
-                          <a>{item.name}</a>
-                        </Link>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </>
-          ) : (
-            <Link href={`${section.link}`}>
-              <div
-                className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
-                  section.disabled ? "pointer-events-none" : "hover:text-[#476dae]"
-                }`}
-                onClick={() => handleSectionClick(index)}
-              >
-                {section.heading}
-              </div>
-            </Link>
-          )}
-        </div>
-      ))}
-    </div>
-  );
-};
-
-
-const LinksHamburger = () => {
 	const [openSection, setOpenSection] = useState(null);
-  
 
 	const sections = [
 		{
-			heading: "Home",
-			link: "/",
+			heading: 'Home',
+			link: '/',
 			items: [],
-			disabled: false
+			disabled: false,
 		},
 		{
-			heading: "Life At NUST",
-			link: "/gallery",
-			items: [],
-			disabled: false
-	
+			heading: 'About Us',
+			items: [
+				{
+					id: 1,
+					name: 'Life At NUST',
+					link: '/gallery',
+				},
+				{
+					id: 2,
+					name: 'Our Team',
+					link: '/our_team',
+				},
+			],
+			disabled: false,
 		},
 		{
-			heading: "Faqs",
-			link: "/faqs",
-			items: [],
-			disabled: false
-		},
-	  {
-		heading: 'Misc',
-		items: [
-		  { id: 2, name: 'Donations', link: '/donations', 
-		  disabled: true
-		},
-		  { id: 3, name: 'Downloads', link: '/downloads',
-		  disabled: true
-		},
-		],
-	  },
-	  {
-		heading: 'NUST',
-		items: [
-		  { id: 6, name: 'Merch', link: '/merchandise',
-		  disabled: true
-		},
-		  { id: 7, name: 'Activities', link: '/og-activites',
-		  disabled: true
-		},
-		  { id: 8, name: 'Team', link: '/our_team',
-		  disabled: false
-		},
-		  { id: 9, name: 'Sports Fest', link: '/sports_fest',
-		  disabled: true
+			heading: 'Events',
+			items: [
+				{
+					id: 1,
+					name: 'Sports Fest',
+					link: '/sports_fest',
+				},
+			],
 		},
 		{
-			id:10, name: "ON Station", link: '/on-station',
-			disabled: false
-		}
-		],
-	  },
+			heading: 'ON Station',
+			link: '/on-station',
+		},
+		{
+			heading: 'Resources',
+			items: [
+				{ id: 3, name: 'Downloads', link: '/downloads', disabled: true },
+				{
+					id: 4,
+					name: 'Mechandise',
+					link: '/merchandise',
+				},
+			],
+		},
 	];
-	
+
 	const handleSectionClick = (index) => {
-	  if (openSection === index) {
-		setOpenSection(null);
-	  } else {
-		setOpenSection(index);
-	  }
+		if (openSection === index) {
+			setOpenSection(null);
+		} else {
+			setOpenSection(index);
+		}
+	};
+
+	return (
+		<div className='relative flex flex-row justify-around items-center'>
+			{sections.map((section, index) => (
+				<div key={section.heading} className='ml-4 relative'>
+					{section?.items?.length > 0 ? (
+						<>
+							<div
+								className={`text-gray-700 font-semibold uppercase mb-1 cursor-pointer`}
+								onClick={() => handleSectionClick(index)}>
+								{section.heading}
+							</div>
+							{openSection === index && (
+								<div className='absolute left-0 my-2 w-max max-w-xs bg-white border rounded-md shadow'>
+									{section.items.map((item) => (
+										<div key={item.id} className='m-2 p-2'>
+											{item.disabled ? (
+												<span
+													className='lg:text-md mx-1 text-sm font-semibold tracking-tighter cursor-default text-gray-500 p-4 rounded'
+													// Prevent click events on disabled items
+												>
+													{item.name}
+												</span>
+											) : (
+												<Link href={`${item.link}`}>
+													<span
+														className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter cursor-pointer text-gray-800 hover:text-[#476dae] hover:bg-gray-200 p-4 rounded`}>
+														{item.name}
+													</span>
+												</Link>
+											)}
+										</div>
+									))}
+								</div>
+							)}
+						</>
+					) : (
+						<Link href={`${section.link}`}>
+							<div
+								className={`text-gray-700 font-semibold uppercase mb-1 cursor-pointer ${
+									section.disabled ? 'pointer-events-none' : 'hover:text-[#476dae]'
+								}`}
+								onClick={() => handleSectionClick(index)}>
+								{section.heading}
+							</div>
+						</Link>
+					)}
+				</div>
+			))}
+		</div>
+	);
+};
+
+const LinksHamburger = () => {
+	const [openSection, setOpenSection] = useState(null);
+
+	const sections = [
+		{
+			heading: 'Home',
+			link: '/',
+			items: [],
+			disabled: false,
+		},
+		{
+			heading: 'Life At NUST',
+			link: '/gallery',
+			items: [],
+			disabled: false,
+		},
+		{
+			heading: 'Faqs',
+			link: '/faqs',
+			items: [],
+			disabled: false,
+		},
+		{
+			heading: 'Misc',
+			items: [
+				{ id: 2, name: 'Donations', link: '/donations', disabled: true },
+				{ id: 3, name: 'Downloads', link: '/downloads', disabled: true },
+			],
+		},
+		{
+			heading: 'NUST',
+			items: [
+				{ id: 6, name: 'Merch', link: '/merchandise', disabled: true },
+				{ id: 7, name: 'Activities', link: '/og-activites', disabled: true },
+				{ id: 8, name: 'Team', link: '/our_team', disabled: false },
+				{ id: 9, name: 'Sports Fest', link: '/sports_fest', disabled: true },
+				{
+					id: 10,
+					name: 'ON Station',
+					link: '/on-station',
+					disabled: false,
+				},
+			],
+		},
+	];
+
+	const handleSectionClick = (index) => {
+		if (openSection === index) {
+			setOpenSection(null);
+		} else {
+			setOpenSection(index);
+		}
 	};
 	return (
-		<div className="flex flex-col">
-		  {sections.map((section, index) => (
-			<div key={section.heading} className="ml-4 relative">
-			  {section.items.length > 0 ? (
-				<>
-				  <div
-					className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
-					  openSection === index ? "text-[#476dae]" : ""
-					}`}
-					onClick={() => handleSectionClick(index)}
-				  >
-					{section.heading}
-				  </div>
-				  {openSection === index && (
-					<div className="left-0 mt-2 bg-white border rounded shadow">
-					  {section.items.map((item) => (
-						<div key={item.id} className="mx-2 p-2">
-						  {item.disabled ? (
+		<div className='flex flex-col'>
+			{sections.map((section, index) => (
+				<div key={section.heading} className='ml-4 relative'>
+					{section.items.length > 0 ? (
+						<>
 							<div
-							  className="text-gray-400 font-semibold"
-							  // Prevent click events on disabled items
-							>
-							  {item.name}
+								className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
+									openSection === index ? 'text-[#476dae]' : ''
+								}`}
+								onClick={() => handleSectionClick(index)}>
+								{section.heading}
 							</div>
-						  ) : (
-							<Link
-							  href={`${item.link}`}
-							  className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter text-gray-800 hover:text-[#476dae]`}
-							>
-							  <a>{item.name}</a>
-							</Link>
-						  )}
-						</div>
-					  ))}
-					</div>
-				  )}
-				</>
-			  ) : (
-				<Link href={`${section.link}`}>
-				  <div
-					className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
-					  section.disabled ? "pointer-events-none" : "hover:text-[#476dae]"
-					}`}
-					onClick={() => handleSectionClick(index)}
-				  >
-					{section.heading}
-				  </div>
-				</Link>
-			  )}
-			</div>
-		  ))}
+							{openSection === index && (
+								<div className='left-0 mt-2 bg-white border rounded shadow'>
+									{section.items.map((item) => (
+										<div key={item.id} className='mx-2 p-2'>
+											{item.disabled ? (
+												<div
+													className='text-gray-400 font-semibold'
+													// Prevent click events on disabled items
+												>
+													{item.name}
+												</div>
+											) : (
+												<Link
+													href={`${item.link}`}
+													className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter text-gray-800 hover:text-[#476dae]`}>
+													<a>{item.name}</a>
+												</Link>
+											)}
+										</div>
+									))}
+								</div>
+							)}
+						</>
+					) : (
+						<Link href={`${section.link}`}>
+							<div
+								className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
+									section.disabled ? 'pointer-events-none' : 'hover:text-[#476dae]'
+								}`}
+								onClick={() => handleSectionClick(index)}>
+								{section.heading}
+							</div>
+						</Link>
+					)}
+				</div>
+			))}
 		</div>
-	  );
-	};
-  
+	);
+};
