@@ -1,16 +1,36 @@
 import React, { useState } from 'react';
 import { useSprings, animated, to as interpolate } from '@react-spring/web';
+import Image from 'next/image'
 import { useDrag } from 'react-use-gesture';
 import styles from './Cards.module.css';
 
-const cards = [
-  'https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/d/db/RWS_Tarot_06_Lovers.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg',
-];
+
+  const cards = [
+    {
+      "id": 1,
+      
+      "image": "/direcimagesnew/1.png"
+      
+  },
+  {
+      "id": 2,
+      
+      "image": "/direcimagesnew/2.png"
+      
+  },
+  {
+    "id": 3,
+    
+    "image": "/direcimagesnew/3.png"
+    
+},
+{
+  "id": 4,
+  
+  "image": "/direcimagesnew/4.png"
+  
+},
+  ];
 
 const to = (i) => ({
   x: 0,
@@ -57,21 +77,23 @@ const Opswing = () => {
     }
   });
 
-  return (
-    <div className="-ml-8">
-      {props.map(({ x, y, rot, scale }, i) => (
-        <animated.div className={styles.deck} key={i} style={{ x, y }}>
-          <animated.div
-            {...bind(i)}
-            style={{
-              transform: interpolate([rot, scale], trans),
-              backgroundImage: `url(${cards[i]})`,
-            }}
-          />
-        </animated.div>
-      ))}
-    </div>
-  );
-};
+ 
+  
+    return (
+      <div className="-ml-80">
+        {props.map(({ x, y, rot, scale }, i) => (
+          <animated.div className={styles.deck} key={i} style={{ x, y }}>
+            <animated.div {...bind(i)} style={{ transform: interpolate([rot, scale], trans), border: '10px solid #C97295', borderRadius: '10px' }}>
+              <Image src={cards[i].image} layout="fill" alt={`Card ${i + 1}`} />
+            </animated.div>
+          </animated.div>
+        ))}
+      </div>
+    );
+  };
+  
+  export default Opswing;
+  
 
-export default Opswing;
+
+
