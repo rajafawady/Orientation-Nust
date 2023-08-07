@@ -5,8 +5,9 @@ import { useRouter } from 'next/router';
 // import Logo from "./Logo";
 import { setTimeout } from 'timers';
 import Link from 'next/link';
+import Logo from './Logo';
 
-const Navbar = ({ global }) => {
+const Navbar = () => {
 	// const router = usePathname();
 	const router = useRouter();
 	const navbarRef = useRef(null);
@@ -20,8 +21,7 @@ const Navbar = ({ global }) => {
 		console.log({ router });
 		function scrollFunction() {
 			const scrollAmounnt = document.body.scrollTop || document.documentElement.scrollTop;
-			// map margin to scroll amount. at scrollAmount 500 margin will be 0 and at scrollAmount 0 margin will be 5rem
-			let margin = 1 / ((scrollAmounnt * 5) / 250);
+			let margin = 1 / (scrollAmounnt * 5);
 			if (margin > 2.5) margin = 2.5;
 			else if (margin < 0) margin = 0;
 			navbarRef.current.style.margin = `0 ${margin}rem`;
@@ -48,15 +48,15 @@ const Navbar = ({ global }) => {
 		};
 	}, [router]);
 
-	if (router.pathname === '/' && global) return null;
 	return (
-		// <div className='sticky top-0 -my-20 w-full z-50 h-16'>
-		<div className='sticky top-0  w-full z-50 h-16 mb-10'>
+		<div className='sticky top-0 w-full z-50 h-16 mt-10'>
 			<div
 				className=' rounded-xl border-2 border-black bg-white px-4 mx-20 shadow-md duration-[0.3s]'
 				ref={navbarRef}>
 				<div className='flex items-center justify-between py-4 '>
-					{/* <Link href="/"><Logo height="50px" color={'black'} /></Link> */}
+					<Link href='/'>
+						<Logo height='h-[60px]' width='w-[60px]' specialClasses='-my-3' />
+					</Link>
 					<div className='hidden md:flex md:items-center'>
 						<Links />
 					</div>
