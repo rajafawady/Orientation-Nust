@@ -1,36 +1,8 @@
 import React, { useState } from 'react';
 import { useSprings, animated, to as interpolate } from '@react-spring/web';
-import Image from 'next/image'
+import Image from 'next/image';
 import { useDrag } from 'react-use-gesture';
 import styles from './Cards.module.css';
-
-
-  const cards = [
-    {
-      "id": 1,
-      
-      "image": "/direcimagesnew/1.png"
-      
-  },
-  {
-      "id": 2,
-      
-      "image": "/direcimagesnew/2.png"
-      
-  },
-  {
-    "id": 3,
-    
-    "image": "/direcimagesnew/3.png"
-    
-},
-{
-  "id": 4,
-  
-  "image": "/direcimagesnew/4.png"
-  
-},
-  ];
 
 const to = (i) => ({
   x: 0,
@@ -44,7 +16,7 @@ const from = (_i) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 
 const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
 
-const Opswing = () => {
+const Wing = ({ cards }) => {
   const [gone] = useState(() => new Set());
   const [props, api] = useSprings(cards.length, (i) => ({
     ...to(i),
@@ -77,23 +49,33 @@ const Opswing = () => {
     }
   });
 
- 
-  
-    return (
-      <div className="-ml-80">
-        {props.map(({ x, y, rot, scale }, i) => (
-          <animated.div className={styles.deck} key={i} style={{ x, y }}>
-            <animated.div {...bind(i)} style={{ transform: interpolate([rot, scale], trans), border: '10px solid #C97295', borderRadius: '10px' }}>
+  return (
+    <div className="-ml-80">
+      {props.map(({ x, y, rot, scale }, i) => (
+        <animated.div className={styles.deck} key={i} style={{ x, y }}>
+          <animated.div
+            {...bind(i)}
+            style={{
+              transform: interpolate([rot, scale], trans),
+              border: '10px solid #C97295',
+              borderRadius: '2rem',
+              overflow: 'hidden',
+              position: 'relative',
+            }}
+          >
+            <div className={styles.gradientOverlay}></div>
+            <div className={styles.imageContainer}>
               <Image src={cards[i].image} layout="fill" alt={`Card ${i + 1}`} />
-            </animated.div>
+            </div>
+            <div className={styles.cardText}>
+              <p className={styles.name}>{cards[i].name}</p>
+              <p className={styles.role}>{cards[i].role}</p>
+            </div>
           </animated.div>
-        ))}
-      </div>
-    );
-  };
-  
-  export default Opswing;
-  
+        </animated.div>
+      ))}
+    </div>
+  );
+};
 
-
-
+export default Wing;
