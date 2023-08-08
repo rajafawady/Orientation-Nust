@@ -619,12 +619,7 @@ li {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: repeating-radial-gradient(
-    farthest-side at 5px 5px,
-    rgba(197, 0, 109, 0.6),
-    #250082,
-    rgba(213, 0, 117, 0.6)
-  );
+  @apply bg-gradient-to-br from-prussian-blue via-dark-purple  to-ultra-red;
 }
 
 .school__h2 {
@@ -708,4 +703,17 @@ li {
 
 /* Testing clip path for activities component */
 .clipDiv {
+}
+
+.galaxy-bg {
+  background-image: radial-gradient(
+    #e1cdf9 0%,
+    #ede5f9 3%,
+    #e4f3fe 40%,
+    #83cdf7 100%
+  );
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-prussian-blue via-dark-purple  to-ultra-red;
 }

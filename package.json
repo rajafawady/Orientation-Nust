@@ -40,6 +40,7 @@
     "react-tsparticles": "^2.1.4",
     "react-wheel-of-prizes": "^1.0.9",
     "styled-components": "^5.3.5",
+    "tailwind-merge": "^1.14.0",
     "tsparticles": "^2.1.4"
   },
   "devDependencies": {
