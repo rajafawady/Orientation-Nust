@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   /* ------------------------------- */
   @font-face {
     font-family: "Lato-Bold";
@@ -184,8 +183,9 @@ li {
   background: white;
   top: 0;
   left: 0;
-  offset-path: path("M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
-    );
+  offset-path: path(
+    "M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
+  );
 }
 
 .text-stroke {
@@ -272,9 +272,11 @@ li {
 @media screen and (max-width: 600px) {
   .main-content {
     height: 100vh;
-    background: linear-gradient(to top,
+    background: linear-gradient(
+        to top,
         rgba(114, 2, 64, 0.6),
-        rgba(0, 0, 0, 0.8)),
+        rgba(0, 0, 0, 0.8)
+      ),
       url("/background-main.webp") no-repeat top center;
     background-size: cover;
   }
@@ -453,7 +455,6 @@ li {
 }
 
 @media screen and (max-width: 600px) {
-
   .schools-grid-1,
   .schools-grid-2 {
     grid-template-columns: 1fr;
@@ -515,9 +516,11 @@ li {
 @media screen and (max-width: 600px) {
   .main-content {
     height: 100vh;
-    background: linear-gradient(to top,
+    background: linear-gradient(
+        to top,
         rgba(114, 2, 64, 0.6),
-        rgba(0, 0, 0, 0.8)),
+        rgba(0, 0, 0, 0.8)
+      ),
       url("/background-main.webp") no-repeat top center;
     background-size: cover;
   }
@@ -616,10 +619,12 @@ li {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: repeating-radial-gradient(farthest-side at 5px 5px,
-      rgba(197, 0, 109, 0.6),
-      #250082,
-      rgba(213, 0, 117, 0.6));
+  background-image: repeating-radial-gradient(
+    farthest-side at 5px 5px,
+    rgba(197, 0, 109, 0.6),
+    #250082,
+    rgba(213, 0, 117, 0.6)
+  );
 }
 
 .school__h2 {
@@ -631,9 +636,11 @@ li {
 
 /* Star animations */
 
-
 .animate-scaleSmall {
   animation: scaleSmall 2s infinite;
+}
+.animate-scaleSmall2 {
+  animation: scaleSmall2 2s infinite;
 }
 
 .animate-scaleLarge {
@@ -644,13 +651,10 @@ li {
   animation: glow 2s infinite;
 }
 
-
-
 @keyframes glow {
   0% {
     box-shadow: none;
   }
-
 
   100% {
     box-shadow: none;
@@ -660,17 +664,28 @@ li {
 @keyframes scaleSmall {
   0% {
     scale: 0.02;
-    /* transform: scale(0.02); */
   }
 
   50% {
     scale: 1;
-    /* transform: scale(1); */
   }
 
   100% {
     scale: 0.02;
-    /* transform: scale(0.02); */
+  }
+}
+
+@keyframes scaleSmall2 {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 0.02;
+  }
+
+  100% {
+    scale: 1;
   }
 }
 
@@ -691,6 +706,6 @@ li {
   }
 }
 
-
 /* Testing clip path for activities component */
-.clipDiv {}
+.clipDiv {
+}
