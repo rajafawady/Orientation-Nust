@@ -25,25 +25,25 @@ const StarContainer = () => {
 		return starArray;
 	};
 
-	const scrollFunc = () => {
-		if (typeof window == 'undefined') return;
-		// Transition the gradient
-		const scroll = window.scrollY;
-		const height = document.body.offsetHeight;
-		const width = document.body.offsetWidth;
-		const gradient = document.querySelector('.bg-gradient-to-b');
-		const opacity = scroll / height;
-		gradient.style.opacity = opacity;
-	};
+	// const scrollFunc = () => {
+	// 	if (typeof window == 'undefined') return;
+	// 	// Transition the gradient
+	// 	const scroll = window.scrollY;
+	// 	const height = document.body.offsetHeight;
+	// 	const width = document.body.offsetWidth;
+	// 	const gradient = document.querySelector('.bg-gradient-to-b');
+	// 	const opacity = scroll / height;
+	// 	gradient.style.opacity = opacity;
+	// };
 
 	const randomArray = getRandomStars();
 
-	useEffect(() => {
-		if (typeof window !== 'undefined') window.addEventListener('scroll', scrollFunc);
-		return () => {
-			if (typeof window !== 'undefined') window.removeEventListener('scroll', scrollFunc);
-		};
-	}, []);
+	// useEffect(() => {
+	// 	if (typeof window !== 'undefined') window.addEventListener('scroll', scrollFunc);
+	// 	return () => {
+	// 		if (typeof window !== 'undefined') window.removeEventListener('scroll', scrollFunc);
+	// 	};
+	// }, []);
 
 	return (
 		<div
