@@ -44,7 +44,7 @@ export default function Footer() {
   return (
     <>
       <footer
-        className="bg-gradient-to-br from-dark-purple via-prussian-blue to-lapis-lazuli mt-16"
+        className="bg-gradient-to-br from-dark-purple via-prussian-blue to-lapis-lazuli mt-16 relative z-10"
         aria-labelledby="footer-heading"
       >
         <h2 id="footer-heading" className="sr-only">

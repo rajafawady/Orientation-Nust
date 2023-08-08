@@ -71,7 +71,7 @@ const Navbar = () => {
     console.log({ router });
     function scrollFunction() {
       const transitionAt = 300;
-      const scrollAmounnt =
+      const scrollAmount =
         document.body.scrollTop || document.documentElement.scrollTop;
 
       // let margin = (-1 / transitionAt) * scrollAmounnt + 2.5;
@@ -79,8 +79,8 @@ const Navbar = () => {
       // else if (margin < 0) margin = 0;
       // navbarRef.current.style.margin = `${margin}rem`;
       // navbarRef.current.style.marginLeft = margin + 'rem';
-      if (scrollAmounnt >= transitionAt) setStickNavbar(true);
-      else if (scrollAmounnt < transitionAt) setStickNavbar(false);
+      if (scrollAmount >= transitionAt) setStickNavbar(true);
+      else if (scrollAmount < transitionAt) setStickNavbar(false);
     }
 
     window.onscroll = scrollFunction;

@@ -5,6 +5,9 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+const FloatingContainer = dynamic(() => import("./FloatingShapes/FloatingContainer"), {
+  ssr: false,
+});
 
 // const DynamicHeader = dynamic(() => import('./Header/Header'), {
 // 	ssr: false,
@@ -20,7 +23,9 @@ export default function Layout({ children, title, homePage }) {
       <div className="min-h-full">
         <Navbar />
         <div className="w-full flex justify-center">
-          <div className="max-w-md sm:container">{children}</div>
+          <div className="max-w-md sm:container z-10">{children}</div>
+
+          <FloatingContainer />
         </div>
       </div>
       <Footer />

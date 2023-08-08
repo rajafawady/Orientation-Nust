@@ -17,15 +17,15 @@ const Episode = () => {
       {currentVideo && (
         <Layout title={`ON Station | Episode ${currentVideo.id}`}>
           <div className="flex  flex-col items-center mt-20  dark:text-white">
-            <div className="font-jacklyn text-5xl sm:text-7xl font-bold mb-16 relative">
+            <div className="font-jacklyn font-bold mb-16 relative">
               <p className="header-1">ON Station</p>
 
-              <DoodleContainer
+              {/* <DoodleContainer
                 className={"absolute w-32 aspect-1 -top-10 -left-[40%]"}
                 src="/doodles/on-station/1.png"
-              />
+              /> */}
               <DoodleContainer
-                className={"absolute w-32 aspect-1 -top-10 -right-[40%]"}
+                className={"absolute w-32 aspect-1 top-6 -right-[60%]"}
                 src="/doodles/on-station/2.png"
               />
             </div>

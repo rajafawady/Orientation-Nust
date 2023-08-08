@@ -5,7 +5,7 @@ import Star from "./Star";
 
 const StarContainer = () => {
   const getRandomStars = () => {
-    const sizes = ["0.02", "0.05", "0.08"];
+    const sizes = ["10", "8", "6", "5", "7", "9"];
     const colors = ["white", "#899DFC", "#C8D1FC", "#F6AC5E", "#FFF06D"];
     const animations = [
       "pulse",
@@ -35,7 +35,7 @@ const StarContainer = () => {
   const randomArray = getRandomStars();
 
   return (
-    <div className="w-screen h-screen bg-gradient-to-br from-[#42008C]  via-[#2C3B6C] to-[#240046] absolute top-0 left-0">
+    <div className="w-screen h-screen bg-gradient-to-br from-[#42008C] via-[#2C3B6C] to-[#240046] absolute top-0 left-0">
       <div className="w-full h-full relative overflow-hidden">
         {randomArray.map((star, index) => (
           <div
@@ -44,7 +44,7 @@ const StarContainer = () => {
               bottom: `${star.top}%`,
               right: `${star.left}%`,
             }}
-            className={`absolute w-10 h-10 animate-${star.animation} rotate-[40deg] z-0`}
+            className={`absolute w-${star.size} aspect-1 animate-${star.animation} rotate-[40deg] z-0`}
           >
             <Star color={star.color} />
           </div>
