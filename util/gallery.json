@@ -86,7 +86,7 @@
       "image": "/gallery/bowling.png",
       "content": "All work and no play is surely going to make life a drag. Thankfully, NUST H-12 has innumerable facilities through which one can unwind and have a fun time! One excellent example is NUST's Bowling Alley! Open to casuals and enthusiasts alike, it's a great place to relax and have a great relaxing time with like-minded individuals!"
     },
-    
+
     {
       "id": "societies",
       "name": "Societies",
@@ -122,18 +122,12 @@
       "name": "Gym",
       "image": "/gallery/gym.jpg",
       "content": "Alongside nurturing your mind, NUST also empowers you to take care of your body. NUST Central Gym is a state of the art facility with modern equipment to cater to all the workout needs for both male and female students."
-    },{
+    },
+    {
       "id": "students-and-cafes",
       "name": "Students and Cafes",
       "image": "/gallery/c1aerial.jpg",
       "content": "In university, you take classes from 9 am to 5 pm for the first time in your life. This not only tires you but also increases your need to refuel yourself. In addition to this, long and dreary lectures can also make us hungry, just to have an excuse to get through the class. With the huge and gorgeous campus, you walk around a lot and want to spend time with friends and be social and just have a good time. The words friends and fun go hand-in-hand with food and NUST makes sure you have no fewer food options. With the 4 main cafeterias and the 4 other fancy-dhaba-style cafes, which are student-run, food options are plenty. Starting with the main cafeterias, Concordia 1 (C1) and Concordia 2 (C2). These are proper big circular structures with everything from food shops to stationery and tuck shops. Both these cafeterias offer a variety of food items ranging from sandwiches and fries to chana daal and biryani. Some of the more loved items are Samosa Chaat and Biryani from C1, Roll parathas from C2. Fries are best left to café in C2 or Margalla café, opposite SADA Parking. C1 is generally crowded with students of SADA, ASAB, NBS, and SCME whereas C2 is comparatively less crowded, with students of SEECS and other schools mostly going there. Concordia 3 (C3), right opposite to Library, and Concordia 4 (C4), in SMME, are famous for their desi breakfast and biryani and orange juice in winter. C3 is generally alive at night, with the lights on and the pretty view of the sports complex. C4 is mostly limited to students of SNS and SMME, who are closest to it and farthest from all other cafes. Another option is the NICE rooftop café, famous for its shawarmas. Coming to the student-run cafes, the two open these days are Margalla, opposite SADA parking, and Retro, near the Boy’s hostels. With the other two cafes closed, Margalla is the life of NUST, and their food is equally so. Everything on their menu, from the fries to the pizza, everything is of great taste and quality, with the cheesy pasta being a student favorite. The first semester after coming to NUST is just exploring, do not hesitate to try new things and be open to experimenting and seeing for yourself what you like, and don’t forget to make some good memories while doing so! \uD83D\uDE0A"
-    },
-    {
-      "id": "studying-and-cafes",
-      "name": "Studying and Grades",
-      "image": "/gallery/exam.jpg",
-      "content": "So you’ve finally made it to the number 1 university of Pakistan, after months and months of hard work and dedication. Congratulations! But what now? What kind of education system is used in university? After more than a decade of the yearly system and 4 years of Board Exams/CIEs, let me introduce you to the Semester and Relative Grading System. This shift in the system and exam grading is something many students struggle with soon after starting university. You might ask, what is the semester system? University degrees are generally of 4 years (except Bachelor of Architecture, which is of 5 years), comprising of 8-10 semesters, each semester is 16-18 weeks long. In most schools of NUST, internal examinations include multiple small 10-minute quizzes and One Hour Tests (OHTs), which take place twice in each semester. They take place in Week 6 and Week 12, with the End Semester Examinations (ESEs) taking place in the last week of the semester. For SADA, S3H, and NBS, they have mids in Week 9. In the semester system, the course is a lot and time is scarce, hence teachers teach faster than you’re previously used to. Listen attentively in class and take clear and concise notes. Try to retain as much information as you can and at the end of the week try and go over whatever you did the previous week to gear up for the next week. One very important tip is to not leave everything for the very end, as the course is generally in a decent quantity and time between exams is little to none. Ending this on the golden rule of the semester system – Study smart, not hard! Coming to the grading scheme, most schools in NUST employ Relative Grading schemes. In this, all students are graded relative to the class average. So gone are the days of scoring high and getting grades out of the total, it all depends on the class average and how well you perfume relative to the rest of the class, hence the name relative grading. But enough of studying and grades and all, remember to enjoy as contrary to popular belief, a good GPA can lend you a job but only skills can let you keep it!"
     }
-    
   ]
 }

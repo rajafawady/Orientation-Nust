@@ -1,21 +1,37 @@
-import MeetOurTeam from "../EC/MeetOurTeam";
-import Title from "../Title";
-import List from "./List";
+import { useRef } from 'react';
+import MeetOurTeam from '../EC/MeetOurTeam';
+import Title from '../Title';
+import List from './List';
 
-const CardList = ({schools, lifeAtNUST}) => {
-    return (
-        <div id='cardList'>
-            <div className="flex justify-center lg:text-7xl md:text-6xl text-5xl my-8 font-montserrat font-bold md:mb-20 md:mt-20 text-tyrian-purple dark:text-pale-pink">
-          <MeetOurTeam placeholderText={[{ type: "heading1", text: "Schools" },]}/>
-        </div>
-            
-            <List list={schools} type='School'/>
-            <div className="flex justify-center lg:text-7xl md:text-6xl text-5xl my-8 font-montserrat font-bold md:mb-20 md:mt-20 text-tyrian-purple dark:text-pale-pink">
-          <MeetOurTeam placeholderText={[{ type: "heading1", text: "Life At NUST" },]}/>
-        </div>
-            <List list={lifeAtNUST} type='Life at NUST'/>
-        </div>
-    )
-}
+const CardList = ({ schools, lifeAtNUST }) => {
+	const schoolRef = useRef(null);
+	const lifeAtNUSTRef = useRef(null);
+	return (
+		<div id='cardList'>
+			<div className='school__div w-full'>
+				<h1 className='header-1' ref={schoolRef}>
+					Schools
+				</h1>
+			</div>
+			<div className='list'>
+				<div className='school__container  lg:px-8 px-3 py-2'>
+					<List list={schools} container={schoolRef} type='School' />
+				</div>
+			</div>
+
+			<div className='school__div bg-black'>
+				<h1 className='header-1' ref={lifeAtNUSTRef}>
+					Life At Nust
+				</h1>
+			</div>
+			<div className='list'>
+				<div className='school__container lg:px-8 px-3 py-2'>
+					<List list={lifeAtNUST} container={lifeAtNUSTRef} type='Life at NUST' />
+				</div>
+			</div>
+			<div className='py-6'></div>
+		</div>
+	);
+};
 
 export default CardList;
