@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Page1 from '../components/Landing/Page1';
 import VideoManager from '../components/Landing/VideoManager';
 import StarContainer from '../components/Landing/StarContainer';
+import Activites from '../components/Activities';
 
 export default function Home() {
 	const [shouldPlay, setShouldPlay] = useState(true);
@@ -13,7 +14,10 @@ export default function Home() {
 			<div className='min-h-full'>
 				<Page1 />
 				<StarContainer />
-				<div className='h-screen -mt-10 bg-yellow-300 z-10 relative'>{/* remaining content goes here */}</div>
+				<div className='h-screen flex flex-col items-center justify-center -mt-10 w-full z-10 relative'>
+					{/* remaining content goes here */}
+					<Activites />
+				</div>
 			</div>
 		</Layout>
 	);

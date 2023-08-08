@@ -3,3 +3,5 @@
 - [ ] remove dark theme
 - [ ] add footer in util pages
 - [ ] fix nav on mobile
+- [ ] fix activites on mobile
+- [ ] finalise activities

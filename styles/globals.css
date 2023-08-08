@@ -3,33 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "Brittany-Signature";
-    src: url("/fonts/Brittany-Signature.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Montserrat";
-    src: url("/fonts/Montserrat.woff2") format("woff2");
-    font-weight: 200;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Vogue";
-    src: url("/fonts/Vogue.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Montserrat-Light";
-    src: url("/fonts/Montserrat-Light.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-  }
 
   /* ------------------------------- */
   @font-face {
@@ -57,6 +30,16 @@
   @font-face {
     font-family: "The-Jacklyn";
     src: url("/fonts/TheJacklyn.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Goodnight-London-Sans";
+    src: url("/fonts/Goodnight-London-Sans.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Goodnight-London-Script";
+    src: url("/fonts/Goodnight-London-Script.ttf") format("truetype");
   }
 }
 
@@ -707,3 +690,7 @@ li {
     /* transform: scale(1); */
   }
 }
+
+
+/* Testing clip path for activities component */
+.clipDiv {}

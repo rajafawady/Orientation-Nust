@@ -50,7 +50,7 @@ const Navbar = () => {
 
 	return (
 		<div className='sticky top-0 w-full z-50 h-16 mt-10'>
-			<div className=' rounded-xl bg-white px-4 mx-20 shadow-md duration-[0.3s]' ref={navbarRef}>
+			<div className=' rounded-xl bg-white px-4 mx-20 shadow-lg duration-[0.3s]' ref={navbarRef}>
 				<div className='flex items-center justify-between py-4 '>
 					<Link href='/'>
 						<Logo height='h-[60px]' width='w-[60px]' specialClasses='-my-3' />
@@ -120,7 +120,7 @@ const Links = () => {
 		},
 		{
 			heading: 'ON Station',
-			link: '/on-station',
+			link: '/on-station/episode/1',
 		},
 		{
 			heading: 'Resources',
@@ -238,7 +238,7 @@ const LinksHamburger = () => {
 		},
 		{
 			heading: 'ON Station',
-			link: '/on-station',
+			link: '/on-station/episode/1',
 		},
 		{
 			heading: 'Resources',
