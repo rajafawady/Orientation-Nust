@@ -28,7 +28,10 @@ const StarContainer = () => {
 	const randomArray = getRandomStars();
 
 	return (
-		<div className='w-screen h-screen bg-gradient-to-br from-[#42008C]  via-[#2C3B6C] to-[#240046] absolute top-0 left-0'>
+		<div
+			className='w-screen h-screen bg-gradient-to-b from-[#42008C]  via-[#240046] to-[#fff] absolute top-0 left-0'
+			// className='w-screen h-screen absolute top-0 left-0'
+		>
 			<div className='w-full h-full relative overflow-hidden'>
 				{randomArray.map((star, index) => (
 					<div

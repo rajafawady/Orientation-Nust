@@ -38,7 +38,8 @@ const Page1 = () => {
 
 				<div className='flex flex-col gap-8 justify-between'>
 					<div class='relative inline-block -skew-y-3'>
-						<span class='relative text-white bg-gradient-to-br from-pink-500 to-transparent p-1 skew-y-3 text-5xl font-bold'>
+						{/* <span class='relative text-white bg-gradient-to-br from-pink-500 to-transparent p-1 skew-y-3 text-5xl font-bold'> */}
+						<span className='relative text-white p-1 skew-y-3 text-5xl font-bold'>
 							<span className='font-aspectRange tracking-[-0.15em] relative'>O N</span>
 							<span className='font-goodnightLondonScript relative'> to the stars ✨</span>
 						</span>

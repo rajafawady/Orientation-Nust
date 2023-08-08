@@ -6,8 +6,8 @@ const Logo = () => {
 	const followCursor = () => {
 		if (typeof window == 'undefined') return;
 		const dome = domeRef.current;
-		const xDist = (centerCords.x - window.event.clientX) / 150;
-		const yDist = (centerCords.y - window.event.clientY) / 150;
+		const xDist = (centerCords.x - window.event.clientX) / 200;
+		const yDist = (centerCords.y - window.event.clientY) / 200;
 		const x = 50 - xDist + '%';
 		const y = 50 - yDist + '%';
 		dome.style.left = x;
