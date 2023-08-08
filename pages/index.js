@@ -8,7 +8,7 @@ import Activites from '../components/Activities';
 
 export default function Home() {
 	const [shouldPlay, setShouldPlay] = useState(true);
-	// if (shouldPlay) return <VideoManager setShouldPlay={setShouldPlay} />;
+	if (shouldPlay) return <VideoManager setShouldPlay={setShouldPlay} />;
 	return (
 		<Layout title={'Orientation 2023'} homePage={true}>
 			<div className='min-h-full'>
