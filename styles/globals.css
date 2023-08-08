@@ -619,8 +619,16 @@ li {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  @apply bg-gradient-to-br from-prussian-blue via-dark-purple  to-ultra-red;
+  @apply bg-gradient-to-br from-prussian-blue via-dark-purple to-ultra-red;
 }
+
+@media (max-width: 640px) {
+  .header-1 {
+    font-size: 3rem;
+  }
+}
+
+
 
 .school__h2 {
   font-weight: 800;

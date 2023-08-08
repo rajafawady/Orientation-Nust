@@ -20,7 +20,7 @@ export default function Layout({ children, title, homePage }) {
       <div className="min-h-full">
         <Navbar />
         <div className="w-full flex justify-center">
-          <div className="max-w-xs sm:container">{children}</div>
+          <div className="max-w-md sm:container">{children}</div>
         </div>
       </div>
       <Footer />
