@@ -5,7 +5,7 @@ const Activites = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   return (
     <>
-      <h1 className="header-1 my-3 text-3xl p-4">O&apos;week Highlights</h1>
+      <h1 className="header-1 mb-14 text-3xl p-4">O&apos;week Highlights</h1>
       <div className="hidden rounded-xl p-3 md:flex w-11/12 shadow-2xl gap-3 md:flex-row justify-center items-center bg-center bg-cover bg-no-repeat bg-gray-100 h-[40rem]">
         <Card img="fresh beginings.jpg" classes="w-2/6 h-full">
           <h2 className="text-3xl font-bold text-white absolute bottom-0 left-0 m-3">

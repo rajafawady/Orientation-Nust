@@ -7,7 +7,7 @@ const Gallery = ({ schools, lifeAtNUST }) => {
 	return (
 		<Layout title={'Life At NUST'}>
 			<div className='w-full flex justify-center'>
-				<div className='py-3flex justify-center items-center container'>
+				<div className='py-3 flex justify-center items-center container'>
 					<CardList schools={schools} lifeAtNUST={lifeAtNUST} />
 				</div>
 			</div>

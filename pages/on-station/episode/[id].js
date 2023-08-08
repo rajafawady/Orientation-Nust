@@ -15,12 +15,12 @@ const Episode = () => {
     <>
       {currentVideo && (
         <Layout title={`Episode ${currentVideo.id}`}>
-          <div className="flex  flex-col items-center mt-20 text-tyrian-purple dark:text-white">
-            <h1 className="font-jacklyn text-5xl sm:text-7xl font-bold mb-16">
+          <div className="flex  flex-col items-center mt-20  dark:text-white">
+            <h1 className="font-jacklyn text-5xl sm:text-7xl font-bold mb-16 header-1">
               ON Station
             </h1>
 
-            <div className="flex lg:flex-row flex-col justify-center w-full gap-6 px-6">
+            <div className="flex lg:flex-row flex-col justify-center w-full gap-6 px-6 text-tyrian-purple">
               {/* video container */}
               <div className="flex flex-col gap-1">
                 <div className="relative overflow-hidden w-full aspect-[16/9]">
