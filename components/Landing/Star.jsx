@@ -14,10 +14,8 @@ const Star = ({ color }) => {
 		};
 
 		if (typeof window !== 'undefined') {
-			console.log('star on');
 			window.addEventListener('scroll', handleScroll);
 			return () => {
-				console.log('star signing off');
 				window.removeEventListener('scroll', handleScroll);
 			};
 		}

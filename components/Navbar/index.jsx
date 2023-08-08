@@ -5,8 +5,9 @@ import { useRouter } from 'next/router';
 // import Logo from "./Logo";
 import { setTimeout } from 'timers';
 import Link from 'next/link';
+import Logo from './Logo';
 
-const Navbar = ({ global }) => {
+const Navbar = () => {
 	// const router = usePathname();
 	const router = useRouter();
 	const navbarRef = useRef(null);
@@ -20,8 +21,7 @@ const Navbar = ({ global }) => {
 		console.log({ router });
 		function scrollFunction() {
 			const scrollAmounnt = document.body.scrollTop || document.documentElement.scrollTop;
-			// map margin to scroll amount. at scrollAmount 500 margin will be 0 and at scrollAmount 0 margin will be 5rem
-			let margin = 1 / ((scrollAmounnt * 5) / 250);
+			let margin = 1 / (scrollAmounnt * 5);
 			if (margin > 2.5) margin = 2.5;
 			else if (margin < 0) margin = 0;
 			navbarRef.current.style.margin = `0 ${margin}rem`;
@@ -48,15 +48,13 @@ const Navbar = ({ global }) => {
 		};
 	}, [router]);
 
-	if (router.pathname === '/' && global) return null;
 	return (
-		// <div className='sticky top-0 -my-20 w-full z-50 h-16'>
-		<div className='sticky top-0  w-full z-50 h-16 mb-10'>
-			<div
-				className=' rounded-xl border-2 border-black bg-white px-4 mx-20 shadow-md duration-[0.3s]'
-				ref={navbarRef}>
+		<div className='sticky top-0 w-full z-50 h-16 mt-10'>
+			<div className=' rounded-xl bg-white px-4 mx-20 shadow-lg duration-[0.3s]' ref={navbarRef}>
 				<div className='flex items-center justify-between py-4 '>
-					{/* <Link href="/"><Logo height="50px" color={'black'} /></Link> */}
+					<Link href='/'>
+						<Logo height='h-[60px]' width='w-[60px]' specialClasses='-my-3' />
+					</Link>
 					<div className='hidden md:flex md:items-center'>
 						<Links />
 					</div>
@@ -73,7 +71,7 @@ const Navbar = ({ global }) => {
 
 				<div className={`${isOpen ? 'block' : 'hidden'} bg-ten border-t-2 py-2 md:hidden`}>
 					<div className='flex flex-col'>
-						<Links />
+						<LinksHamburger />
 					</div>
 				</div>
 			</div>
@@ -84,51 +82,233 @@ const Navbar = ({ global }) => {
 };
 
 export default Navbar;
-
-//Component to display the nav data and adding links
 const Links = () => {
-	const [hoveredIndex, setHoveredIndex] = useState(null);
-	const [flag, setFlag] = useState(false);
+	const [openSection, setOpenSection] = useState(null);
 
-	//navebar items and their linsk
-	const menuItems = [
-		{ id: 1, name: 'Home', link: '/', flag: false },
-		{ id: 2, name: 'Life at NUST', link: '/gallery', flag: flag },
-		{ id: 3, name: 'CHARITIES', link: '/charities', flag: false },
-		{ id: 4, name: 'START A FUNDRAISER', link: '/raisefunds', flag: flag },
+	const sections = [
+		{
+			heading: 'Home',
+			link: '/',
+			items: [],
+			disabled: false,
+		},
+		{
+			heading: 'About Us',
+			items: [
+				{
+					id: 1,
+					name: 'Life At NUST',
+					link: '/gallery',
+				},
+				{
+					id: 2,
+					name: 'Our Team',
+					link: '/our_team',
+				},
+			],
+			disabled: false,
+		},
+		{
+			heading: 'Events',
+			items: [
+				{
+					id: 1,
+					name: 'Sports Fest',
+					link: '/sports_fest',
+				},
+			],
+		},
+		{
+			heading: 'ON Station',
+			link: '/on-station/episode/1',
+		},
+		{
+			heading: 'Resources',
+			items: [
+				{ id: 3, name: 'Downloads', link: '/downloads', disabled: true },
+				{
+					id: 4,
+					name: 'Mechandise',
+					link: '/merchandise',
+				},
+			],
+		},
 	];
 
-	useEffect(() => {
-		// setFlag(true);
-	}, []);
+	const handleSectionClick = (index) => {
+		if (openSection === index) {
+			setOpenSection(null);
+		} else {
+			setOpenSection(index);
+		}
+	};
 
 	return (
-		<>
-			{menuItems.map((item) => (
-				<div
-					key={item.id}
-					className='mx-2'
-					onMouseEnter={() => setHoveredIndex(item.id)}
-					onMouseLeave={() => setHoveredIndex(null)}>
-					{item.flag ? (
-						<label
-							htmlFor={'sign-in'}
-							className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter text-gray-800 hover:text-[#476dae]`}>
-							{item.name}
-						</label>
+		<div className='relative flex flex-row justify-around items-center'>
+			{sections.map((section, index) => (
+				<div key={section.heading} className='ml-4 relative'>
+					{section?.items?.length > 0 ? (
+						<>
+							<div
+								className={`text-gray-700 font-semibold uppercase mb-1 cursor-pointer flex items-center gap-2 hover:bg-gray-200 p-2 rounded-sm group`}
+								onClick={() => handleSectionClick(index)}>
+								<h4>{section.heading}</h4>
+								<div
+									className={`${
+										openSection === index ? 'rotate-[360deg]' : ''
+									} transition-transform duration-1000`}>
+									<img src='icons/caret.png' className='h-5 w-auto object-contain' alt='' />
+								</div>
+							</div>
+							{openSection === index && (
+								<div className='absolute left-0 my-2 w-max max-w-xs bg-white border rounded-md shadow'>
+									{section.items.map((item) => (
+										<div key={item.id} className='m-2 p-2'>
+											{item.disabled ? (
+												<span
+													className='lg:text-md mx-1 text-sm font-semibold tracking-tighter cursor-default text-gray-500 p-4 rounded'
+													// Prevent click events on disabled items
+												>
+													{item.name}
+												</span>
+											) : (
+												<Link href={`${item.link}`}>
+													<span
+														className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter cursor-pointer text-gray-800 hover:text-[#476dae] hover:bg-gray-200 p-4 rounded`}>
+														{item.name}
+													</span>
+												</Link>
+											)}
+										</div>
+									))}
+								</div>
+							)}
+						</>
 					) : (
-						<Link
-							href={`${item.link}`}
-							className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter text-gray-800 hover:text-[#476dae]`}>
-							<a>{item.name}</a>
+						<Link href={`${section.link}`}>
+							<div
+								className={`text-gray-700 font-semibold uppercase mb-1 cursor-pointer ${
+									section.disabled ? 'pointer-events-none' : 'hover:text-[#476dae]'
+								}`}
+								onClick={() => handleSectionClick(index)}>
+								{section.heading}
+							</div>
 						</Link>
 					)}
-					<div
-						className={`bg-six h-1 transition-all duration-500 ease-in-out ${
-							hoveredIndex === item.id ? 'w-full' : 'w-0'
-						}`}></div>
 				</div>
 			))}
-		</>
+		</div>
+	);
+};
+
+const LinksHamburger = () => {
+	const [openSection, setOpenSection] = useState(null);
+	const sections = [
+		{
+			heading: 'Home',
+			link: '/',
+			items: [],
+			disabled: false,
+		},
+		{
+			heading: 'About Us',
+			items: [
+				{
+					id: 1,
+					name: 'Life At NUST',
+					link: '/gallery',
+				},
+				{
+					id: 2,
+					name: 'Our Team',
+					link: '/our_team',
+				},
+			],
+			disabled: false,
+		},
+		{
+			heading: 'Events',
+			items: [
+				{
+					id: 1,
+					name: 'Sports Fest',
+					link: '/sports_fest',
+				},
+			],
+		},
+		{
+			heading: 'ON Station',
+			link: '/on-station/episode/1',
+		},
+		{
+			heading: 'Resources',
+			items: [
+				{ id: 3, name: 'Downloads', link: '/downloads', disabled: true },
+				{
+					id: 4,
+					name: 'Mechandise',
+					link: '/merchandise',
+				},
+			],
+		},
+	];
+
+	const handleSectionClick = (index) => {
+		if (openSection === index) {
+			setOpenSection(null);
+		} else {
+			setOpenSection(index);
+		}
+	};
+	return (
+		<div className='flex flex-col'>
+			{sections.map((section, index) => (
+				<div key={section.heading} className='ml-4 relative'>
+					{section?.items?.length > 0 ? (
+						<>
+							<div
+								className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
+									openSection === index ? 'text-[#476dae]' : ''
+								}`}
+								onClick={() => handleSectionClick(index)}>
+								{section.heading}
+							</div>
+							{openSection === index && (
+								<div className='left-0 mt-2 bg-white border rounded shadow'>
+									{section.items.map((item) => (
+										<div key={item.id} className='mx-2 p-2'>
+											{item.disabled ? (
+												<div
+													className='text-gray-400 font-semibold'
+													// Prevent click events on disabled items
+												>
+													{item.name}
+												</div>
+											) : (
+												<Link
+													href={`${item.link}`}
+													className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter text-gray-800 hover:text-[#476dae]`}>
+													<a>{item.name}</a>
+												</Link>
+											)}
+										</div>
+									))}
+								</div>
+							)}
+						</>
+					) : (
+						<Link href={`${section.link}`}>
+							<div
+								className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
+									section.disabled ? 'pointer-events-none' : 'hover:text-[#476dae]'
+								}`}
+								onClick={() => handleSectionClick(index)}>
+								{section.heading}
+							</div>
+						</Link>
+					)}
+				</div>
+			))}
+		</div>
 	);
 };
