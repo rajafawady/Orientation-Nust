@@ -1,8 +1,11 @@
 import { FaChevronDown } from "react-icons/fa";
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Links = ({ isSticky, sections }) => {
+  const router = useRouter();
+  const isHome = router.pathname === "/";
   const [openSection, setOpenSection] = useState(null);
 
   const handleSectionClick = (index) => {
@@ -16,7 +19,12 @@ const Links = ({ isSticky, sections }) => {
   return (
     <div className="relative flex flex-row justify-around items-center">
       {sections.map((section, index) => (
-        <div key={section.heading} className="ml-4 relative">
+        <div
+          key={section.heading}
+          className={`ml-4 relative transition-all
+          ${isHome ? "hover:text-ultra-red" : "hover:text-slate-200"}
+          `}
+        >
           {section?.items?.length > 0 ? (
             <>
               <div
@@ -59,9 +67,10 @@ const Links = ({ isSticky, sections }) => {
           ) : (
             <Link href={`${section.link}`}>
               <div
-                className={`font-semibold uppercase mb-1 cursor-pointer ${
-                  section.disabled && "pointer-events-none"
-                }`}
+                className={`font-semibold uppercase mb-1 cursor-pointer transition-all 
+                ${section.disabled && "pointer-events-none"}
+                ${isHome ? "hover:text-ultra-red" : "hover:text-slate-200"}
+                `}
                 onClick={() => handleSectionClick(index)}
               >
                 {section.heading}

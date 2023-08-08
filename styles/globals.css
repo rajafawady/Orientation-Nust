@@ -715,5 +715,5 @@ li {
 }
 
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-br from-prussian-blue via-dark-purple  to-ultra-red;
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-lapis-lazuli  to-pale-pink;
 }

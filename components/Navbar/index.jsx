@@ -104,7 +104,7 @@ const Navbar = () => {
           stickNavbar
             ? "bg-opacity-100 rounded-none shadow-lg mt-0"
             : "bg-opacity-70 rounded-xl shadow-none mt-10",
-          !isHome ? "bg-lapis-lazuli text-white" : "bg-dark-purple text-white"
+          !isHome ? "bg-lapis-lazuli text-white" : "bg-white text-tyrian-purple backdrop-blur"
         )}
         ref={navbarRef}
       >
