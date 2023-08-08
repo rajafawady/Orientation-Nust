@@ -1,0 +1,122 @@
+.teamCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    grid-row-gap: 70px;
+  }
+  
+  .card {
+    display: inline-block;
+    margin: 20px;
+    position: relative; /* Add this to make sure the card acts as a positioning context */
+  }
+  
+  
+  .imageContainer {
+   
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #C97295; /* Background color */
+  }
+  
+  
+  .image {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    top: -100px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+  }
+  
+ 
+  
+  .textContainer {
+    background-color: white;
+    width: 250px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+   
+    text-align: left;
+    position: relative;
+    margin-top: -25px;
+    z-index: 2;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .role {
+    font-size: 14px;
+    color: gray;
+  }
+  
+
+  @media (max-width: 768px) {
+    .grid {
+    margin-top: 90px;
+      grid-template-columns: repeat(1, 1fr); /* Change to 1 column per row on mobile */
+      gap: 60px; /* Reduce the gap between items */
+    }
+  }
+  
+  .card {
+    display: inline-block;
+    margin: 20px;
+    position: relative; /* Add this to make sure the card acts as a positioning context */
+  }
+  
+  .imageContainer {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #C97295; /* Background color */
+  }
+  
+  .image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: -100px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+  }
+  
+  .textContainer {
+    background-color: white;
+    width: 250px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: left;
+    position: relative;
+    margin-top: -25px;
+    z-index: 2;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .role {
+    font-size: 14px;
+    color: gray;
+  }
