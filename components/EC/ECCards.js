@@ -7,27 +7,27 @@ import styles from './ECCard.module.css'
 const VPcards = [
     {
         "id": 1,
-        "name": "Muhammad Bin Mubashir",
+        "name": "Fazail Haider",
         "role": "President",
-        "image": "/EC-Pics/test.png",
+        "image": "/EC-Pics/fazail.png",
         "one-liner": "Little by little, we made it.",
         "school": "SEECS",
         "batch": "2019"
     },
     {
         "id": 3,
-        "name": "Zahaab Rehman",
+        "name": "Aun Abbas",
         "role": "VP Coordinations",
-        "image": "/EC-Pics/test.png",
+        "image": "/EC-Pics/aun.png",
         "one-liner": "Smol but Lethal",
         "school": "S3H",
         "batch": "2019"
     },
     {
         "id": 2,
-        "name": "Sarim Raqeeb",
+        "name": "Naurang Jahan ",
         "role": "VP Operations",
-        "image": "/EC-Pics/test.png",
+        "image": "/EC-Pics/naurang.png",
         "one-liner": "Work hard, Party harder!",
         "school": "NBS",
         "batch": "2019"
@@ -35,27 +35,27 @@ const VPcards = [
 
     {
         "id": 4,
-        "name": "Rejja Irfan",
+        "name": "Saman Malik",
         "role": "VP Media",
-        "image": "/EC-Pics/test.png",
+        "image": "/EC-Pics/saman.png",
         "one-liner": "Mujhe kya main tou SADA ki hun",
         "school": "SADA",
         "batch": "2019"
     },
     {
         "id": 5,
-        "name": "Hamza Saeed Rao",
+        "name": "Umer Ishtiaq",
         "role": "VP Resources",
-        "image": "/EC-Pics/test.png",
+        "image": "/EC-Pics/umer.png",
         "one-liner": "Follow your dreams, Keep sleeping",
         "school": "NBS",
         "batch": "2019"
     },
     {
         "id": 6,
-        "name": "Fatima Azam",
+        "name": "Fizza Ayub",
         "role": "VP Outreach",
-        "image": "/EC-Pics/test.png",
+        "image": "/EC-Pics/fizza.png",
         "one-liner": "I know a guy who knows a guy",
         "school": "NBS",
         "batch": "2020"
@@ -71,10 +71,14 @@ const VPcards = [
               <div className={styles.grid}>
                 {VPcards.map((card) => (
                   <div key={card.id} className={styles.card}>
+                  <img src={card.image} alt={card.name} className={styles.image} />
+
                     <div className={styles.imageContainer}>
                     
                     </div>
-                    <img src={card.image} alt={card.name} className={styles.image} />
+
+                    
+                    
                     
                     <div className={styles.textContainer}>
                       <p className={styles.name}>{card.name}</p>
