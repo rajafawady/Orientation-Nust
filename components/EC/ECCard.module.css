@@ -9,7 +9,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 40px;
-    grid-row-gap: 70px;
+    grid-row-gap: 90px;
   }
   
   .card {
@@ -81,7 +81,7 @@
   }
   
   .imageContainer {
-    width: 250px;
+    width: 270px;
     height: 250px;
     overflow: hidden;
     border-radius: 10px;
@@ -89,21 +89,20 @@
   }
   
   .image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: -100px;
-    width: 100%;
-    height: auto;
+    
+   margin-top: -70px;
+    
+    width:400px;
+    height:400px ;
     object-fit: cover;
     z-index: 2;
   }
   
   .textContainer {
     background-color: white;
-    width: 250px;
+    width: 270px;
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     text-align: left;
     position: relative;
     margin-top: -25px;
@@ -111,12 +110,12 @@
   }
   
   .name {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
     margin: 5px 0;
   }
   
   .role {
-    font-size: 14px;
+    font-size: 17px;
     color: gray;
   }

@@ -50,7 +50,7 @@ const Wing = ({ cards }) => {
   });
 
   return (
-    <div className="-ml-80">
+    <div className="-ml-60">
       {props.map(({ x, y, rot, scale }, i) => (
         <animated.div className={styles.deck} key={i} style={{ x, y }}>
           <animated.div
