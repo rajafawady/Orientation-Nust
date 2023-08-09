@@ -16,12 +16,11 @@ export default function Layout({ children, title, homePage }) {
 				<title>{title}</title>
 			</Head>
 			{/* <div className={`${click & homePage ? (theme === 'dark' ? 'dark-content' : 'main-content') : null}`}> */}
-			<div className='min-h-full'>
+			<div className='min-h-full w-screen'>
 				<Navbar />
 				<div className='w-full flex justify-center'>
-					<div className='max-w-xs sm:container z-10'>{children}</div>
-
-					<FloatingContainer />
+					<div className='max-w-xs sm:container hero-content z-10'>{children}</div>
+					{/* <FloatingContainer /> */}
 				</div>
 			</div>
 			<Footer />

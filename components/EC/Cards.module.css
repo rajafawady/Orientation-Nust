@@ -10,7 +10,7 @@
 
 .deck {
   position: absolute;
-  width: 300px;
+  width: 70%;
   /* height: 200px; */
   will-change: transform;
   display: flex;
@@ -88,6 +88,10 @@
 
 
 @media (max-width: 640px) {
+  .deck {
+    width: 300px;
+  }
+
   .deck>div {
     max-width: 200px;
     max-height: 350px;

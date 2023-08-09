@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const Links = ({ isSticky, sections }) => {
-	const router = useRouter();
-	const isHome = router.pathname === '/';
+	// const router = useRouter();
+	// const isHome = router.pathname === '/';
 	const [openSection, setOpenSection] = useState(null);
 
 	const handleSectionClick = (index) => {
@@ -17,15 +17,13 @@ const Links = ({ isSticky, sections }) => {
 	};
 
 	return (
-		<div className='relative flex flex-row justify-around items-center text-black'>
+		<div className='relative flex flex-row justify-around items-center '>
 			{sections.map((section, index) => (
 				<div key={section.heading} className={`ml-4 relative transition-all`}>
 					{section?.items?.length > 0 ? (
 						<>
 							<div
-								className={`font-semibold uppercase mb-1 cursor-pointer flex items-center gap-2 p-2 rounded-sm group transition-all ${
-									isHome ? 'hover:text-tyrian-purple' : 'hover:text-slate-200'
-								}`}
+								className={`font-semibold uppercase mb-1 cursor-pointer flex items-center gap-2 p-2 rounded-sm group transition-all hover:text-tyrian-purple`}
 								onClick={() => handleSectionClick(index)}>
 								<h4>{section.heading}</h4>
 								<div
@@ -60,10 +58,9 @@ const Links = ({ isSticky, sections }) => {
 					) : (
 						<Link href={`${section.link}`}>
 							<div
-								className={`font-semibold uppercase mb-1 cursor-pointer transition-all 
-                ${section.disabled && 'pointer-events-none'}
-                ${isHome ? 'hover:text-tyrian-purple' : 'hover:text-slate-200'}
-                `}
+								className={`font-semibold uppercase mb-1 cursor-pointer transition-all hover:text-tyrian-purple ${
+									section.disabled && 'pointer-events-none'
+								}`}
 								onClick={() => handleSectionClick(index)}>
 								{section.heading}
 							</div>
