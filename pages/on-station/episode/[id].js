@@ -18,9 +18,9 @@ const Episode = () => {
 				<Layout title={`ON Station | Episode ${currentVideo.id}`}>
 					<div className='flex mt-10 flex-col items-center dark:text-white'>
 						<div className='w-full flex items-center justify-center gap-3 px-3 my-5'>
-							<div className='w-1/3 h-[3px] bg-[#3F2073] rounded-l-md'></div>
+							<div className='w-1/4 h-[3px] bg-[#3F2073] rounded-l-md'></div>
 							<h1 className='my-3 p-4 shrink-0 heading'>ON Station</h1>
-							<div className='w-1/3 h-[3px] bg-[#3F2073] rounded-r-md'></div>
+							<div className='w-1/4 h-[3px] bg-[#3F2073] rounded-r-md'></div>
 						</div>
 						{/* <div className='font-jacklyn font-bold mb-16 relative'>
 							<p className='header-1'>ON Station</p>

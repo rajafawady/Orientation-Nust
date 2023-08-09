@@ -6,9 +6,9 @@ const Activites = () => {
 	return (
 		<>
 			<div className='w-full flex items-center justify-center gap-3 px-3 mt-10'>
-				<div className='w-1/3 h-[3px] bg-[#3F2073]'></div>
+				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
 				<h1 className='my-3 p-4 shrink-0 heading'>O'week Highlights</h1>
-				<div className='w-1/3 h-[3px] bg-[#3F2073]'></div>
+				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
 			</div>
 			<div className='hidden rounded-xl p-3 md:flex w-11/12 shadow-2xl gap-3 md:flex-row justify-center items-center bg-center bg-cover bg-no-repeat h-[40rem]'>
 				<Card img='fresh beginings.jpg' classes='w-2/6 h-full'>
