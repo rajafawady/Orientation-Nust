@@ -10,7 +10,7 @@
 
 .deck {
   position: absolute;
-  width: 300px;
+  width: 70%;
   /* height: 200px; */
   will-change: transform;
   display: flex;
@@ -46,7 +46,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+  background-image: linear-gradient(to bottom, rgba(132, 18, 87, 0.15), transparent);
   z-index: 1;
 }
 
@@ -88,6 +88,10 @@
 
 
 @media (max-width: 640px) {
+  .deck {
+    width: 300px;
+  }
+
   .deck>div {
     max-width: 200px;
     max-height: 350px;

@@ -8,15 +8,15 @@ import { opswing, mediawing, reswing, coorwing, outwing, presiwing } from './dat
 export default function EC() {
 	return (
 		<div className='w-full flex flex-col justify-center items-center'>
-			<div className='w-full flex items-center justify-center gap-3 px-3 mt-10 mb-8'>
+			<div className='w-full flex items-center justify-center gap-1 md:gap-3 px-3 mt-10 mb-8'>
 				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
-				<h1 className='my-3 p-4 shrink-0 heading text-5xl'>Meet Our Team</h1>
+				<h1 className='my-3 p-4 shrink-0 heading text-4xl'>Meet Our Team</h1>
 				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
 			</div>
 			<ECCards />
-			<div className='w-full flex items-center justify-center gap-3 px-3 mt-10 mb-8'>
+			<div className='w-full flex items-center justify-center gap-1 md:gap-3 px-3 mt-10 mb-8'>
 				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
-				<h1 className='my-3 p-4 shrink-0 heading text-5xl'>Directorate</h1>
+				<h1 className='my-3 p-4 shrink-0 heading text-4xl'>Directorate</h1>
 				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
 			</div>
 			<div className='prose w-full max-w-4xl text-justify mb-8'>

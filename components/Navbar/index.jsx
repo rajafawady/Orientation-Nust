@@ -28,16 +28,16 @@ const sections = [
 			},
 		],
 	},
-	{
-		heading: 'Events',
-		items: [
-			{
-				id: 1,
-				name: 'Sports Fest',
-				link: '/sports_fest',
-			},
-		],
-	},
+	// {
+	// 	heading: 'Events',
+	// 	items: [
+	// 		{
+	// 			id: 1,
+	// 			name: 'Sports Fest',
+	// 			link: '/sports_fest',
+	// 		},
+	// 	],
+	// },
 	{
 		heading: 'ON Station',
 		link: '/on-station/episode/1',
@@ -95,10 +95,8 @@ const Navbar = () => {
 		<div className={`sticky top-0 w-full z-50 h-16 transition-all ${stickNavbar ? 'px-0' : 'px-10'}`}>
 			<div
 				className={twMerge(
-					`px-4 duration-300 transition-all w-full shadow-lg`,
-					stickNavbar ? 'rounded-none mt-0' : 'rounded-3xl mt-10',
-					!isHome ? 'bg-lapis-lazuli text-white' : 'bg-white backdrop-blur',
-					(isHome && stickNavbar) || !isHome ? 'opacity-100' : 'opacity-80'
+					`px-8 duration-300 transition-all w-full shadow-xl bg-white backdrop-blur`,
+					stickNavbar ? 'rounded-none mt-0 opacity-100' : 'rounded-3xl mt-10 opacity-80'
 				)}
 				ref={navbarRef}>
 				<div className='flex items-center justify-between py-2 '>

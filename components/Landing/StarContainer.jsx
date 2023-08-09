@@ -47,7 +47,7 @@ const StarContainer = () => {
 
 	return (
 		<div
-			className='w-screen h-screen bg-center bg-no-repeat bg-cover absolute top-0 left-0'
+			className='w-full h-screen bg-center bg-no-repeat bg-cover absolute top-0 left-0'
 			style={{
 				backgroundImage: 'url(background.svg)',
 			}}>

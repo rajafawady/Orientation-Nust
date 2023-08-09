@@ -40,7 +40,7 @@ export const TimerContainer = () => {
 	}, [time]);
 	return (
 		// <div className='grid grid-flow-col gap-1 text-center auto-cols-max absolute bottom-20 lg:left-0 left:1/2 m-4'>
-		<div className='grid grid-flow-col gap-1 text-center auto-cols-max'>
+		<div className='hidden md:grid grid-flow-col gap-1 text-center auto-cols-max'>
 			<div className='flex flex-col p-2 bg-[#3F2073] rounded-sm text-neutral-content'>
 				<span className='countdown font-mono text-4xl'>
 					<span style={{ '--value': days }}></span>

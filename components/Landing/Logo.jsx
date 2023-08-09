@@ -29,7 +29,7 @@ const Logo = () => {
 	}, []);
 
 	return (
-		<div className='h-64 w-64 xl:h-72 xl:w-72 relative shrink-0 flex items-end justify-center'>
+		<div className='h-48 w-48 lg:h-64 lg:w-64 xl:h-72 xl:w-72 relative shrink-0 flex items-end justify-center'>
 			<img src='Logo Assets/CnF Outline.png' className='h-full w-full absolute ' alt='' />
 			<img
 				src='Logo Assets/DnS Outline.png'
