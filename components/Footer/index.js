@@ -1,9 +1,10 @@
+import Link from "next/link";
 
 const navigation = {
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Facebook",
+      href: "https://www.facebook.com/ON.NUST/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -15,8 +16,8 @@ const navigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
+      name: "Instagram",
+      href: "https://www.instagram.com/o_nust/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -28,8 +29,8 @@ const navigation = {
       ),
     },
     {
-      name: 'Twitter',
-      href: '#',
+      name: "Twitter",
+      href: "https://twitter.com/O_NUST",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -37,76 +38,86 @@ const navigation = {
       ),
     },
   ],
-}
+};
 
 export default function Footer() {
   return (
     <>
-    
-    <footer className="bg-tyrian-purple mt-16" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="md:grid md:grid-cols-3 md:gap-8">
-          <div className="md:grid md:grid-cols-2 md:gap-8 md:col-span-2">
-            <div className="mt-8 xl:mt-0">
-              <div >
-                <div className="text-white text-3xl font-semibold uppercase text-center md:text-left">
-                  Contact US
-                </div>
-                <div className="mt-2 text-lg text-slate-100 text-center md:text-left">
-                  In case of any query contact us at:
-                </div>
-                <div className="text-white text-lg mt-4 font-bold text-center md:text-left">
-                liaison.orientation@nust.edu.pk
-                </div>
-                <div className="text-white text-lg mt-4 font-bold text-center md:text-left">
-                Team Liaison, ON 2022.
+      <footer
+        className="bg-gradient-to-br from-dark-purple via-prussian-blue to-lapis-lazuli mt-16 relative z-10"
+        aria-labelledby="footer-heading"
+      >
+        <h2 id="footer-heading" className="sr-only">
+          Footer
+        </h2>
+        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+          <div className="md:grid md:grid-cols-3 md:gap-8">
+            <div className="md:grid md:grid-cols-2 md:gap-8 md:col-span-2">
+              <div className="mt-8 xl:mt-0">
+                <div>
+                  <div className="text-white text-3xl font-semibold uppercase text-center md:text-left">
+                    Contact US
+                  </div>
+                  <div className="mt-2 text-lg text-slate-100 text-center md:text-left">
+                    In case of any query contact us at:
+                  </div>
+                  <div className="text-white text-lg mt-4 font-bold text-center md:text-left">
+                    liaison.orientation@nust.edu.pk
+                  </div>
+                  <div className="text-white text-lg mt-4 font-bold text-center md:text-left">
+                    Team Liaison, ON 2023.
+                  </div>
                 </div>
               </div>
             </div>
-
-          </div>
-          <div className="mt-8 xl:mt-0">
-            <h3 className="text-3xl font-semibold text-center md:text-left text-white tracking-wider uppercase">
-              Be our Sponsor
-            </h3>
-            <p className="mt-4 text-lg text-slate-100 text-center md:text-left">
-              If you&apos;re interested in becoming a sponsor, please fill this form and our team will contact you soon!
-            </p>
-            <form className="mt-4 sm:flex sm:max-w-md">
-
-
-              <div className="mt-3 pt-4 rounded-md sm:mt-0 w-full sm:flex-shrink-0">
-                <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSdjyF-qEHOFOHfPKCUmY4MBPjdeVR36-pmwwkFaGnHb0S0MjQ/viewform?usp=sf_link">
-                  <button
-                    type="button"
-                    className="w-full h-16 bg-white rounded-md py-2 px-4 flex items-center justify-center text-xl font-bold text-tyrian-purple hover:bg-tyrian-purple hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-2xl border-white border-2"
+            <div className="mt-8 xl:mt-0">
+              <h3 className="text-3xl font-semibold text-center md:text-left text-white tracking-wider uppercase">
+                Be our Sponsor
+              </h3>
+              <p className="mt-4 text-lg text-slate-100 text-center md:text-left">
+                If you&apos;re interested in becoming a sponsor, please fill
+                this form and our team will contact you soon!
+              </p>
+              <form className="mt-4 sm:flex sm:max-w-md">
+                <div className="mt-3 pt-4 rounded-md sm:mt-0 w-full sm:flex-shrink-0">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdjyF-qEHOFOHfPKCUmY4MBPjdeVR36-pmwwkFaGnHb0S0MjQ/viewform?usp=sf_link"
                   >
-                    Become Our Sponsor
-                  </button>
-                </a>
-              </div>
-            </form>
+                    <button
+                      type="button"
+                      className="w-full h-16 bg-white rounded-md py-2 px-4 flex items-center justify-center text-xl font-bold transition-all
+                       text-prussian-blue hover:text-white hover:bg-dark-purple hover:bg-opacity-75 duration-300 focus:outline-none shadow-2xl"
+                    >
+                      Become Our Sponsor
+                    </button>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div className="mt-8 md:mt-8 border-t border-white md:pt-8 md:flex md:items-center md:justify-between">
+            <p className="mt-8 text-base text-white md:mt-0 text-center md:order-1">
+              &copy; 2023 Orientation, NUST. All rights reserved.
+            </p>
+            <div className="flex justify-center space-x-6 md:order-2 mt-6 md:mt-0">
+              {navigation.social.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className=""
+                >
+                  <div className="text-white cursor-pointer hover:-translate-y-0.5 transition-all">
+                    <span className="sr-only">{item.name}</span>
+                    <item.icon className="h-6 w-6" aria-hidden="true" />
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="mt-8 md:mt-8 border-t border-white md:pt-8 md:flex md:items-center md:justify-between">
-        <p className="mt-8 text-base text-white md:mt-0 text-center md:order-1">
-            &copy; 2022 Orientation, NUST. All rights reserved.
-          </p>
-          <div className="flex justify-center space-x-6 md:order-2 mt-6 md:mt-0">
-            {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-white hover:text-gray-300">
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
-          </div>
-         
-        </div>
-      </div>
-    </footer>
+      </footer>
     </>
-  )
+  );
 }

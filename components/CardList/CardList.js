@@ -1,7 +1,7 @@
-import { useRef } from 'react';
-import MeetOurTeam from '../EC/MeetOurTeam';
-import Title from '../Title';
-import List from './List';
+import { useRef } from "react";
+import MeetOurTeam from "../EC/MeetOurTeam";
+import Title from "../Title";
+import List from "./List";
 
 const CardList = ({ schools, lifeAtNUST }) => {
 	const schoolRef = useRef(null);

@@ -5,6 +5,7 @@ import videos from "../../../util/episodes.json";
 
 import Layout from "../../../components/Layout";
 import Image from "next/image";
+import DoodleContainer from "../../../components/DoodleContainer";
 
 const Episode = () => {
   const router = useRouter();
@@ -14,13 +15,22 @@ const Episode = () => {
   return (
     <>
       {currentVideo && (
-        <Layout title={`Episode ${currentVideo.id}`}>
-          <div className="flex  flex-col items-center mt-20 text-tyrian-purple dark:text-white">
-            <h1 className="font-jacklyn text-5xl sm:text-7xl font-bold mb-16">
-              ON Station
-            </h1>
+        <Layout title={`ON Station | Episode ${currentVideo.id}`}>
+          <div className="flex  flex-col items-center mt-20  dark:text-white">
+            <div className="font-jacklyn font-bold mb-16 relative">
+              <p className="header-1">ON Station</p>
 
-            <div className="flex lg:flex-row flex-col justify-center w-full gap-6 px-6">
+              {/* <DoodleContainer
+                className={"absolute w-32 aspect-1 -top-10 -left-[40%]"}
+                src="/doodles/on-station/1.png"
+              /> */}
+              <DoodleContainer
+                className={"absolute w-32 aspect-1 top-6 -right-[60%]"}
+                src="/doodles/on-station/2.png"
+              />
+            </div>
+
+            <div className="flex lg:flex-row flex-col justify-center w-full gap-6 px-6 text-tyrian-purple">
               {/* video container */}
               <div className="flex flex-col gap-1">
                 <div className="relative overflow-hidden w-full aspect-[16/9]">
@@ -48,7 +58,7 @@ const Episode = () => {
                       className={`cursor-pointer transition-colors w-full
                             ${
                               video.id === id
-                                ? "bg-tyrian-purple text-white"
+                                ? "bg-gradient-to-tl from-dark-purple to-ultra-red text-white"
                                 : "hover:bg-pale-pink"
                             }
                         `}

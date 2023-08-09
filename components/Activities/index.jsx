@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // ! Making 2 copies of the same component (in the 2 divs) one for mobile and one for desktop
 const Activites = () => {
@@ -95,35 +95,55 @@ const Activites = () => {
 };
 
 const Card = ({ children, img, classes }) => (
-	<div
-		className={`rounded-xl bg-center bg-cover bg-no-repeat hover:backdrop-blur-lg shadow-lg ${classes}`}
-		style={{ backgroundImage: `url('activities/${img}')` }}>
-		<div class='w-full h-full flex flex-col justify-center items-center rounded-xl hover:backdrop-blur-md transition-all duration-300 relative p-3 group'>
-			{children}
-		</div>
-	</div>
+  <div
+    className={`rounded-xl bg-center bg-cover bg-no-repeat hover:backdrop-blur-lg shadow-lg ${classes}`}
+    style={{ backgroundImage: `url('activities/${img}')` }}
+  >
+    <div className="w-full h-full flex flex-col justify-center items-center rounded-xl hover:backdrop-blur-md transition-all duration-300 relative p-3 group">
+      {children}
+    </div>
+  </div>
 );
 
-const SmolCard = ({ children, img, index, activeIndex, setActiveIndex }) => {
-	const handleClick = () => {
-		if (activeIndex === index) setActiveIndex(null);
-		else setActiveIndex(index);
-	};
-	return (
-		<div
-			className={`rounded-xl bg-center bg-cover bg-no-repeat w-full ${
-				activeIndex === index ? 'h-4/5' : 'h-1/5'
-			} transition-all duration-300`}
-			style={{ backgroundImage: `url('activities/${img}')` }}
-			onClick={handleClick}>
-			<div
-				className={`w-full h-full flex flex-col justify-center items-center rounded-xl hover:backdrop-blur-sm ${
-					activeIndex === index ? 'backdrop-blur-sm' : ''
-				} transition-all duration-300`}>
-				{children}
-			</div>
-		</div>
-	);
+const SmolCard = ({
+  children,
+  img,
+  index,
+  activeIndex,
+  setActiveIndex,
+  heading,
+}) => {
+  const handleClick = () => {
+    if (activeIndex === index) setActiveIndex(null);
+    else setActiveIndex(index);
+  };
+  return (
+    <div
+      className={`rounded-xl bg-center bg-cover bg-no-repeat w-full ${
+        activeIndex === index ? "h-4/5" : "h-1/5"
+      } transition-all duration-300`}
+      style={{ backgroundImage: `url('activities/${img}')` }}
+      onClick={handleClick}
+    >
+      <div
+        className={`w-full h-full flex flex-col justify-center items-center rounded-xl ${
+          activeIndex === index ? "backdrop-blur-sm" : "backdrop-blur-none"
+        } transition-all duration-300`}
+      >
+        <h2
+          className={`text-xl text-black bg-white px-4 py-1 rounded-md font-medium ${
+            activeIndex === index
+              ? "opacity-0 scale-75"
+              : "opacity-100 scale-100"
+          } transition-all duration-300`}
+        >
+          {heading}
+        </h2>
+
+        {children}
+      </div>
+    </div>
+  );
 };
 
 export default Activites;
