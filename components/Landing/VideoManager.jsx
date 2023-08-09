@@ -1,12 +1,10 @@
 const VideoManager = ({ setShouldPlay }) => {
 	return (
-		<video
-			autoPlay
-			muted
-			onEnded={() => setShouldPlay(false)}
-			className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-scren w-screen bg-white'>
-			<source src='THINGY.mp4' />
-		</video>
+		<div className='flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-50 bg-white/50'>
+			<video autoPlay muted onEnded={() => setShouldPlay(false)} className='w-full h-full video-animation'>
+				<source src='thingyreal.webm' />
+			</video>
+		</div>
 	);
 };
 

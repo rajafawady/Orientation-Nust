@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
   /* ------------------------------- */
   @font-face {
     font-family: "Lato-Bold";
@@ -183,9 +184,8 @@ li {
   background: white;
   top: 0;
   left: 0;
-  offset-path: path(
-    "M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
-  );
+  offset-path: path("M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
+    );
 }
 
 .text-stroke {
@@ -272,11 +272,9 @@ li {
 @media screen and (max-width: 600px) {
   .main-content {
     height: 100vh;
-    background: linear-gradient(
-        to top,
+    background: linear-gradient(to top,
         rgba(114, 2, 64, 0.6),
-        rgba(0, 0, 0, 0.8)
-      ),
+        rgba(0, 0, 0, 0.8)),
       url("/background-main.webp") no-repeat top center;
     background-size: cover;
   }
@@ -445,6 +443,7 @@ li {
 }
 
 @media screen and (max-width: 600px) {
+
   .schools-grid-1,
   .schools-grid-2 {
     grid-template-columns: 1fr;
@@ -506,11 +505,9 @@ li {
 @media screen and (max-width: 600px) {
   .main-content {
     height: 100vh;
-    background: linear-gradient(
-        to top,
+    background: linear-gradient(to top,
         rgba(114, 2, 64, 0.6),
-        rgba(0, 0, 0, 0.8)
-      ),
+        rgba(0, 0, 0, 0.8)),
       url("/background-main.webp") no-repeat top center;
     background-size: cover;
   }
@@ -621,11 +618,56 @@ li {
   font-size: 3rem;
 }
 
+.video-animation {
+  backdrop-filter: blur(100px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+  animation-delay: 7s;
+}
+
+@-webkit-keyframes fadeOutRight {
+  from {
+    backdrop-filter: blur(100px);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    backdrop-filter: blur(0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    backdrop-filter: blur(100px);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    backdrop-filter: blur(0);
+
+  }
+}
+
+
 /* Star animations */
 
 .animate-scaleSmall {
   animation: scaleSmall 2s infinite;
 }
+
 .animate-scaleSmall2 {
   animation: scaleSmall2 2s infinite;
 }
@@ -693,3 +735,52 @@ li {
   }
 }
 
+/* Animations for our floating components */
+
+.animate-float {
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes float-sm {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-70px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes float-md {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-130px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes float-lg {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-180px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

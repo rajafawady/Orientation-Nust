@@ -7,10 +7,11 @@ import StarContainer from '../components/Landing/StarContainer';
 import Activites from '../components/Activities';
 
 export default function Home() {
-	const [shouldPlay, setShouldPlay] = useState(false);
-	if (shouldPlay) return <VideoManager setShouldPlay={setShouldPlay} />;
+	const [shouldPlay, setShouldPlay] = useState(true);
+	// if (shouldPlay) return <VideoManager setShouldPlay={setShouldPlay} />;
 	return (
 		<Layout title={'Orientation 2023'} homePage={true}>
+			{shouldPlay && <VideoManager setShouldPlay={setShouldPlay} />}
 			<div className='min-h-full'>
 				<Page1 />
 				<StarContainer />

@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 // ! Making 2 copies of the same component (in the 2 divs) one for mobile and one for desktop
 const Activites = () => {
 	const [activeIndex, setActiveIndex] = useState(null);
 	return (
 		<>
-			<div className='w-full flex items-center justify-center gap-3 px-3 my-5'>
-				<div className='w-1/3 h-[3px] bg-[#3F2073]'></div>
+			<div className='w-full flex items-center justify-center gap-3 px-3 mt-10'>
+				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
 				<h1 className='my-3 p-4 shrink-0 heading'>O'week Highlights</h1>
-				<div className='w-1/3 h-[3px] bg-[#3F2073]'></div>
+				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
 			</div>
 			<div className='hidden rounded-xl p-3 md:flex w-11/12 shadow-2xl gap-3 md:flex-row justify-center items-center bg-center bg-cover bg-no-repeat h-[40rem]'>
 				<Card img='fresh beginings.jpg' classes='w-2/6 h-full'>
@@ -95,55 +95,42 @@ const Activites = () => {
 };
 
 const Card = ({ children, img, classes }) => (
-  <div
-    className={`rounded-xl bg-center bg-cover bg-no-repeat hover:backdrop-blur-lg shadow-lg ${classes}`}
-    style={{ backgroundImage: `url('activities/${img}')` }}
-  >
-    <div className="w-full h-full flex flex-col justify-center items-center rounded-xl hover:backdrop-blur-md transition-all duration-300 relative p-3 group">
-      {children}
-    </div>
-  </div>
+	<div
+		className={`rounded-xl bg-center bg-cover bg-no-repeat hover:backdrop-blur-lg shadow-lg ${classes}`}
+		style={{ backgroundImage: `url('activities/${img}')` }}>
+		<div className='w-full h-full flex flex-col justify-center items-center rounded-xl hover:backdrop-blur-md transition-all duration-300 relative p-3 group'>
+			{children}
+		</div>
+	</div>
 );
 
-const SmolCard = ({
-  children,
-  img,
-  index,
-  activeIndex,
-  setActiveIndex,
-  heading,
-}) => {
-  const handleClick = () => {
-    if (activeIndex === index) setActiveIndex(null);
-    else setActiveIndex(index);
-  };
-  return (
-    <div
-      className={`rounded-xl bg-center bg-cover bg-no-repeat w-full ${
-        activeIndex === index ? "h-4/5" : "h-1/5"
-      } transition-all duration-300`}
-      style={{ backgroundImage: `url('activities/${img}')` }}
-      onClick={handleClick}
-    >
-      <div
-        className={`w-full h-full flex flex-col justify-center items-center rounded-xl ${
-          activeIndex === index ? "backdrop-blur-sm" : "backdrop-blur-none"
-        } transition-all duration-300`}
-      >
-        <h2
-          className={`text-xl text-black bg-white px-4 py-1 rounded-md font-medium ${
-            activeIndex === index
-              ? "opacity-0 scale-75"
-              : "opacity-100 scale-100"
-          } transition-all duration-300`}
-        >
-          {heading}
-        </h2>
+const SmolCard = ({ children, img, index, activeIndex, setActiveIndex, heading }) => {
+	const handleClick = () => {
+		if (activeIndex === index) setActiveIndex(null);
+		else setActiveIndex(index);
+	};
+	return (
+		<div
+			className={`rounded-xl bg-center bg-cover bg-no-repeat w-full ${
+				activeIndex === index ? 'h-4/5' : 'h-1/5'
+			} transition-all duration-300`}
+			style={{ backgroundImage: `url('activities/${img}')` }}
+			onClick={handleClick}>
+			<div
+				className={`w-full h-full flex flex-col justify-center items-center rounded-xl ${
+					activeIndex === index ? 'backdrop-blur-sm' : 'backdrop-blur-none'
+				} transition-all duration-300`}>
+				<h2
+					className={`text-xl text-black bg-white px-4 py-1 rounded-md font-medium ${
+						activeIndex === index ? 'opacity-0 scale-75' : 'opacity-100 scale-100'
+					} transition-all duration-300`}>
+					{heading}
+				</h2>
 
-        {children}
-      </div>
-    </div>
-  );
+				{children}
+			</div>
+		</div>
+	);
 };
 
 export default Activites;
