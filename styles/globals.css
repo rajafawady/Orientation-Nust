@@ -619,12 +619,48 @@ li {
 }
 
 .video-animation {
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(100px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: scaleUp 0.5s ease-in-out 7.5s forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+  animation-delay: 7s;
 }
+
+@-webkit-keyframes fadeOutRight {
+  from {
+    backdrop-filter: blur(100px);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    backdrop-filter: blur(0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    backdrop-filter: blur(100px);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    backdrop-filter: blur(0);
+
+  }
+}
+
 
 /* Star animations */
 
