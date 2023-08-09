@@ -379,14 +379,6 @@ li {
   color: white;
 }
 
-.school__div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  margin: 0px;
-}
 
 .blur {
   background: rgba(255, 255, 255, 0.2);
@@ -609,21 +601,15 @@ li {
   background-color: #72024035;
 }
 
-.header-1 {
+.heading {
   font-size: 4rem;
   font-weight: 800;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: "Lato-Bold" sans-serif;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  @apply bg-gradient-to-br from-prussian-blue via-dark-purple to-ultra-red;
-}
-
-@media (max-width: 640px) {
-  .header-1 {
-    font-size: 3rem;
-  }
+  background-image: linear-gradient(#3F2073, #3676AA)
 }
 
 
@@ -707,19 +693,3 @@ li {
   }
 }
 
-/* Testing clip path for activities component */
-.clipDiv {
-}
-
-.galaxy-bg {
-  background-image: radial-gradient(
-    #e1cdf9 0%,
-    #ede5f9 3%,
-    #e4f3fe 40%,
-    #83cdf7 100%
-  );
-}
-
-.gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-br from-lapis-lazuli  to-pale-pink;
-}
