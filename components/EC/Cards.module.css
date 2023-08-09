@@ -1,0 +1,95 @@
+.container {
+  background: lightblue;
+  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
+    auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.deck {
+  position: absolute;
+  width: 300px;
+  /* height: 200px; */
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
+  z-index: 10;
+}
+
+
+
+
+.deck>div {
+  background-color: white;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 65vh;
+  max-width: 300px;
+  height: 95vh;
+  max-height: 480px;
+  will-change: transform;
+  border-radius: 10px;
+  box-shadow: 0 12.5px 50px -10px rgba(50, 50, 73, 0.2), 0 10px 10px -10px rgba(50, 50, 73, 0.2);
+}
+
+
+/* Cards.module.css */
+
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+  z-index: 1;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.cardText {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  text-align: center;
+  background-color: #6390d5;
+  padding: 3px;
+  border-radius: 0px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white
+}
+
+.role {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+
+@media (max-width: 640px) {
+  .deck>div {
+    max-width: 200px;
+    max-height: 350px;
+  }
+}

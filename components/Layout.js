@@ -1,38 +1,30 @@
-import { useTheme } from "next-themes";
-import Head from "next/head";
-import React from "react";
-import { useContext } from "react";
-import { ClickContext } from "../context/GlobalProvider";
+import { useTheme } from 'next-themes';
+import Head from 'next/head';
+import React from 'react';
 
-import dynamic from "next/dynamic";
-
-const DynamicHeader = dynamic(() => import("./Header/Header"), {
-  ssr: false,
+import dynamic from 'next/dynamic';
+import Navbar from './Navbar';
+import Footer from './Footer';
+const FloatingContainer = dynamic(() => import('./FloatingShapes/FloatingContainer'), {
+	ssr: false,
 });
+
 export default function Layout({ children, title, homePage }) {
-  const { click } = useContext(ClickContext);
-  const { theme, setTheme } = useTheme();
-  return (
-    <div
-      className={`${
-        click & homePage
-          ? theme === "dark"
-            ? "dark-content"
-            : "main-content"
-          : null
-      }`}
-    >
-      <Head>
-        <title>{title}</title>
-      </Head>
+	return (
+		<>
+			<Head>
+				<title>{title}</title>
+			</Head>
+			{/* <div className={`${click & homePage ? (theme === 'dark' ? 'dark-content' : 'main-content') : null}`}> */}
+			<div className='min-h-full'>
+				<Navbar />
+				<div className='w-full flex justify-center'>
+					<div className='max-w-xs sm:container z-10'>{children}</div>
 
-
-    
-    <DynamicHeader homepage={homePage}/>
-    
-    
-    {children}
-   
-    </div>
-  );
+					<FloatingContainer />
+				</div>
+			</div>
+			<Footer />
+		</>
+	);
 }

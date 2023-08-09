@@ -4,22 +4,21 @@ import AnimatedText from "../SubComponents/AnimatedText";
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
 
-export default function MeetOurTeam({placeholderText}) {
+export default function MeetOurTeam({ placeholderText }) {
   const [replay, setReplay] = useState(true);
-  const {theme, setTheme} = useTheme()
+  const { theme, setTheme } = useTheme();
   // Placeholder text data, as if from API
-  
 
-  useEffect(()=>{
+  useEffect(() => {
     handleReplay();
-  }, [theme])
+  }, [theme]);
 
   const container = {
     visible: {
       transition: {
-        staggerChildren: 0.025
-      }
-    }
+        staggerChildren: 0.025,
+      },
+    },
   };
 
   // Quick and dirt for the example
@@ -43,7 +42,6 @@ export default function MeetOurTeam({placeholderText}) {
           return <AnimatedText {...item} key={index} />;
         })}
       </div>
-    
     </motion.div>
   );
 }
