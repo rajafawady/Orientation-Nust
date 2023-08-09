@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<Layout title={'Orientation 2023'} homePage={true}>
 			{shouldPlay && <VideoManager setShouldPlay={setShouldPlay} />}
-			<div className='min-h-full'>
+			<div className='min-h-full w-full'>
 				<Page1 />
 				<StarContainer />
 				<div className='h-screen flex flex-col items-center justify-center -mt-10 w-full z-10 relative'>
