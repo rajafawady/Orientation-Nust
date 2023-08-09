@@ -618,6 +618,14 @@ li {
   font-size: 3rem;
 }
 
+.video-animation {
+  backdrop-filter: blur(15px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: scaleUp 0.5s ease-in-out 7.5s forwards;
+}
+
 /* Star animations */
 
 .animate-scaleSmall {

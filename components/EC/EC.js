@@ -31,31 +31,31 @@ export default function EC() {
 			<div className='w-full overflow-hidden flex flex-col gap-4 md:gap-0 md:flex-row items-center md:items-start justify-evenly flex-wrap'>
 				<div className='w-full'></div>
 				<div className='w-1/3 h-[700px] flex flex-col items-center justify-start gap-10 relative'>
-					<h2 className='text-4xl bg-gradient-to-b bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
+					<h2 className='text-4xl bg-gradient-to-b font-latoBold bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
 						Operations Wing
 					</h2>
 					<Wing cards={opswing} />
 				</div>
 				<div className='w-1/3 h-[700px] flex flex-col items-center ustify-start gap-10 relative'>
-					<h2 className='text-4xl bg-gradient-to-b bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
+					<h2 className='text-4xl bg-gradient-to-b font-latoBold bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
 						Media Wing
 					</h2>
 					<Wing cards={mediawing} />
 				</div>
 				<div className='w-1/3 h-[700px] flex flex-col items-center ustify-start gap-10 relative'>
-					<h2 className='text-4xl bg-gradient-to-b bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
-						Cordination Wing
+					<h2 className='text-4xl bg-gradient-to-b font-latoBold bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
+						Coordination Wing
 					</h2>
 					<Wing cards={coorwing} />
 				</div>
 				<div className='w-1/3 h-[700px] flex flex-col items-center ustify-start gap-10 relative'>
-					<h2 className='text-4xl bg-gradient-to-b bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
+					<h2 className='text-4xl bg-gradient-to-b font-latoBold bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
 						Outreach Wing
 					</h2>
 					<Wing cards={outwing} />
 				</div>
 				<div className='w-1/3 h-[700px] flex flex-col items-center ustify-start gap-10 relative'>
-					<h2 className='text-4xl bg-gradient-to-b bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
+					<h2 className='text-4xl bg-gradient-to-b font-latoBold bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
 						President Wing
 					</h2>
 					<Wing cards={presiwing} />
