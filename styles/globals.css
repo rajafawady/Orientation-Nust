@@ -377,16 +377,6 @@ li {
   color: white;
 }
 
-.school__div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-block: 30px;
-  background-color: transparent;
-  margin: 0px;
-  padding: 1rem;
-}
 
 .blur {
   background: rgba(255, 255, 255, 0.2);
@@ -608,18 +598,15 @@ li {
   background-color: #72024035;
 }
 
-.header-1 {
+.heading {
   font-size: 4rem;
   font-weight: 800;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: "Lato-Bold" sans-serif;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: repeating-radial-gradient(farthest-side at 5px 5px,
-      rgba(197, 0, 109, 0.6),
-      #250082,
-      rgba(213, 0, 117, 0.6));
+  background-image: linear-gradient(#3F2073, #3676AA)
 }
 
 .school__h2 {
@@ -690,7 +677,3 @@ li {
     /* transform: scale(1); */
   }
 }
-
-
-/* Testing clip path for activities component */
-.clipDiv {}

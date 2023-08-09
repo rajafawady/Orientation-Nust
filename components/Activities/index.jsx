@@ -5,8 +5,12 @@ const Activites = () => {
 	const [activeIndex, setActiveIndex] = useState(null);
 	return (
 		<>
-			<h1 className='header-1 my-3 text-3xl p-4'>O'week Highlights</h1>
-			<div className='hidden rounded-xl p-3 md:flex w-11/12 shadow-2xl gap-3 md:flex-row justify-center items-center bg-center bg-cover bg-no-repeat bg-gray-100 h-[40rem]'>
+			<div className='w-full flex items-center justify-center gap-3 px-3 my-5'>
+				<div className='w-1/3 h-[3px] bg-[#3F2073]'></div>
+				<h1 className='my-3 p-4 shrink-0 heading'>O'week Highlights</h1>
+				<div className='w-1/3 h-[3px] bg-[#3F2073]'></div>
+			</div>
+			<div className='hidden rounded-xl p-3 md:flex w-11/12 shadow-2xl gap-3 md:flex-row justify-center items-center bg-center bg-cover bg-no-repeat h-[40rem]'>
 				<Card img='fresh beginings.jpg' classes='w-2/6 h-full'>
 					<h2 className='text-3xl font-bold text-white absolute bottom-0 left-0 m-3'>
 						Celebrating Fresh <br /> Beginnings
@@ -55,7 +59,7 @@ const Activites = () => {
 								await you in your academic journey at NUST.
 							</h4>
 						</Card>
-						<Card img='fresh beginings.jpg' classes='w-1/3 h-full'>
+						<Card img='batch photo.png' classes='w-1/3 h-full'>
 							<div className='absolute top-0 left-0 p-3 bg-white rounded-br-xl group-hover:bg-white/60'>
 								<h2 className='text-2xl font-bold text-black'>The Ultimate Celebration</h2>
 							</div>

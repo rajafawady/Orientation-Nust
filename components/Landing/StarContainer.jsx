@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Page1 from './Page1';
 import { BsStars, BsStarFill } from 'react-icons/bs';
 import Star from './Star';
@@ -25,10 +25,32 @@ const StarContainer = () => {
 		return starArray;
 	};
 
+	// const scrollFunc = () => {
+	// 	if (typeof window == 'undefined') return;
+	// 	// Transition the gradient
+	// 	const scroll = window.scrollY;
+	// 	const height = document.body.offsetHeight;
+	// 	const width = document.body.offsetWidth;
+	// 	const gradient = document.querySelector('.bg-gradient-to-b');
+	// 	const opacity = scroll / height;
+	// 	gradient.style.opacity = opacity;
+	// };
+
 	const randomArray = getRandomStars();
 
+	// useEffect(() => {
+	// 	if (typeof window !== 'undefined') window.addEventListener('scroll', scrollFunc);
+	// 	return () => {
+	// 		if (typeof window !== 'undefined') window.removeEventListener('scroll', scrollFunc);
+	// 	};
+	// }, []);
+
 	return (
-		<div className='w-screen h-screen bg-gradient-to-br from-[#42008C]  via-[#2C3B6C] to-[#240046] absolute top-0 left-0'>
+		<div
+			className='w-screen h-screen bg-center bg-no-repeat bg-cover absolute top-0 left-0'
+			style={{
+				backgroundImage: 'url(background.svg)',
+			}}>
 			<div className='w-full h-full relative overflow-hidden'>
 				{randomArray.map((star, index) => (
 					<div

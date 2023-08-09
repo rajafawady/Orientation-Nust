@@ -15,7 +15,6 @@ export default function Home() {
 				<Page1 />
 				<StarContainer />
 				<div className='h-screen flex flex-col items-center justify-center -mt-10 w-full z-10 relative'>
-					{/* remaining content goes here */}
 					<Activites />
 				</div>
 			</div>
