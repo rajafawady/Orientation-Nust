@@ -30,9 +30,9 @@ const Logo = () => {
 
 	return (
 		<div className='h-64 w-64 xl:h-72 xl:w-72 relative shrink-0 flex items-end justify-center'>
-			<img src='Logo Assets/FaC.png' className='h-full w-full absolute ' alt='' />
+			<img src='Logo Assets/CnF Outline.png' className='h-full w-full absolute ' alt='' />
 			<img
-				src='Logo Assets/DnS.png'
+				src='Logo Assets/DnS Outline.png'
 				className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 h-9/12 w-9/12'
 				alt=''
 				ref={domeRef}

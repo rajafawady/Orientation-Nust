@@ -37,7 +37,9 @@ const List = ({ list = [], type, gap, container }) => {
 
 		if (typeof window !== 'undefined') {
 			startingPosition =
-				(container.current.getBoundingClientRect()?.top + container.current.getBoundingClientRect().bottom) / 2;
+				(container?.current?.getBoundingClientRect()?.top +
+					container?.current?.getBoundingClientRect().bottom) /
+				2;
 
 			console.log({ startingPosition });
 			window.addEventListener('scroll', handleScroll);

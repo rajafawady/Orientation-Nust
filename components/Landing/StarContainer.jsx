@@ -47,9 +47,10 @@ const StarContainer = () => {
 
 	return (
 		<div
-			className='w-screen h-screen bg-gradient-to-b from-[#42008C]  via-[#240046] to-[#240046] fixed top-0 left-0'
-			// className='w-screen h-screen absolute top-0 left-0'
-		>
+			className='w-screen h-screen bg-center bg-no-repeat bg-cover absolute top-0 left-0'
+			style={{
+				backgroundImage: 'url(background.svg)',
+			}}>
 			<div className='w-full h-full relative overflow-hidden'>
 				{randomArray.map((star, index) => (
 					<div
