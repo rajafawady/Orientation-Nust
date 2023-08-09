@@ -49,6 +49,7 @@ body {
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 a {
@@ -599,7 +600,7 @@ li {
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Lato-Bold" sans-serif;
@@ -608,6 +609,13 @@ li {
   background-clip: text;
   background-image: linear-gradient(#3F2073, #3676AA)
 }
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+
 
 
 
@@ -619,48 +627,23 @@ li {
 }
 
 .video-animation {
-  backdrop-filter: blur(100px);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeOutRight;
-  animation-name: fadeOutRight;
-  animation-delay: 7s;
-}
-
-@-webkit-keyframes fadeOutRight {
-  from {
+    background-size: cover;
     backdrop-filter: blur(100px);
-    opacity: 1;
+    animation: scaleUp 0.5s ease-in-out 6.5s forwards;
   }
 
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    backdrop-filter: blur(0);
+  @keyframes scaleUp {
+    0% {
+      backdrop-filter:blur(100px);
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+        backdrop-filter:blur(0px);
+      transform: scale(10);
+      opacity: 0;
+    }
   }
-}
-
-@keyframes fadeOutRight {
-  from {
-    backdrop-filter: blur(100px);
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    backdrop-filter: blur(0);
-
-  }
-}
-
 
 /* Star animations */
 

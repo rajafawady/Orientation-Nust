@@ -5,7 +5,7 @@ import { TimerContainer } from './TimerContainer';
 const Page1 = () => {
 	return (
 		<div className='text-white h-[calc(100vh-4rem)] relative z-10 flex flex-col items-center justify-evenly'>
-			<div className='flex flex-col-reverse md:flex-row flex-wrap items-center w-full justify-evenly font-mont'>
+			<div className='flex flex-col-reverse  md:flex-row items-center w-full justify-evenly font-mont'>
 				<div className='flex flex-col gap-2'>
 					<div>
 						<div className='text-xl font-extrabold font-latoLight flex items-center gap-1 '>
@@ -23,7 +23,6 @@ const Page1 = () => {
 							NUST H12, Islamabad
 						</div>
 					</div>
-
 					<div className='z-20 font-latoBold max-w-3xl text-4xl md:text-6xl lg:text-8xl mt-2 mb-3'>
 						Welcome to Orientation &apos;23
 					</div>
@@ -35,13 +34,12 @@ const Page1 = () => {
 						experience of a lifetime. We wish you the best of luck!
 					</div>
 				</div>
-
-				<div className='flex flex-col gap-8 justify-end h-full'>
+				<div className='flex flex-col gap-8 items-center justify-end h-full'>
 					<Logo />
 					<div className='relative inline-block'>
 						<span className='relative text-white p-1 text-5xl font-bold'>
 							<span className='font-aspectRange tracking-[-0.15em] relative'>O N</span>
-							<span className='font-goodnightLondonScript relative text-6xl'> to the stars</span>
+							<span className='font-goodnightLondonScript relative text-5xl'> to the stars</span>
 						</span>
 					</div>
 				</div>
