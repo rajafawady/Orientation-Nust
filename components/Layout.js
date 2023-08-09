@@ -21,7 +21,7 @@ export default function Layout({ children, title, homePage }) {
 				<div className='w-full flex justify-center'>
 					<div className='max-w-xs sm:container z-10'>{children}</div>
 
-					{/* <FloatingContainer /> */}
+					<FloatingContainer />
 				</div>
 			</div>
 			<Footer />

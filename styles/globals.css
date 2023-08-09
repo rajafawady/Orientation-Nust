@@ -734,3 +734,59 @@ li {
     /* transform: scale(1); */
   }
 }
+
+/* Animations for our floating components */
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-md {
+  animation: float-md 6s ease-in-out infinite;
+}
+
+.animate-float-ld {
+  animation: float-lg 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float-md {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-10px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float-lg {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-5px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
