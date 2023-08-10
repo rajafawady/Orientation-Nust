@@ -56,6 +56,12 @@ export default function EC() {
 				</div>
 				<div className='w-1/3 h-[700px] flex flex-col items-center ustify-start gap-10 relative'>
 					<h2 className='text-4xl bg-gradient-to-b font-latoBold bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
+						Resource Wing
+					</h2>
+					<Wing cards={reswing} />
+				</div>
+				<div className='w-1/3 h-[700px] flex flex-col items-center ustify-start gap-10 relative'>
+					<h2 className='text-4xl bg-gradient-to-b font-latoBold bg-clip-text text-transparent from-dark-purple to-prussian-blue font-bold'>
 						President Wing
 					</h2>
 					<Wing cards={presiwing} />
