@@ -19,8 +19,8 @@ const opswing = [
 	},
 	{
 		id: 4,
-		name: 'Ahmad Abbas',
-		role: 'DD Aadmin Coordination',
+		name: 'Ahmed Abbas',
+		role: 'DD Admin Coordination',
 		image: '/direcimagesnew/ahmadddadcoord.png',
 	},
 	{
@@ -31,7 +31,7 @@ const opswing = [
 	},
 	{
 		id: 6,
-		name: 'Faique Ahmad',
+		name: 'Faique Ahmad Kahn',
 		role: 'Director Accomodations',
 		image: '/direcimagesnew/faq.png',
 	},
@@ -43,13 +43,13 @@ const opswing = [
 	},
 	{
 		id: 8,
-		name: 'Aimen Khaqan',
+		name: 'Aiman Khaqan',
 		role: 'Director Security',
 		image: '/direcimagesnew/dirsec.png',
 	},
 	{
 		id: 9,
-		name: 'Bashna',
+		name: 'Bashna Emaan',
 		role: 'DD Sports',
 		image: '/direcimagesnew/bashna.png',
 	},
@@ -64,7 +64,7 @@ const opswing = [
 const reswing = [
 	{
 		id: 1,
-		name: 'Sana',
+		name: 'Sana Rashid',
 		role: 'DD Decor',
 		image: '/direcimagesnew/sanadddecor.png',
 	},
@@ -76,19 +76,19 @@ const reswing = [
 	},
 	{
 		id: 3,
-		name: 'Mariam Aman',
+		name: 'Mariam Imran',
 		role: 'Director Decor',
 		image: '/direcimagesnew/mariamamandir.png',
 	},
 	{
 		id: 4,
-		name: 'Faraz',
+		name: 'Faraz Waseem',
 		role: 'DD Finance',
 		image: '/direcimagesnew/faraz.png',
 	},
 	{
 		id: 5,
-		name: 'Hasham Zafar',
+		name: 'Hashaam Zafar',
 		role: 'DD Finance',
 		image: '/direcimagesnew/hasham.png',
 	},
@@ -112,15 +112,21 @@ const reswing = [
 	},
 	{
 		id: 9,
-		name: 'Aanas Javed',
+		name: 'Anas Javed',
 		role: 'DD Logistics',
 		image: '/direcimagesnew/anas.png',
 	},
 	{
 		id: 10,
-		name: 'Waleed Ahmad',
-		role: 'Director Logistics',
+		name: 'Waleed Mujahid',
+		role: 'DD Logistics',
 		image: '/direcimagesnew/dirl.png',
+	},
+	{
+		id: 11,
+		name: 'Akbar Khanzada',
+		role: 'Director Logistics',
+		image: '/direcimagesnew/hasham.png',
 	},
 ];
 
@@ -139,7 +145,7 @@ const mediawing = [
 	},
 	{
 		id: 3,
-		name: 'Rayan',
+		name: 'Rayan Ur Rehman',
 		role: 'DD Photography',
 		image: '/direcimagesnew/rayan.png',
 	},
@@ -158,7 +164,7 @@ const mediawing = [
 	},
 	{
 		id: 6,
-		name: 'Arsel',
+		name: 'Arsal Sher Khan',
 		role: 'DD Publications',
 		image: '/direcimagesnew/arsel.png',
 	},
@@ -176,7 +182,7 @@ const mediawing = [
 	},
 	{
 		id: 9,
-		name: 'Waleed',
+		name: 'Waleed Saleem',
 		role: 'DD SMM',
 		image: '/direcimagesnew/ddsmmw.png',
 	},
@@ -191,25 +197,25 @@ const mediawing = [
 const coorwing = [
 	{
 		id: 1,
-		name: 'Maheen',
+		name: 'Maheen Siddiqui',
 		role: 'DD SOC',
 		image: '/direcimagesnew/ddsoc1.png',
 	},
 	{
 		id: 2,
-		name: 'Nimrah Ubaid',
+		name: 'Nimrah Abaidullah',
 		role: 'DD SOC',
 		image: '/direcimagesnew/soc2.png',
 	},
 	{
 		id: 3,
-		name: 'Uzimah',
+		name: 'Uzaimah Mushtaq',
 		role: 'DD SOC',
 		image: '/direcimagesnew/soc3.png',
 	},
 	{
 		id: 4,
-		name: 'Subhan',
+		name: 'Subhan Ahmed Malik',
 		role: 'DD Orientation Guide',
 		image: '/direcimagesnew/sub.png',
 	},
@@ -221,7 +227,7 @@ const coorwing = [
 	},
 	{
 		id: 6,
-		name: 'Abdur Rafay Khokar',
+		name: 'Hafiz Abdur Rafay',
 		role: 'Director Orientation Guide',
 		image: '/direcimagesnew/rafay.png',
 	},
@@ -242,14 +248,14 @@ const outwing = [
 	},
 	{
 		id: 3,
-		name: 'Asad',
+		name: 'M. Asad Tariq',
 		role: 'Director Socials',
 		image: '/direcimagesnew/asad.png',
 	},
 	{
 		id: 4,
 		name: 'Maheen Salman',
-		role: 'Director Protocols',
+		role: 'DD Protocols',
 		image: '/direcimagesnew/maheen.png',
 	},
 	{
@@ -272,7 +278,7 @@ const outwing = [
 	},
 	{
 		id: 8,
-		name: 'Ahmad Aayub',
+		name: 'Ahmad Ayub',
 		role: 'DD Sponsorships',
 		image: '/direcimagesnew/ayub.png',
 	},

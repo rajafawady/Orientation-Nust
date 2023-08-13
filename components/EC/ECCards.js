@@ -23,7 +23,7 @@ const VPcards = [
 	},
 	{
 		id: 2,
-		name: 'Naurang Jahan ',
+		name: 'Naurang Jahania',
 		role: 'VP Operations',
 		image: '/EC-Pics/naurang.png',
 		'one-liner': 'Work hard, Party harder!',
