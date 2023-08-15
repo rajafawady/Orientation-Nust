@@ -16,10 +16,10 @@ export default function donations() {
         {/* <Tabs /> */}
         <div className="flex justify-center items-center">
           <div className="mx-12">
-            <h3 className="flex justify-center m-4 p-4 shrink-0 text-4xl ">
+            <h3 className="flex justify-center m-2 p-4 shrink-0 text-4xl ">
               Google
             </h3>
-            <p>
+            <p className="text-justify">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               tempus lacus sed orci condimentum pulvinar. Curabitur metus neque,
               eleifend vitae dui quis, dapibus viverra libero. Donec lacinia ex
@@ -40,7 +40,7 @@ export default function donations() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="rounded mx-12 h-96 w-96 school_link "
+              className="rounded mx-12 h-72 w-72 school_link "
             ></div>
           </div>
         </div>
@@ -53,10 +53,10 @@ export default function donations() {
         </div>
         <div className="flex justify-center items-center">
           <div className="mx-12">
-            <h3 className="flex justify-center m-4 p-4 shrink-0 text-4xl ">
+            <h3 className="flex justify-center m-2 p-4 shrink-0 text-4xl ">
               Google
             </h3>
-            <p>
+            <p className="text-justify">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               tempus lacus sed orci condimentum pulvinar. Curabitur metus neque,
               eleifend vitae dui quis, dapibus viverra libero. Donec lacinia ex
@@ -77,16 +77,27 @@ export default function donations() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="rounded mx-12 h-96 w-96 school_link "
+              className="rounded mx-12 h-72 w-72 school_link "
             ></div>
           </div>
         </div>
         <div className="flex justify-center items-center">
+          <div>
+            <div
+              style={{
+                // backgroundColor: "rgba(114,2,64,0.1)",
+                backgroundImage: `url("/sponsor-logos/google.png")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="rounded mx-12 h-72 w-72 school_link "
+            ></div>
+          </div>
           <div className="mx-12">
-            <h3 className="flex justify-center m-4 p-4 shrink-0 text-4xl ">
+            <h3 className="flex justify-center m-2 p-4 shrink-0 text-4xl ">
               Google
             </h3>
-            <p>
+            <p className="text-justify">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               tempus lacus sed orci condimentum pulvinar. Curabitur metus neque,
               eleifend vitae dui quis, dapibus viverra libero. Donec lacinia ex
@@ -98,17 +109,6 @@ export default function donations() {
               ultricies, sit amet malesuada justo tempor. Aliquam dictum orci
               vitae facilisis varius.",
             </p>
-          </div>
-          <div>
-            <div
-              style={{
-                // backgroundColor: "rgba(114,2,64,0.1)",
-                backgroundImage: `url("/sponsor-logos/google.png")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-              className="rounded mx-12 h-96 w-96 school_link "
-            ></div>
           </div>
         </div>
         <div className="w-full flex items-center justify-center gap-1 md:gap-3 px-3 my-5">
@@ -120,10 +120,10 @@ export default function donations() {
         </div>
         <div className="flex justify-center items-center">
           <div className="mx-12">
-            <h3 className="flex justify-center m-4 p-4 shrink-0 text-4xl ">
+            <h3 className="flex justify-center m-2 p-4 shrink-0 text-4xl ">
               Google
             </h3>
-            <p>
+            <p className="text-justify">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               tempus lacus sed orci condimentum pulvinar. Curabitur metus neque,
               eleifend vitae dui quis, dapibus viverra libero. Donec lacinia ex
@@ -144,16 +144,27 @@ export default function donations() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="rounded mx-12 h-96 w-96 school_link "
+              className="rounded mx-12 h-72 w-72 school_link "
             ></div>
           </div>
         </div>
         <div className="flex justify-center items-center">
+          <div>
+            <div
+              style={{
+                // backgroundColor: "rgba(114,2,64,0.1)",
+                backgroundImage: `url("/sponsor-logos/google.png")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="rounded mx-12 h-72 w-72 school_link "
+            ></div>
+          </div>
           <div className="mx-12">
-            <h3 className="flex justify-center m-4 p-4 shrink-0 text-4xl ">
+            <h3 className="flex justify-center m-2 p-4 shrink-0 text-4xl ">
               Google
             </h3>
-            <p>
+            <p className="text-justify">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               tempus lacus sed orci condimentum pulvinar. Curabitur metus neque,
               eleifend vitae dui quis, dapibus viverra libero. Donec lacinia ex
@@ -165,17 +176,6 @@ export default function donations() {
               ultricies, sit amet malesuada justo tempor. Aliquam dictum orci
               vitae facilisis varius.",
             </p>
-          </div>
-          <div>
-            <div
-              style={{
-                // backgroundColor: "rgba(114,2,64,0.1)",
-                backgroundImage: `url("/sponsor-logos/google.png")`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-              className="rounded mx-12 h-96 w-96 school_link "
-            ></div>
           </div>
         </div>
       </div>
