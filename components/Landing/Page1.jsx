@@ -37,9 +37,14 @@ const Page1 = () => {
 				<div className='flex flex-col gap-8 items-center justify-end h-full'>
 					<Logo />
 					<div className='relative inline-block'>
-						<span className='relative text-white p-1 text-5xl font-bold'>
-							<span className='font-aspectRange tracking-[-0.15em] relative'>O N</span>
-							<span className='font-goodnightLondonScript relative text-5xl'> to the stars</span>
+						<span className='relative text-white p-1 '>
+							<span className='font-aspectRange tracking-[-0.15em] font-semibold text-4xl md:text-3xl xl:text-5xl'>
+								O N
+							</span>
+							<span className='font-goodnightLondonScript font-medium text-6xl md:text-5xl xl:text-7xl relative -bottom-2'>
+								{' '}
+								to the stars
+							</span>
 						</span>
 					</div>
 				</div>
