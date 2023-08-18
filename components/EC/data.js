@@ -105,6 +105,12 @@ const reswing = [
 		image: '/direcimagesnew/zaryab.png',
 	},
 	{
+		id: 71,
+		name: 'Esha Shahid',
+		role: 'DD I&M',
+		image: '/direcimagesnew/Esha Shahid.png',
+	},
+	{
 		id: 8,
 		name: 'Sadia Kashif',
 		role: 'Director I&M',
@@ -164,9 +170,21 @@ const mediawing = [
 	},
 	{
 		id: 6,
+		name: 'Shiza Yasir',
+		role: 'DD Graphics',
+		image: '/direcimagesnew/Shizza DD Graphics.png',
+	},
+	{
+		id: 61,
 		name: 'Ahad Sajjad',
 		role: 'DD Graphics',
 		image: '/direcimagesnew/ddgrap.png',
+	},
+	{
+		id: 62,
+		name: 'Kashan Ahmed',
+		role: 'Director Graphics',
+		image: '/direcimagesnew/kashan d graphics.png',
 	},
 	{
 		id: 7,
