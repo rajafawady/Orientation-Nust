@@ -5,11 +5,11 @@ import React from 'react'
 
 function merchandise() {
     return (
-        <>
-            <Layout title={"Buy Merchandise"}>
+        <div>
+        
                 <Merchandise></Merchandise>
-            </Layout>
-        </>
+        
+        </div>
     )
 }
 

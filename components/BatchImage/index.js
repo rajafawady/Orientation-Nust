@@ -7,23 +7,21 @@ const BatchImage = ({ imgName, dlName, btnText }) => {
   const [hover, setHover] = useState(false);
   console.log("img name for ", btnText, " is ", imgName);
   return (
-    <div className="flex flex-col w-full sm:w-1/2">
+    <div className="flex flex-col  md:w-1/2 w-full ">
       <div className="w-full flex flex-col items-center sm:flex-row  ">
         <div
-          className={`border-4 border-tyrian-purple w-10/12 sm:w-full aspect-[16/9] bg-no-repeat bg-center bg-cover 
-    lg:mx-10 md:mx-6 mx-4 my-4 sm:my-0
+          className={`border-4 border-lapis-lazuli w-full sm:w-full aspect-[16/9] bg-no-repeat bg-center bg-cover 
+    lg:mx-10 md:mx-6  my-4  sm:my-0
     `}
           style={{
             backgroundImage: `url("/batch-pics/compressed/${imgName}.jpg")`,
           }}
         ></div>
       </div>
-      <div className="flex w-full justify-around mb-6 md:mb-12 sm:mt-2 md:mt-4 lg:mt-6">
+      <div className="flex w-full justify-around mb-10 md:mb-16 sm:mt-2 md:mt-4 lg:mt-6">
         <div className="">
           <button
-            className={`bg-tyrian-purple dark:bg-prussian-blue font-montserrat
-                        dark:hover:bg-lapis-lazuli hover:ring-2 dark:hover:ring-prussian-blue transition-colors
-                          lg:text-3xl lg:px-4 py-2 px-2 sm:text-2xl text-white text-xl
+            className={`max-w-xs flex-1 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white bg-gradient-to-r from-dark-purple to-prussian-blue hover:bg-gradient-to-r hover:from-prussian-blue hover:to-dark-purple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full 
                         `}
             onClick={() => {
               FileSaver.saveAs(

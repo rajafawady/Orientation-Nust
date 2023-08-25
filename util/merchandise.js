@@ -19,7 +19,7 @@ const products = {
         { name: 'White', bgColor: 'bg-white', selectedColor: 'ring-gray-400'},
     ],
     description: `
-<p>Orientation 2022 Merch</p>
+<p>Orientation 2023 Merch</p>
 `,
 }
 
