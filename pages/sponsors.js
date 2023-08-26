@@ -6,12 +6,19 @@ export default function donations() {
   return (
     <Layout title={"Sponsors"}>
       <div className="sp-container">
-        <div className="w-full flex items-center justify-center gap-1 md:gap-3 px-3 my-5">
-          <div className="w-1/4 h-[3px] bg-[#464646]"></div>
-          <h1 className="m-14 p-4 shrink-0 plat-heading-text text-4xl">
+        <div className="w-full flex items-center justify-center gap-1 px-3 my-2">
+          <div className="w-1/4 h-[6px] bg-[#3f2073]"></div>
+          <h1 className="m-14 p-4 shrink-0 sp-heading text-6xl">
+            Our Sponsors
+          </h1>
+          <div className="w-1/4 h-[6px] bg-[#3f2073]"></div>
+        </div>
+        <div className="w-full flex items-center justify-center gap-1 px-3 my-2">
+          <div className="w-1/4 h-[3px] bg-[#5123c5]"></div>
+          <h1 className="m-14 p-4 shrink-0 silver-heading-text text-4xl">
             Winterland
           </h1>
-          <div className="w-1/4 h-[3px] bg-[#464646]"></div>
+          <div className="w-1/4 h-[3px] bg-[#5123c5]"></div>
         </div>
         <div className="flex justify-center items-center">
           <div className="mx-12">
@@ -38,7 +45,7 @@ export default function donations() {
             ></div>
           </div>
         </div>
-        <div className="w-full flex items-center justify-center gap-1 md:gap-3 px-3 my-5">
+        <div className="w-full flex items-center justify-center gap-1 px-3 my-2">
           <div className="w-1/4 h-[3px] bg-[#ffae00]"></div>
           <h1 className="m-14 p-4 shrink-0 gold-heading-text text-4xl">
             Vouch365
@@ -68,12 +75,12 @@ export default function donations() {
             </p>
           </div>
         </div>
-        <div className="w-full flex items-center justify-center gap-1 md:gap-3 px-3 my-5">
-          <div className="w-1/4 h-[3px] bg-[#5123c5]"></div>
-          <h1 className="m-14 p-4 shrink-0 silver-heading-text text-4xl">
+        <div className="w-full flex items-center justify-center gap-1 px-3 my-2">
+          <div className="w-1/4 h-[3px] bg-[#464646]"></div>
+          <h1 className="m-14 p-4 shrink-0 plat-heading-text text-4xl">
             Clicky
           </h1>
-          <div className="w-1/4 h-[3px] bg-[#5123c5]"></div>
+          <div className="w-1/4 h-[3px] bg-[#464646]"></div>
         </div>
         <div className="flex justify-center items-center">
           <div className="mx-12">

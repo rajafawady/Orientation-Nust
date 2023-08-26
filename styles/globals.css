@@ -784,7 +784,6 @@ li {
 }
 
 .plat-heading-text {
-  font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Lato-Bold" sans-serif;
@@ -794,7 +793,6 @@ li {
   background-image: linear-gradient(#464646, #929292);
 }
 .gold-heading-text {
-  font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Lato-Bold" sans-serif;
@@ -805,7 +803,6 @@ li {
 }
 
 .silver-heading-text {
-  font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Lato-Bold" sans-serif;
@@ -813,4 +810,14 @@ li {
   -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(#5123c5, #00ccff);
+}
+
+.sp-heading {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Lato-Bold" sans-serif;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(#3f2073, #a836aa);
 }
