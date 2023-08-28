@@ -83,18 +83,13 @@ export default function Merchandise() {
             animate={{ x: "0%" }}
             initial={{ x: "-100vw" }}
           >
-            <h1 className="text-3xl font-extrabold font-poppins tracking-tight text-black dark:text-white">
-              {products.name}
+            <h1 className="text-3xl font-extrabold font-poppins tracking-tight text-black">
+            Unleash Fresh Vibes: <br></br>Grab Your Epic Merch Tee!
             </h1>
 
-            <div className="mt-3">
-              <h2 className="sr-only">Product information</h2>
-              <p className="text-3xl text-black dark:text-white">
-                {products.price}
-              </p>
-            </div>
+          
 
-            <div className="mt-6">
+            <div className="mt-3">
               <h3 className="sr-only">Description</h3>
               <div
                 className="text-base text-black dark:text-white space-y-6 text-justify"
@@ -102,14 +97,27 @@ export default function Merchandise() {
               />
             </div>
 
+            <div className="mt-5">
+            <h2 className="sr-only">Product information</h2>
+            <p className="text-3xl text-black dark:text-white">
+              {products.price}
+            </p>
+          </div>
+
             <div className="mt-6">
               <div className="mt-10 flex sm:flex-col">
               <button
               type="submit"
-              className="max-w-xs flex-1 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white bg-gradient-to-r from-dark-purple to-prussian-blue hover:bg-gradient-to-r hover:from-prussian-blue hover:to-dark-purple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full md:mb-0 mb-10"
+              className="max-w-xs flex-1 rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white bg-gradient-to-r from-dark-purple to-prussian-blue hover:sm:w-full md:mb-0 mb-10 transition-all duration-200 transform focus:outline-none glow-on-hover"
             >
               Buy Now!!!
             </button>
+            
+            
+            
+            
+            
+            
 
               </div>
             </div>
