@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const EventPlan = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
   const text = [
     "Text for day 1",
     "Text for day 2",
@@ -22,31 +22,43 @@ const EventPlan = () => {
             onClick={() => setActiveIndex(0)}
             className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
           >
-            Day One
+            Day Zero
           </button>
           <button
             onClick={() => setActiveIndex(1)}
             className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
           >
-            Day Two
+            Day One
           </button>
           <button
             onClick={() => setActiveIndex(2)}
             className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
           >
-            Day Three
+            Day Two
           </button>
           <button
             onClick={() => setActiveIndex(3)}
             className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
           >
-            Day Four
+            Day Three
           </button>
           <button
             onClick={() => setActiveIndex(4)}
             className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
           >
+            Day Four
+          </button>
+          <button
+            onClick={() => setActiveIndex(5)}
+            className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+          >
             Day Five
+          </button>
+          <button
+            onClick={() => setActiveIndex(6)}
+            className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+          >
+            Day Six
           </button>
         </div>
         <div className="flex-grow flex justify-center">
@@ -60,6 +72,31 @@ const EventPlan = () => {
 const IndexReturner = ({ activeIndex }) => {
   switch (activeIndex) {
     case 0:
+      return (
+        <table class="border-collapse border border-gray-300">
+          <thead>
+            <tr>
+              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Event</th>
+              <th class="border border-gray-300 px-4 py-2">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
+                0900 - 1700 hrs
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Reporting of Hostelites
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Gates 1, 2, 10 and respective hostels
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      );
+    case 1:
       return (
         <table class="border-collapse border border-gray-300">
           <thead>
@@ -147,8 +184,473 @@ const IndexReturner = ({ activeIndex }) => {
           </tbody>
         </table>
       );
-    case 1:
-      return <div>2TEST</div>;
+    case 2:
+      return (
+        <table class="border-collapse border border-gray-300">
+          <thead>
+            <tr>
+              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Event</th>
+              <th class="border border-gray-300 px-4 py-2">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">0900-1300 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Arrival of Freshmen
+              </td>
+              <td class="border border-gray-300 px-4 py-2" rowSpan={3}>
+                Respective Schools
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">0930-1300 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Orientation School / Documentation / Ice Breaking Activities
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1300-1400 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Lunch / Prayers break
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1400-1700 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Life at NUST (including inspiring NUST Alumni testimonial){" "}
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium / NET Exam Hall
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1730-2130 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Sports Opening Ceremony & Exhibition Matches
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                NBS Sports Ground
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      );
+    case 3:
+      return (
+        <table class="border-collapse border border-gray-300">
+          <thead>
+            <tr>
+              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Event</th>
+              <th class="border border-gray-300 px-4 py-2">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">0900-1300 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Arrival of Freshmen
+              </td>
+              <td class="border border-gray-300 px-4 py-2" rowSpan={3}>
+                Respective Schools
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">0930-1300 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Inter School Visits & Dte / Facilities
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1300-1400 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Lunch / Prayers break
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1400-1600 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                CSR Activities (NCSC will bring orphanage children to NUST for
+                sports activities with freshmen + campus tour)
+              </td>
+              <td class="border border-gray-300 px-4 py-2">Old Gymnasium</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1600-1630 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Break </td>
+              <td class="border border-gray-300 px-4 py-2">Open </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1630-2130 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Sports Activities with indoor and outdoor games and NFC
+                activities Cricket Match Screening
+              </td>
+              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
+                NBS Ground/ Old Gymnasium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">2130-2145 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Jamming Session</td>
+            </tr>
+          </tbody>
+        </table>
+      );
+    case 4:
+      return (
+        <table class="border-collapse border border-gray-300">
+          <thead>
+            <tr>
+              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Event</th>
+              <th class="border border-gray-300 px-4 py-2">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
+                0900-1300 hrs
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Reception at Schools
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Respective Schools (Less SEECS)
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">
+                SEECS Reception and Orientation
+              </td>
+              <td class="border border-gray-300 px-4 py-2">NET Exam Hall</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1000-1130 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Briefing & Q/A session with Parents
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1130-1300 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Principal S3H address to students + Q/A session
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1300-1400 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Lunch / Prayers break
+              </td>
+              <td class="border border-gray-300 px-4 py-2">Open</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1400-1500 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Principal NBS address to students + Q/A session
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1500-1600 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                OG Activities + Icebreaking Activities
+              </td>
+              <td class="border border-gray-300 px-4 py-2">NBS Ground</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1600-1700 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Gathering Freshmen for Batch Photo
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Convocation Ground
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1700-2030 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Batch Photo</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Convocation Ground
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      );
+    case 5:
+      return (
+        <table class="border-collapse border border-gray-300">
+          <thead>
+            <tr>
+              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Event</th>
+              <th class="border border-gray-300 px-4 py-2">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
+                0900-1300 hrs
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Reception at Schools
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Respective Schools (Less SEECS)
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">
+                SEECS Reception and Orientation
+              </td>
+              <td class="border border-gray-300 px-4 py-2">NET Exam Hall</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1000-1130 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Briefing & Q/A session with Parents
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1130-1300 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Principal S3H address to students + Q/A session
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1300-1400 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Lunch / Prayers break
+              </td>
+              <td class="border border-gray-300 px-4 py-2">Open</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1400-1500 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Principal NBS address to students + Q/A session
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1500-1600 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                OG Activities + Icebreaking Activities
+              </td>
+              <td class="border border-gray-300 px-4 py-2">NBS Ground</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1600-1700 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Gathering Freshmen for Batch Photo
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Convocation Ground
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1700-2030 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Batch Photo</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Convocation Ground
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      );
+    case 6:
+      return (
+        <table class="border-collapse border border-gray-300">
+          <thead>
+            <tr>
+              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Event</th>
+              <th class="border border-gray-300 px-4 py-2">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
+                0900-1300 hrs
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Reception at Schools
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Respective Schools (Less SEECS)
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">
+                SEECS Reception and Orientation
+              </td>
+              <td class="border border-gray-300 px-4 py-2">NET Exam Hall</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1000-1130 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Briefing & Q/A session with Parents
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1130-1300 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Principal S3H address to students + Q/A session
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1300-1400 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Lunch / Prayers break
+              </td>
+              <td class="border border-gray-300 px-4 py-2">Open</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1400-1500 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Principal NBS address to students + Q/A session
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1500-1600 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                OG Activities + Icebreaking Activities
+              </td>
+              <td class="border border-gray-300 px-4 py-2">NBS Ground</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1600-1700 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Gathering Freshmen for Batch Photo
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Convocation Ground
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1700-2030 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Batch Photo</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Convocation Ground
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      );
+
+      return (
+        <table class="border-collapse border border-gray-300">
+          <thead>
+            <tr>
+              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Event</th>
+              <th class="border border-gray-300 px-4 py-2">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
+                0900-1300 hrs
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Reception at Schools
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Respective Schools (Less SEECS)
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">
+                SEECS Reception and Orientation
+              </td>
+              <td class="border border-gray-300 px-4 py-2">NET Exam Hall</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1000-1130 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Briefing & Q/A session with Parents
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1130-1300 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Principal S3H address to students + Q/A session
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1300-1400 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Lunch / Prayers break
+              </td>
+              <td class="border border-gray-300 px-4 py-2">Open</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1400-1500 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Principal NBS address to students + Q/A session
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Jinnah Auditorium
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1500-1600 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                OG Activities + Icebreaking Activities
+              </td>
+              <td class="border border-gray-300 px-4 py-2">NBS Ground</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1600-1700 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Gathering Freshmen for Batch Photo
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                Convocation Ground
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1700-2030 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Batch Photo</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Convocation Ground
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      );
     default:
       return null;
   }
