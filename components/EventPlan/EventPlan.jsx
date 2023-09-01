@@ -58,7 +58,7 @@ const EventPlan = () => {
             onClick={() => setActiveIndex(6)}
             className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
           >
-            Day Six
+            Day Seven
           </button>
         </div>
         <div className="flex-grow flex justify-center">
@@ -76,7 +76,7 @@ const IndexReturner = ({ activeIndex }) => {
         <table class="border-collapse border border-gray-300">
           <thead>
             <tr>
-              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Time (2023-9-3)</th>
               <th class="border border-gray-300 px-4 py-2">Event</th>
               <th class="border border-gray-300 px-4 py-2">Location</th>
             </tr>
@@ -101,7 +101,7 @@ const IndexReturner = ({ activeIndex }) => {
         <table class="border-collapse border border-gray-300">
           <thead>
             <tr>
-              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Time (2023-9-4)</th>
               <th class="border border-gray-300 px-4 py-2">Event</th>
               <th class="border border-gray-300 px-4 py-2">Location</th>
             </tr>
@@ -129,7 +129,7 @@ const IndexReturner = ({ activeIndex }) => {
               <td class="border border-gray-300 px-4 py-2">
                 Briefing & Q/A session with Parents
               </td>
-              <td class="border border-gray-300 px-4 py-2">
+              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
                 Jinnah Auditorium
               </td>
             </tr>
@@ -137,9 +137,6 @@ const IndexReturner = ({ activeIndex }) => {
               <td class="border border-gray-300 px-4 py-2">1130-1300 hrs</td>
               <td class="border border-gray-300 px-4 py-2">
                 Principal S3H address to students + Q/A session
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
               </td>
             </tr>
             <tr>
@@ -170,16 +167,13 @@ const IndexReturner = ({ activeIndex }) => {
               <td class="border border-gray-300 px-4 py-2">
                 Gathering Freshmen for Batch Photo
               </td>
-              <td class="border border-gray-300 px-4 py-2">
+              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
                 Convocation Ground
               </td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2">1700-2030 hrs</td>
               <td class="border border-gray-300 px-4 py-2">Batch Photo</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Convocation Ground
-              </td>
             </tr>
           </tbody>
         </table>
@@ -189,7 +183,7 @@ const IndexReturner = ({ activeIndex }) => {
         <table class="border-collapse border border-gray-300">
           <thead>
             <tr>
-              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Time (2023-9-5)</th>
               <th class="border border-gray-300 px-4 py-2">Event</th>
               <th class="border border-gray-300 px-4 py-2">Location</th>
             </tr>
@@ -242,7 +236,7 @@ const IndexReturner = ({ activeIndex }) => {
         <table class="border-collapse border border-gray-300">
           <thead>
             <tr>
-              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Time (2023-9-6)</th>
               <th class="border border-gray-300 px-4 py-2">Event</th>
               <th class="border border-gray-300 px-4 py-2">Location</th>
             </tr>
@@ -304,183 +298,119 @@ const IndexReturner = ({ activeIndex }) => {
         <table class="border-collapse border border-gray-300">
           <thead>
             <tr>
-              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Time (2023-9-7)</th>
               <th class="border border-gray-300 px-4 py-2">Event</th>
               <th class="border border-gray-300 px-4 py-2">Location</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
-                0900-1300 hrs
+              <td class="border border-gray-300 px-4 py-2">0900 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Arrival of Freshmen
               </td>
               <td class="border border-gray-300 px-4 py-2">
-                Reception at Schools
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Respective Schools (Less SEECS)
+                Starting Point Schools/Hostels
               </td>
             </tr>
             <tr>
+              <td class="border border-gray-300 px-4 py-2">0930-1300 hrs</td>
+
               <td class="border border-gray-300 px-4 py-2">
-                SEECS Reception and Orientation
+                Inter School Visits & Dte / Facilities
               </td>
-              <td class="border border-gray-300 px-4 py-2">NET Exam Hall</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1000-1130 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Briefing & Q/A session with Parents
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1130-1300 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Principal S3H address to students + Q/A session
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
-              </td>
+              <td class="border border-gray-300 px-4 py-2">All Schools</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2">1300-1400 hrs</td>
               <td class="border border-gray-300 px-4 py-2">
-                Lunch / Prayers break
+                Lunch / Prayer break
               </td>
-              <td class="border border-gray-300 px-4 py-2">Open</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1400-1500 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Principal NBS address to students + Q/A session
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
+              <td class="border border-gray-300 px-4 py-2" rowSpan={3}>
+                Open
               </td>
             </tr>
             <tr>
-              <td class="border border-gray-300 px-4 py-2">1500-1600 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">1400-1700 hrs</td>
               <td class="border border-gray-300 px-4 py-2">
-                OG Activities + Icebreaking Activities
-              </td>
-              <td class="border border-gray-300 px-4 py-2">NBS Ground</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1600-1700 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Gathering Freshmen for Batch Photo
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Convocation Ground
+                Activities by Clubs and Societies
               </td>
             </tr>
             <tr>
-              <td class="border border-gray-300 px-4 py-2">1700-2030 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">Batch Photo</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Convocation Ground
-              </td>
+              <td class="border border-gray-300 px-4 py-2">1700-1800 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Break </td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">1800-2145 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Social Event</td>
+              <td class="border border-gray-300 px-4 py-2">SCME Ground</td>
             </tr>
           </tbody>
         </table>
       );
+
     case 5:
       return (
         <table class="border-collapse border border-gray-300">
           <thead>
             <tr>
-              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Time (2023-9-8)</th>
               <th class="border border-gray-300 px-4 py-2">Event</th>
               <th class="border border-gray-300 px-4 py-2">Location</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
-                0900-1300 hrs
+              <td class="border border-gray-300 px-4 py-2">0900 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">
+                Arrival of Freshmen
               </td>
               <td class="border border-gray-300 px-4 py-2">
-                Reception at Schools
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Respective Schools (Less SEECS)
+                Starting Point Schools/Hostels
               </td>
             </tr>
             <tr>
+              <td class="border border-gray-300 px-4 py-2">0930-1230 hrs</td>
+
               <td class="border border-gray-300 px-4 py-2">
-                SEECS Reception and Orientation
+                Inter School Visits & Dte / Facilities
               </td>
-              <td class="border border-gray-300 px-4 py-2">NET Exam Hall</td>
+              <td class="border border-gray-300 px-4 py-2">All Schools</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 px-4 py-2">1000-1130 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">1230-1430 hrs</td>
               <td class="border border-gray-300 px-4 py-2">
-                Briefing & Q/A session with Parents
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1130-1300 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Principal S3H address to students + Q/A session
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1300-1400 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Lunch / Prayers break
+                Lunch / Prayer break
               </td>
               <td class="border border-gray-300 px-4 py-2">Open</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 px-4 py-2">1400-1500 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">1430-1630 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Closing Ceremony</td>
               <td class="border border-gray-300 px-4 py-2">
-                Principal NBS address to students + Q/A session
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
+                Jinnah Auditorium / NET Exam Hall
               </td>
             </tr>
             <tr>
-              <td class="border border-gray-300 px-4 py-2">1500-1600 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                OG Activities + Icebreaking Activities
-              </td>
-              <td class="border border-gray-300 px-4 py-2">NBS Ground</td>
+              <td class="border border-gray-300 px-4 py-2">1700-1830 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Break </td>
+              <td class="border border-gray-300 px-4 py-2">Open</td>
             </tr>
             <tr>
-              <td class="border border-gray-300 px-4 py-2">1600-1700 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Gathering Freshmen for Batch Photo
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Convocation Ground
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1700-2030 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">Batch Photo</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Convocation Ground
-              </td>
+              <td class="border border-gray-300 px-4 py-2">1830-2230 hrs</td>
+              <td class="border border-gray-300 px-4 py-2">Social Event</td>
+              <td class="border border-gray-300 px-4 py-2">SCME Ground</td>
             </tr>
           </tbody>
         </table>
       );
+
     case 6:
       return (
         <table class="border-collapse border border-gray-300">
           <thead>
             <tr>
-              <th class="border border-gray-300 px-4 py-2">Time</th>
+              <th class="border border-gray-300 px-4 py-2">Time (2023-9-10)</th>
               <th class="border border-gray-300 px-4 py-2">Event</th>
               <th class="border border-gray-300 px-4 py-2">Location</th>
             </tr>
@@ -488,77 +418,12 @@ const IndexReturner = ({ activeIndex }) => {
           <tbody>
             <tr>
               <td class="border border-gray-300 px-4 py-2" rowSpan={2}>
-                0900-1300 hrs
+                1600 - 2245 hrs
               </td>
               <td class="border border-gray-300 px-4 py-2">
-                Reception at Schools
+                Match Screening Pak vs India ODI
               </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Respective Schools (Less SEECS)
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">
-                SEECS Reception and Orientation
-              </td>
-              <td class="border border-gray-300 px-4 py-2">NET Exam Hall</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1000-1130 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Briefing & Q/A session with Parents
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1130-1300 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Principal S3H address to students + Q/A session
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1300-1400 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Lunch / Prayers break
-              </td>
-              <td class="border border-gray-300 px-4 py-2">Open</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1400-1500 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Principal NBS address to students + Q/A session
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Jinnah Auditorium
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1500-1600 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                OG Activities + Icebreaking Activities
-              </td>
-              <td class="border border-gray-300 px-4 py-2">NBS Ground</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1600-1700 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Gathering Freshmen for Batch Photo
-              </td>
-              <td class="border border-gray-300 px-4 py-2">
-                Convocation Ground
-              </td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2">1700-2030 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">Batch Photo</td>
-              <td class="border border-gray-300 px-4 py-2">
-                Convocation Ground
-              </td>
+              <td class="border border-gray-300 px-4 py-2">SCME Ground</td>
             </tr>
           </tbody>
         </table>
