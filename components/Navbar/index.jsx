@@ -45,7 +45,7 @@ const sections = [
 	{
 		heading: 'Resources',
 		items: [
-			{ id: 3, name: 'Downloads', link: '/downloads', disabled: true },
+			{ id: 3, name: 'Downloads', link: '/downloads'},
 			{
 				id: 4,
 				name: 'Mechandise',

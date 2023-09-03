@@ -12,13 +12,13 @@ export default function Merchandise() {
   const [imageIndex, setImageIndex] = useState(0);
 
   return (
-    <div className="bg-white dark:bg-black md:px-60 pt-10 sm:pt-0">
+    <div className="bg-white dark:bg-black md:px-60 pt-0 sm:pt-0">
     <div className='w-full flex items-center justify-center gap-1 md:gap-3 px-3  mt-10 mb-8'>
 				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
 				<h1 className='my-3 p-4 shrink-0 heading text-4xl'>Buy Our Merchandise</h1>
 				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
 			</div>
-      <div className="max-w-2xl -mt-20 mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="max-w-2xl -mt-20 -mb-20 mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start">
           <Tab.Group as="div" className="flex flex-col-reverse">
             <motion.div
