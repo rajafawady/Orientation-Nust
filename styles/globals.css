@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   /* ------------------------------- */
   @font-face {
     font-family: "Lato-Bold";
@@ -49,7 +48,6 @@ body {
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
 }
 
 a {
@@ -185,8 +183,9 @@ li {
   background: white;
   top: 0;
   left: 0;
-  offset-path: path("M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
-    );
+  offset-path: path(
+    "M 239 17 C 142 17 48.5 103 48.5 213.5 C 48.5 324 126 408 244 408 C 362 408 412 319 412 213.5 C 412 108 334 68.5 244 68.5 C 154 68.5 102.68 135.079 99 213.5 C 95.32 291.921 157 350 231 345.5 C 305 341 357.5 290 357.5 219.5 C 357.5 149 314 121 244 121 C 174 121 151.5 167 151.5 213.5 C 151.5 260 176 286.5 224.5 286.5 C 273 286.5 296.5 253 296.5 218.5 C 296.5 184 270 177 244 177 C 218 177 197 198 197 218.5 C 197 239 206 250.5 225.5 250.5 C 245 250.5 253 242 253 218.5"
+  );
 }
 
 .text-stroke {
@@ -273,9 +272,11 @@ li {
 @media screen and (max-width: 600px) {
   .main-content {
     height: 100vh;
-    background: linear-gradient(to top,
+    background: linear-gradient(
+        to top,
         rgba(114, 2, 64, 0.6),
-        rgba(0, 0, 0, 0.8)),
+        rgba(0, 0, 0, 0.8)
+      ),
       url("/background-main.webp") no-repeat top center;
     background-size: cover;
   }
@@ -378,7 +379,6 @@ li {
   color: white;
 }
 
-
 .blur {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
@@ -444,7 +444,6 @@ li {
 }
 
 @media screen and (max-width: 600px) {
-
   .schools-grid-1,
   .schools-grid-2 {
     grid-template-columns: 1fr;
@@ -506,9 +505,11 @@ li {
 @media screen and (max-width: 600px) {
   .main-content {
     height: 100vh;
-    background: linear-gradient(to top,
+    background: linear-gradient(
+        to top,
         rgba(114, 2, 64, 0.6),
-        rgba(0, 0, 0, 0.8)),
+        rgba(0, 0, 0, 0.8)
+      ),
       url("/background-main.webp") no-repeat top center;
     background-size: cover;
   }
@@ -607,7 +608,7 @@ li {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(#3F2073, #3676AA)
+  background-image: linear-gradient(#3f2073, #3676aa);
 }
 
 @media screen and (max-width: 600px) {
@@ -615,9 +616,6 @@ li {
     font-size: 2rem;
   }
 }
-
-
-
 
 .school__h2 {
   font-weight: 800;
@@ -627,23 +625,23 @@ li {
 }
 
 .video-animation {
-    background-size: cover;
-    backdrop-filter: blur(100px);
-    animation: scaleUp 0.5s ease-in-out 6.5s forwards;
-  }
+  background-size: cover;
+  backdrop-filter: blur(100px);
+  animation: scaleUp 0.5s ease-in-out 6.5s forwards;
+}
 
-  @keyframes scaleUp {
-    0% {
-      backdrop-filter:blur(100px);
-      opacity: 1;
-      transform: scale(1);
-    }
-    100% {
-        backdrop-filter:blur(0px);
-      transform: scale(10);
-      opacity: 0;
-    }
+@keyframes scaleUp {
+  0% {
+    backdrop-filter: blur(100px);
+    opacity: 1;
+    transform: scale(1);
   }
+  100% {
+    backdrop-filter: blur(0px);
+    transform: scale(10);
+    opacity: 0;
+  }
+}
 
 /* Star animations */
 
@@ -766,4 +764,60 @@ li {
   100% {
     transform: translateY(0px);
   }
+}
+
+/* SPONSORS PAGE CSS */
+
+.sp-container * {
+  box-sizing: border-box;
+}
+
+.sp-container {
+  /* border: 1px solid green; */
+  display: block;
+  width: 100%;
+  margin: 4rem 6rem;
+}
+
+.tab-content-container {
+  display: flex;
+}
+
+.plat-heading-text {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Lato-Bold" sans-serif;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(#464646, #929292);
+}
+.gold-heading-text {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Lato-Bold" sans-serif;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(#c59223, #ffae00);
+}
+
+.silver-heading-text {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Lato-Bold" sans-serif;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(#5123c5, #00ccff);
+}
+
+.sp-heading {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Lato-Bold" sans-serif;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(#3f2073, #a836aa);
 }
