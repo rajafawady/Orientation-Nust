@@ -16,53 +16,55 @@ const EventPlan = () => {
         <h1 className="my-3 p-4 shrink-0 heading">Event Plan</h1>
         <div className="w-1/4 h-[3px] bg-[#3F2073]"></div>
       </div>
-      <div className="rounded-xl p-3  w-11/12 shadow-2xl gap-3 flex flex-grow flex-col items-center justify-center">
-        <div className="flex items-center flex-grow">
-          <button
-            onClick={() => setActiveIndex(0)}
-            className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
-          >
-            Day Zero
-          </button>
-          <button
-            onClick={() => setActiveIndex(1)}
-            className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
-          >
-            Day One
-          </button>
-          <button
-            onClick={() => setActiveIndex(2)}
-            className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
-          >
-            Day Two
-          </button>
-          <button
-            onClick={() => setActiveIndex(3)}
-            className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
-          >
-            Day Three
-          </button>
-          <button
-            onClick={() => setActiveIndex(4)}
-            className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
-          >
-            Day Four
-          </button>
-          <button
-            onClick={() => setActiveIndex(5)}
-            className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
-          >
-            Day Five
-          </button>
-          <button
-            onClick={() => setActiveIndex(6)}
-            className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
-          >
-            Day Seven
-          </button>
-        </div>
-        <div className="flex-grow flex justify-center">
-          <IndexReturner activeIndex={activeIndex}></IndexReturner>
+      <div className="flex justify-center w-11/12 min-h-[600px]">
+        <div className="rounded-xl p-3  w-11/12 shadow-2xl gap-3 flex flex-col items-center">
+          <div className="flex">
+            <button
+              onClick={() => setActiveIndex(0)}
+              className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+            >
+              Day Zero
+            </button>
+            <button
+              onClick={() => setActiveIndex(1)}
+              className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+            >
+              Day One
+            </button>
+            <button
+              onClick={() => setActiveIndex(2)}
+              className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+            >
+              Day Two
+            </button>
+            <button
+              onClick={() => setActiveIndex(3)}
+              className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+            >
+              Day Three
+            </button>
+            <button
+              onClick={() => setActiveIndex(4)}
+              className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+            >
+              Day Four
+            </button>
+            <button
+              onClick={() => setActiveIndex(5)}
+              className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+            >
+              Day Five
+            </button>
+            <button
+              onClick={() => setActiveIndex(6)}
+              className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+            >
+              Day Seven
+            </button>
+          </div>
+          <div className="flex justify-center">
+            <IndexReturner activeIndex={activeIndex}></IndexReturner>
+          </div>
         </div>
       </div>
     </div>
@@ -265,7 +267,7 @@ const IndexReturner = ({ activeIndex }) => {
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2">1400-1600 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
+              <td class="border border-gray-300 px-4 py-2 prose prose-wrap">
                 CSR Activities (NCSC will bring orphanage children to NUST for
                 sports activities with freshmen + campus tour)
               </td>
@@ -278,7 +280,7 @@ const IndexReturner = ({ activeIndex }) => {
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2">1630-2130 hrs</td>
-              <td class="border border-gray-300 px-4 py-2">
+              <td class="border border-gray-300 px-4 py-2 prose prose-wrap">
                 Sports Activities with indoor and outdoor games and NFC
                 activities Cricket Match Screening
               </td>
