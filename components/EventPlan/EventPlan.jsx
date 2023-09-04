@@ -2,13 +2,6 @@ import React, { useState } from "react";
 
 const EventPlan = () => {
   const [activeIndex, setActiveIndex] = useState(1);
-  const text = [
-    "Text for day 1",
-    "Text for day 2",
-    "Text for day 3",
-    "Text for day 4",
-    "Text for day 5",
-  ];
   return (
     <div className="flex flex-col items-center">
       <div className="w-full flex items-center justify-center gap-1 md:gap-3 px-3 mt-10">
@@ -16,9 +9,9 @@ const EventPlan = () => {
         <h1 className="my-3 p-4 shrink-0 heading">Event Plan</h1>
         <div className="w-1/4 h-[3px] bg-[#3F2073]"></div>
       </div>
-      <div className="flex justify-center w-11/12 min-h-[600px]">
-        <div className="rounded-xl p-3  w-11/12 shadow-2xl gap-3 flex flex-col items-center">
-          <div className="flex">
+      <div className="flex justify-center md:w-11/12 min-h-[500px]">
+        <div className="rounded-xl p-3  md:w-11/12 shadow-2xl gap-3 flex flex-col items-center">
+          <div className="flex flex-col md:flex-row">
             <button
               onClick={() => setActiveIndex(0)}
               className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
