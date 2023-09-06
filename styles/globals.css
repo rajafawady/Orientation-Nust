@@ -785,9 +785,7 @@ li {
 
 .sp-container {
   /* border: 1px solid green; */
-  display: block;
   width: 100%;
-  margin: 4rem 6rem;
 }
 
 .tab-content-container {

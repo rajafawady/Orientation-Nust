@@ -5,23 +5,23 @@ import Tabs from "../components/Tabs/Tabs";
 export default function donations() {
   return (
     <Layout title={"Sponsors"}>
-      <div className="sp-container">
-        <div className="w-full flex items-center justify-center gap-1 px-3 my-2">
+      <div className="w-full flex flex-col">
+        <div className="w-full flex items-center justify-center gap-1 px-3 flex-col lg:flex-row mt-5">
           <div className="w-1/4 h-[6px] bg-[#3f2073]"></div>
-          <h1 className="m-14 p-4 shrink-0 sp-heading text-6xl">
+          <h1 className="m-5 lg:mx-14 p-1 lg:p-4 shrink-0  sp-heading text-6xl">
             Our Sponsors
           </h1>
           <div className="w-1/4 h-[6px] bg-[#3f2073]"></div>
         </div>
-        <div className="w-full flex items-center justify-center gap-1 px-3 my-2">
+        <div className="w-full flex items-center justify-center gap-1 px-3 my-2 flex-col lg:flex-row">
           <div className="w-1/4 h-[3px] bg-[#5123c5]"></div>
-          <h1 className="m-14 p-4 shrink-0 silver-heading-text text-4xl">
+          <h1 className="m-5 lg:m-14 p-1 lg:p-4 shrink-0  silver-heading-text text-4xl">
             Winterland
           </h1>
           <div className="w-1/4 h-[3px] bg-[#5123c5]"></div>
         </div>
-        <div className="flex justify-center items-center">
-          <div className="mx-12">
+        <div className="flex justify-center items-center flex-col lg:flex-row">
+          <div className="mx-2 lg:mx-12">
             <p className="text-justify">
               Winterland is Pakistan’s pioneering snow park, offering an
               immersive & enchanting experience of winter for its visitors. The
@@ -41,18 +41,18 @@ export default function donations() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="rounded mx-12 h-72 w-72 school_link "
+              className="rounded mx-2 lg:mx-12 h-72 w-72 school_link "
             ></div>
           </div>
         </div>
-        <div className="w-full flex items-center justify-center gap-1 px-3 my-2">
+        <div className="w-full flex items-center justify-center gap-1 px-3 my-2 flex-col lg:flex-row">
           <div className="w-1/4 h-[3px] bg-[#ffae00]"></div>
-          <h1 className="m-14 p-4 shrink-0 gold-heading-text text-4xl">
+          <h1 className="m-5 lg:m-14 p-1 lg:p-4 shrink-0  gold-heading-text text-4xl">
             Vouch365
           </h1>
           <div className="w-1/4 h-[3px] bg-[#ffae00]"></div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center flex-col lg:flex-row">
           <div>
             <div
               style={{
@@ -61,10 +61,10 @@ export default function donations() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="rounded mx-12 h-72 w-72 school_link "
+              className="rounded mx-2 lg:mx-12 h-72 w-72 school_link "
             ></div>
           </div>
-          <div className="mx-12">
+          <div className="mx-2 lg:mx-12">
             <p className="text-justify">
               Vouch365 is an application that have access to 14 cities including
               major cities like (karachi, lahore, islamabad) They are proving
@@ -75,15 +75,15 @@ export default function donations() {
             </p>
           </div>
         </div>
-        <div className="w-full flex items-center justify-center gap-1 px-3 my-2">
+        <div className="w-full flex items-center justify-center gap-1 px-3 my-2 flex-col lg:flex-row">
           <div className="w-1/4 h-[3px] bg-[#464646]"></div>
-          <h1 className="m-14 p-4 shrink-0 plat-heading-text text-4xl">
+          <h1 className="m-5 lg:m-14 p-1 lg:p-4 shrink-0  plat-heading-text text-4xl">
             Clicky
           </h1>
           <div className="w-1/4 h-[3px] bg-[#464646]"></div>
         </div>
-        <div className="flex justify-center items-center">
-          <div className="mx-12">
+        <div className="flex justify-center items-center flex-col lg:flex-row">
+          <div className="mx-2 lg:mx-12">
             <p className="text-justify">
               Clicky.pk stands as a distinguished online fashion platform in
               Pakistan, exclusively catering to the style needs of women, men,
@@ -104,18 +104,10 @@ export default function donations() {
               <br />
               {"\u00A0"}
               {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
               {"\u00A0"}• A vibrant and extensive assortment of fashion
               products.
               <br />
               <br />
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
               {"\u00A0"}
               {"\u00A0"}
               {"\u00A0"}• Swift and reliable delivery services to customers'
@@ -124,18 +116,10 @@ export default function donations() {
               <br />
               {"\u00A0"}
               {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
               {"\u00A0"}• Placing utmost priority on addressing and resolving
               client concerns.
               <br />
               <br />
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
               {"\u00A0"}
               {"\u00A0"}
               {"\u00A0"}• Providing clear and comprehensive product
@@ -144,18 +128,10 @@ export default function donations() {
               <br />
               {"\u00A0"}
               {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
               {"\u00A0"}• Offering a user-friendly browsing experience, ensuring
               ease of navigation.
               <br />
               <br />
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
-              {"\u00A0"}
               {"\u00A0"}
               {"\u00A0"}
               {"\u00A0"}• Guiding and assisting customers throughout the
@@ -175,7 +151,7 @@ export default function donations() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="rounded mx-12 h-72 w-72 school_link "
+              className="rounded mx-2 lg:mx-12 h-72 w-72 school_link "
             ></div>
           </div>
         </div>
