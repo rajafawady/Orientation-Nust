@@ -26,7 +26,7 @@ export const TimerContainer = () => {
 
 			if (difference <= 0) {
 				clearInterval(updateTime);
-				setMessage('The Launch Has Started');
+				// setMessage('The Launch Has Started');
 				setDays(0);
 				setHours(0);
 				setMinutes(0);
