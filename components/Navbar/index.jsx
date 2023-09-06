@@ -9,56 +9,46 @@ import MobileLinks from "./MobileLinks";
 import { twMerge } from "tailwind-merge";
 
 const sections = [
-  {
-    heading: "Home",
-    link: "/",
-  },
-  {
-    heading: "About Us",
-    items: [
-      {
-        id: 1,
-        name: "Life At NUST",
-        link: "/gallery",
-      },
-      {
-        id: 2,
-        name: "Our Team",
-        link: "/our_team",
-      },
-    ],
-  },
-  // {
-  // 	heading: 'Events',
-  // 	items: [
-  // 		{
-  // 			id: 1,
-  // 			name: 'Sports Fest',
-  // 			link: '/sports_fest',
-  // 		},
-  // 	],
-  // },
-  {
-    heading: "ON Station",
-    link: "/on-station/episode/1",
-  },
-  {
-    heading: "Sponsors",
-    link: "/sponsors",
-  },
-
-  {
-    heading: "Resources",
-    items: [
-      { id: 3, name: "Downloads", link: "/downloads", disabled: true },
-      {
-        id: 4,
-        name: "Mechandise",
-        link: "/merchandise",
-      },
-    ],
-  },
+	{
+		heading: 'Home',
+		link: '/',
+	},
+	{
+		heading: 'About Us',
+		items: [
+			{
+				id: 1,
+				name: 'Life At NUST',
+				link: '/gallery',
+			},
+			{
+				id: 2,
+				name: 'Our Team',
+				link: '/our_team',
+			},
+		],
+	},
+	{
+		heading: 'ON Station',
+		link: '/on-station/episode/1',
+	},
+	{
+		heading: 'Resources',
+		items: [
+			{ id: 3, name: 'Downloads', link: '/downloads' },
+			{
+				id: 4,
+				name: 'Mechandise',
+				link: '/merchandise',
+			},
+		],
+	},
+	{
+		heading: 'Sponsors',
+		link: '/sponsors',
+	},
 ];
+
 
 const Navbar = () => {
   const router = useRouter();
