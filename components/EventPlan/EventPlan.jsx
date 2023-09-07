@@ -11,7 +11,7 @@ const EventPlan = () => {
       </div>
       <div className="flex justify-center md:w-11/12 min-h-[500px]">
         <div className="rounded-xl p-3  md:w-11/12 shadow-2xl gap-3 flex flex-col items-center">
-          <div className="flex flex-col md:flex-row">
+          <div className="md:flex hidden md:flex-row">
             <button
               onClick={() => setActiveIndex(0)}
               className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
@@ -55,6 +55,12 @@ const EventPlan = () => {
               Day Seven
             </button>
           </div>
+          <div className="md:hidden flex">
+            <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
+              <div className="carousel-item"></div>
+            </div>
+          </div>
+
           <div className="flex justify-center">
             <IndexReturner activeIndex={activeIndex}></IndexReturner>
           </div>
