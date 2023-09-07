@@ -10,7 +10,7 @@ const EventPlan = () => {
         <div className="w-1/4 h-[3px] bg-[#3F2073]"></div>
       </div>
       <div className="flex justify-center md:w-11/12 min-h-[500px]">
-        <div className="rounded-xl p-3  md:w-11/12 shadow-2xl gap-3 flex flex-col items-center">
+        <div className="rounded-xl p-3 w-screen md:w-11/12 shadow-2xl gap-3 flex flex-col items-center">
           <div className="md:flex hidden md:flex-row">
             <button
               onClick={() => setActiveIndex(0)}
@@ -56,8 +56,63 @@ const EventPlan = () => {
             </button>
           </div>
           <div className="md:hidden flex">
-            <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
-              <div className="carousel-item"></div>
+            <div className="carousel carousel-center max-w-[270px] p-2 space-x-2 rounded-box">
+              <div className="carousel-item">
+                <button
+                  onClick={() => setActiveIndex(0)}
+                  className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+                >
+                  Day Zero
+                </button>
+              </div>
+              <div className="carousel-item">
+                <button
+                  onClick={() => setActiveIndex(1)}
+                  className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+                >
+                  Day One
+                </button>
+              </div>
+              <div className="carousel-item">
+                <button
+                  onClick={() => setActiveIndex(2)}
+                  className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+                >
+                  Day Two
+                </button>
+              </div>
+              <div className="carousel-item">
+                <button
+                  onClick={() => setActiveIndex(3)}
+                  className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+                >
+                  Day Three
+                </button>
+              </div>
+              <div className="carousel-item">
+                <button
+                  onClick={() => setActiveIndex(4)}
+                  className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+                >
+                  Day Four
+                </button>
+              </div>
+              <div className="carousel-item">
+                <button
+                  onClick={() => setActiveIndex(5)}
+                  className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+                >
+                  Day Five
+                </button>
+              </div>
+              <div className="carousel-item">
+                <button
+                  onClick={() => setActiveIndex(6)}
+                  className="border-slate-400 border-2 text-xl font-bold p-3 hover:bg-slate-100"
+                >
+                  Day Seven
+                </button>
+              </div>
             </div>
           </div>
 
