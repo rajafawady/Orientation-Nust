@@ -155,6 +155,48 @@ export default function donations() {
             ></div>
           </div>
         </div>
+        <div className="w-full flex items-center justify-center gap-1 px-3 my-2 flex-col lg:flex-row">
+          <div className="w-1/4 h-[3px] bg-[#5123c5]"></div>
+          <h1 className="m-5 lg:m-14 p-1 lg:p-4 shrink-0  silver-heading-text text-4xl">
+            More Sponsors
+          </h1>
+          <div className="w-1/4 h-[3px] bg-[#5123c5]"></div>
+        </div>
+        <div className="flex justify-center">
+          <div>
+            <div
+              style={{
+                // backgroundColor: "rgba(114,2,64,0.1)",
+                backgroundImage: `url("/sponsor-logos/breeo.png")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="rounded mx-2 lg:mx-12 h-72 w-72 school_link "
+            ></div>
+          </div>
+          <div>
+            <div
+              style={{
+                // backgroundColor: "rgba(114,2,64,0.1)",
+                backgroundImage: `url("/sponsor-logos/cheezious.png")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="rounded mx-2 lg:mx-12 h-72 w-72 school_link "
+            ></div>
+          </div>
+          <div>
+            <div
+              style={{
+                // backgroundColor: "rgba(114,2,64,0.1)",
+                backgroundImage: `url("/sponsor-logos/reach.png")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="rounded mx-2 lg:mx-12 h-72 w-72 school_link "
+            ></div>
+          </div>
+        </div>
       </div>
     </Layout>
   );
