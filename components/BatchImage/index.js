@@ -18,7 +18,8 @@ const BatchImage = ({ imgName, dlName, btnText }) => {
 			<div className='flex w-full justify-around mb-10 md:mb-16 mt-3 md:mt-10'>
 				<div className=''>
 					<button
-						className={`max-w-xs flex-1  rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white bg-gradient-to-r from-dark-purple to-prussian-blue ransition-all duration-200 transform focus:outline-none glow-on-hover sm:w-full 
+						title='Download High Resolution'
+						className={`max-w-xs flex-1 rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white bg-gradient-to-r from-dark-purple to-prussian-blue ransition-all duration-200 transform focus:outline-none glow-on-hover sm:w-full 
                         `}
 						onClick={() => {
 							FileSaver.saveAs(`/batch-pics/original/${imgName}`, `${dlName}.jpg`);

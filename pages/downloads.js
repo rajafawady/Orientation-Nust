@@ -14,8 +14,8 @@ const Downloads = () => {
 				<div className='flex w-full  flex-wrap justify-evenly'>
 					<BatchImage imgName='day-full.jpg' dlName='day-photo-1' btnText='Day Drone' />
 					<BatchImage imgName='night-full.png' dlName='night-photo-2' btnText='Night Drone' />
-					<BatchImage imgName='day-pano.jpg' dlName='day-photo-2' btnText='Day' />
-					<BatchImage imgName='night-pano.png' dlName='night-photo-3' btnText='Night Drone' />
+					<BatchImage imgName='day-pano.jpg' dlName='day-photo-2' btnText='Day Panorama' />
+					<BatchImage imgName='night-pano.png' dlName='night-photo-3' btnText='Night Panorama' />
 				</div>
 			</div>
 		</Layout>
