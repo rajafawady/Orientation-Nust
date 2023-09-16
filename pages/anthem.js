@@ -174,10 +174,12 @@ export default function Music() {
 									<div className='grid grid-cols-1 md:grid-cols-2 gap-16 h-full'>
 										<div className='flex flex-col justify-evenly'>
 											<div className='text-center font-semibold font-sans text-xl flex flex-col'>
-												<span className='capitalize'>Concept & Director</span>
+												<span className='capitalize'>Concept & Direction</span>
 												<p className='flex flex-col justify-center items-center'>
 													<span className='font-light'>Hammad Qasim</span>
 												</p>
+											</div>
+											<div className='text-center font-semibold font-sans text-xl flex flex-col'>
 												<span className='capitalize'>Videography</span>
 												<p className='flex flex-col justify-center items-center'>
 													<span className='font-light'>Baasil Siddiqi</span>
