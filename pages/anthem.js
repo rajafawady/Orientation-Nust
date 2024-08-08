@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import Lyrics from '../components/Lyrics/Lyrics';
 // import NavCopy from '../components/Navbar';
 import logo from '/public/logo12345.png';
-import onLogo from '/public/logo.png';
+import onLogo from '/public/Logo Assets/NUST ON24 LOGO COLORED.png';
 import Image from 'next/image';
 
 const MusicVideo = dynamic(() => import('../components/Lyrics/MusicVideo'), {
@@ -85,8 +85,8 @@ export default function Music() {
 								Concept
 							</h2>
 							<h4 className='w-full text-justify'>
-								The "ON'23 Anthem" is a song that inspires people to embrace the challenges of the year
-								2023 with optimism, unity, and resilience, reminding them that the journey itself is
+								The "ON'24 Anthem" is a song that inspires people to embrace the challenges of the year
+								2024 with optimism, unity, and resilience, reminding them that the journey itself is
 								worth celebrating, while also capturing the essence of hope, determination, and the
 								journey ahead. It has divided their journey into 4 parts: The verse is a description of
 								the night before the travel that is anxiety ridden. The bridge is a reminiscent of the

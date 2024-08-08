@@ -14,28 +14,18 @@ const sections = [
 		link: '/',
 	},
 	{
-		heading: 'About Us',
-		items: [
-			{
-				id: 1,
-				name: 'Life At NUST',
-				link: '/gallery',
-			},
-			{
-				id: 2,
-				name: 'Our Team',
-				link: '/our_team',
-			},
-		],
+		heading: 'Nust in Focus',
+		link: '/game',
 	},
-	{
-		heading: 'Anthem',
-		link: '/anthem',
-	},
-	{
-		heading: 'ON Station',
-		link: '/on-station/episode/1',
-	},
+	
+	// {
+	// 	heading: 'Anthem',
+	// 	link: '/anthem',
+	// },
+	// {
+	// 	heading: 'ON Station',
+	// 	link: '/on-station/episode/1',
+	// },
 	{
 		heading: 'Resources',
 		items: [
@@ -50,6 +40,21 @@ const sections = [
 	{
 		heading: 'Sponsors',
 		link: '/sponsors',
+	},
+	{
+		heading: 'About Us',
+		items: [
+			{
+				id: 1,
+				name: 'Life At NUST',
+				link: '/gallery',
+			},
+			{
+				id: 2,
+				name: 'Our Team',
+				link: '/our_team',
+			},
+		],
 	},
 ];
 
@@ -74,7 +79,7 @@ const Navbar = () => {
 			// let margin = (-1 / transitionAt) * scrollAmounnt + 2.5;
 			// if (margin > 2.5) margin = 2.5;
 			// else if (margin < 0) margin = 0;
-			// navbarRef.current.style.margin = `${margin}rem`;
+			// navbarRef.current.style.margin = ${margin}rem;
 			// navbarRef.current.style.marginLeft = margin + 'rem';
 			if (scrollAmount >= transitionAt) setStickNavbar(true);
 			else if (scrollAmount < transitionAt) setStickNavbar(false);
@@ -93,14 +98,14 @@ const Navbar = () => {
 		<div className={`sticky top-0 w-full z-50 h-16 transition-all ${stickNavbar ? 'px-0' : 'px-10'}`}>
 			<div
 				className={twMerge(
-					`px-8 duration-300 transition-all w-full shadow-xl bg-white backdrop-blur`,
+					`px-8 duration-300 transition-all w-full shadow-xl bg-purple text-coral backdrop-blur`,
 					stickNavbar ? 'rounded-none mt-0 opacity-100' : 'rounded-3xl mt-10 opacity-80'
 				)}
 				ref={navbarRef}>
 				<div className='flex items-center justify-between py-2 '>
 					<Link href='/'>
-						<div className='w-16 aspect-1 relative'>
-							<Image src='/Logo Assets/outlined-logo.svg' alt='logo' layout='fill' />
+						<div className='w-16 aspect-1 relative cursor-pointery '>
+							<Image src='/Logo Assets/NUST ON24 LOGO COLORED.png' alt='logo' layout='fill' />
 						</div>
 					</Link>
 					<div className='hidden md:flex md:items-center'>
@@ -124,4 +129,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default Navbar;

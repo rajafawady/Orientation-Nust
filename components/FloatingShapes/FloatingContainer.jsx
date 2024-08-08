@@ -43,7 +43,7 @@ const Container = () => {
 	// }, []);
 	const getDoodle = () => {
 		const fill = [
-			'text-dark-purple ',
+			'text-purple ',
 			'text-lapis-lazuli ',
 			'text-tyrian-purple ',
 			'text-prussian-blue ',

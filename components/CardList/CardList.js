@@ -9,9 +9,9 @@ const CardList = ({ schools, lifeAtNUST }) => {
 	return (
 		<div id='cardList'>
 			<div className='w-full flex items-center justify-center gap-1 md:gap-3 px-3 my-5'>
-				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
+				<div className='w-1/4 h-[3px] bg-coral'></div>
 				<h1 className='my-3 p-4 shrink-0 heading text-4xl'>Schools</h1>
-				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
+				<div className='w-1/4 h-[3px] bg-coral'></div>
 			</div>
 			<div className='list'>
 				<div className='school__container  lg:px-8 px-3 py-2'>
@@ -20,9 +20,9 @@ const CardList = ({ schools, lifeAtNUST }) => {
 			</div>
 
 			<div className='w-full flex items-center justify-center gap-1 md:gap-3 px-3 my-16'>
-				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
+				<div className='w-1/4 h-[3px] bg-coral'></div>
 				<h1 className='my-3 p-4 shrink-0 heading text-4xl'>Life at NUST</h1>
-				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
+				<div className='w-1/4 h-[3px] bg-coral'></div>
 			</div>
 			<div className='list'>
 				<div className='school__container lg:px-8 px-3 py-2'>

@@ -7,9 +7,9 @@ const Downloads = () => {
 		<Layout title={'Downloads'}>
 			<div className='flex flex-col items-center w-full'>
 				<div className='w-full flex items-center justify-center gap-1 md:gap-3 px-3 mt-10 mb-8'>
-					<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
+					<div className='w-1/4 h-[3px] bg-coral'></div>
 					<h1 className='my-3 p-4 shrink-0 heading text-4xl'>Downloads</h1>
-					<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
+					<div className='w-1/4 h-[3px] bg-coral'></div>
 				</div>
 				<div className='flex w-full  flex-wrap justify-evenly'>
 					<BatchImage imgName='day-full.jpg' dlName='day-photo-1' btnText='Day Drone' />

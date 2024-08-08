@@ -18,9 +18,9 @@ const Episode = () => {
 				<Layout title={`ON Station | Episode ${currentVideo.id}`}>
 					<div className='flex mt-10 flex-col items-center dark:text-white'>
 						<div className='w-full flex items-center justify-center gap-3 px-3 my-5'>
-							<div className='w-1/4 h-[3px] bg-[#3F2073] rounded-l-md'></div>
+							<div className='w-1/4 h-[3px] bg-coral rounded-l-md'></div>
 							<h1 className='my-3 p-4 shrink-0 heading'>ON Station</h1>
-							<div className='w-1/4 h-[3px] bg-[#3F2073] rounded-r-md'></div>
+							<div className='w-1/4 h-[3px] bg-coral rounded-r-md'></div>
 						</div>
 						{/* <div className='font-jacklyn font-bold mb-16 relative'>
 							<p className='header-1'>ON Station</p>
@@ -56,8 +56,8 @@ const Episode = () => {
 											className={`cursor-pointer transition-colors w-full
                             ${
 								video.id === id
-									? 'bg-gradient-to-tl from-dark-purple to-prussian-blue text-white'
-									: 'hover:bg-prussian-blue/30'
+									? 'bg-gradient-to-tl from-purple to-coral text-white'
+									: 'hover:bg-coral/30'
 							}
                         `}
 											onClick={() => router.push(`/on-station/episode/${video.id}`)}>
