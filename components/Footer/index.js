@@ -44,7 +44,7 @@ export default function Footer() {
 	return (
 		<>
 			<footer
-				className='bg-gradient-to-br from-dark-purple via-prussian-blue to-lapis-lazuli mt-16 relative z-10'
+				className='bg-gradient-to-br from-purple via-[#60392c] to-coral mt-16 relative z-10'
 				aria-labelledby='footer-heading'>
 				<h2 id='footer-heading' className='sr-only'>
 					Footer
@@ -64,7 +64,7 @@ export default function Footer() {
 										liaison.orientation@nust.edu.pk
 									</div>
 									<div className='text-white text-lg mt-4 font-bold text-center md:text-left'>
-										Team Liaison, ON 2023.
+										Team Liaison, ON 2024.
 									</div>
 								</div>
 							</div>
@@ -83,7 +83,7 @@ export default function Footer() {
 										<button
 											type='button'
 											className='w-full h-16 bg-white rounded-md py-2 px-4 flex items-center justify-center text-xl font-bold transition-all
-                       text-prussian-blue hover:text-white hover:bg-dark-purple hover:bg-opacity-75 duration-300 focus:outline-none shadow-2xl'>
+                       text-coral hover:text-light-yellow hover:bg-purple hover:bg-opacity-75 duration-300 focus:outline-none shadow-2xl'>
 											Become Our Sponsor
 										</button>
 									</a>
@@ -93,7 +93,7 @@ export default function Footer() {
 					</div>
 					<div className='mt-8 md:mt-8 border-t border-white md:pt-8 md:flex md:items-center md:justify-between'>
 						<p className='mt-8 text-base text-white md:mt-0 text-center md:order-1'>
-							&copy; 2023 Orientation, NUST. All rights reserved.
+							&copy; 2024 Orientation, NUST. All rights reserved.
 						</p>
 						<div className='flex justify-center space-x-6 md:order-2 mt-6 md:mt-0'>
 							{navigation.social.map((item) => (

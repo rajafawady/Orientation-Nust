@@ -18,22 +18,22 @@ const MobileLinks = ({ isSticky, sections }) => {
           {section?.items?.length > 0 ? (
             <>
               <div
-                className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
-                  openSection === index ? "text-[#476dae]" : ""
+                className={`text-coral hover:text-light-yellow hover:text-glow font-semibold uppercase mb-1 cursor-pointer ${
+                  openSection === index ? "text-light-yellow" : ""
                 }`}
                 onClick={() => handleSectionClick(index)}
               >
                 {section.heading}
               </div>
               {openSection === index && (
-                <div className="left-0 mt-2 bg-white border rounded shadow">
+                <div className="left-0 mt-2 bg-purple border border-purple rounded shadow">
                   {section.items
                     .filter((item) => !item.disabled)
                     .map((item) => (
                       <div key={item.id} className="mx-2 p-2">
                         <Link
                           href={`${item.link}`}
-                          className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter text-gray-800 hover:text-[#476dae]`}
+                          className={`lg:text-md mx-1 text-sm font-semibold tracking-tighter text-gray-800 hover:text-light-yellow hover:text-glow`}
                         >
                           {item.name}
                         </Link>
@@ -45,10 +45,10 @@ const MobileLinks = ({ isSticky, sections }) => {
           ) : (
             <Link href={`${section.link}`}>
               <div
-                className={`text-gray-500 font-semibold uppercase mb-1 cursor-pointer ${
+                className={`text-coral font-semibold uppercase mb-1 cursor-pointer ${
                   section.disabled
                     ? "pointer-events-none"
-                    : "hover:text-[#476dae]"
+                    : "hover:text-light-yellow hover:text-glow"
                 }`}
                 onClick={() => handleSectionClick(index)}
               >

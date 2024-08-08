@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export const TimerContainer = () => {
-	const countDownDate = new Date('2023-09-05T09:00:00');
+	const countDownDate = new Date('2024-09-06T09:00:00');
 
 	const [days, setDays] = useState(0);
 	const [time, setTime] = useState(10);
@@ -41,25 +41,25 @@ export const TimerContainer = () => {
 	return (
 		// <div className='grid grid-flow-col gap-1 text-center auto-cols-max absolute bottom-20 lg:left-0 left:1/2 m-4'>
 		<div className='hidden md:grid grid-flow-col gap-1 text-center auto-cols-max'>
-			<div className='flex flex-col p-2 bg-[#3F2073] rounded-sm text-neutral-content'>
+			<div className='flex flex-col p-2 opacity-90 bg-purple rounded-sm text-light-gray'>
 				<span className='countdown font-mono text-4xl'>
 					<span style={{ '--value': days }}></span>
 				</span>
 				days
 			</div>
-			<div className='flex flex-col p-2 bg-[#3F2073] rounded-sm text-neutral-content'>
+			<div className='flex flex-col p-2 opacity-90 bg-purple rounded-sm text-light-gray'>
 				<span className='countdown font-mono text-4xl'>
 					<span style={{ '--value': hours }}></span>
 				</span>
 				hours
 			</div>
-			<div className='flex flex-col p-2 bg-[#3F2073] rounded-sm  text-neutral-content'>
+			<div className='flex flex-col p-2 opacity-90 bg-purple rounded-sm  text-light-gray'>
 				<span className='countdown font-mono text-4xl'>
 					<span style={{ '--value': minutes }}></span>
 				</span>
 				min
 			</div>
-			<div className='flex flex-col p-2 bg-[#3F2073] rounded-sm  text-neutral-content'>
+			<div className='flex flex-col p-2 opacity-90 bg-purple rounded-sm  text-light-gray'>
 				<span className='countdown font-mono text-4xl'>
 					<span style={{ '--value': seconds }}></span>
 				</span>

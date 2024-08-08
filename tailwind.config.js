@@ -8,6 +8,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      textShadow: {},
       colors: {
         "pale-pink": "#F9D8D7",
         // 'ultra-red': '#F26E83',
@@ -19,7 +20,15 @@ module.exports = {
         // 'lapis-lazuli': '#12629E',
         "lapis-lazuli": "#6390d5",
         /* new: */
-        "dark-purple": "#3f2073",
+        // "dark-purple": "#3f2073",
+
+
+        'purple': '#291729',
+        'dark-red': '#9e2a35',
+        'olive-green': '#898930',
+        'coral': '#f7874b',
+        'light-yellow': '#fec75b',
+        'light-gray': '#dce3e4',
       },
       fontFamily: {
         montserrat: ["Montserrat"],
@@ -61,6 +70,7 @@ module.exports = {
       },
     },
   },
+  
   daisyui: {
     themes: ["light"],
   },
@@ -69,5 +79,16 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
     require("daisyui"),
+
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-glow': {
+          textShadow: '0 0 1px #dce3e4', // Custom text shadow
+        },
+        '.text-glow-lg': {
+          textShadow: '0 0 3px #dce3e4', // Larger glow
+        },
+      }, ['responsive', 'hover']);
+    },
   ],
 };

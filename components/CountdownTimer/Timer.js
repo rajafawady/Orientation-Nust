@@ -10,7 +10,7 @@ const Timer = () => {
 	const [seconds, setSeconds] = useState(0);
 	const [message, setMessage] = useState('');
 
-	let countDownDate = new Date('2023-09-05T09:00:00');
+	let countDownDate = new Date('2024-09-02T09:00:00');
 
 	useEffect(() => {
 		var updateTime = setInterval(() => {

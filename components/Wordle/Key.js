@@ -11,7 +11,7 @@ function Key({ keyVal, bigKey, disabled }) {
     console.log(keyVal, " is a big key? ", bigKey);
     if (gameOver.gameOver) return;
     if (keyVal === "Enter") {
-      console.log("entr pressed");
+      console.log("enter pressed");
       onEnter();
     } else if (keyVal === "Delete") {
       onDelete();

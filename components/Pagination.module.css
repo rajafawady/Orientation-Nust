@@ -1,0 +1,28 @@
+/* Pagination.module.css */
+.button {
+    margin: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.875rem;
+}
+
+.activeButton {
+    background-color: olive;
+    color: white;
+}
+
+.inactiveButton {
+    background-color: white;
+    color: olive;
+}
+
+@media (min-width: 641px) {
+    .button {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+}

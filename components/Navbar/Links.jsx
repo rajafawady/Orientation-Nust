@@ -23,23 +23,21 @@ const Links = ({ isSticky, sections }) => {
 					{section?.items?.length > 0 ? (
 						<>
 							<div
-								className={`font-semibold uppercase mb-1 cursor-pointer flex items-center gap-2 p-2 rounded-sm group transition-all hover:text-tyrian-purple`}
+								className={`font-semibold uppercase mb-1 cursor-pointer flex items-center gap-2 p-2 rounded-sm group transition-all hover:text-light-yellow hover:text-glow`}
 								onClick={() => handleSectionClick(index)}>
 								<h4>{section.heading}</h4>
 								<div
-									className={`${
-										openSection === index ? 'rotate-[180deg]' : ''
-									} transition-transform`}>
+									className={`${openSection === index ? 'rotate-[180deg]' : ''
+										} transition-transform`}>
 									<FaChevronDown />
 								</div>
 							</div>
 
 							<div
-								className={`absolute left-0 my-2 w-max max-w-xs bg-white flex-col shadow transition-all ${
-									openSection === index
+								className={`absolute left-0 my-2 w-max max-w-xs bg-purple flex-col shadow transition-all ${openSection === index
 										? 'flex top-[62px] opacity-100'
 										: ' top-8 opacity-0 pointer-events-none'
-								}
+									}
                   ${!isSticky ? '' : 'rounded-md'}
                 
                 `}>
@@ -48,7 +46,7 @@ const Links = ({ isSticky, sections }) => {
 									.map((item) => (
 										<Link href={`${item.link}`} key={item.id}>
 											<div
-												className={`lg:text-md text-sm font-semibold tracking-tighter cursor-pointer p-4 hover:text-tyrian-purple transition-all`}>
+												className={`lg:text-md text-sm font-semibold tracking-tighter cursor-pointer p-4 hover:text-light-yellow hover:text-glow transition-all`}>
 												{item.name}
 											</div>
 										</Link>
@@ -58,9 +56,7 @@ const Links = ({ isSticky, sections }) => {
 					) : (
 						<Link href={`${section.link}`}>
 							<div
-								className={`font-semibold uppercase mb-1 cursor-pointer transition-all hover:text-tyrian-purple ${
-									section.disabled && 'pointer-events-none'
-								}`}
+								className={`font-semibold uppercase mb-1 cursor-pointer transition-all hover:text-light-yellow hover:text-glow  ${section.disabled && 'pointer-events-none'}`}
 								onClick={() => handleSectionClick(index)}>
 								{section.heading}
 							</div>

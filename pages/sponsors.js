@@ -7,14 +7,14 @@ export default function donations() {
 		<Layout title={'Sponsors'}>
 			<div className='w-full flex flex-col'>
 				<div className='w-full flex items-center justify-center gap-1 px-3 flex-col lg:flex-row mt-5'>
-					<div className='w-1/4 h-[6px] bg-[#3f2073]'></div>
-					<h1 className='m-5 lg:mx-14 p-1 lg:p-4 shrink-0  sp-heading text-6xl'>Our Sponsors</h1>
-					<div className='w-1/4 h-[6px] bg-[#3f2073]'></div>
+					<div className='w-1/4 h-[6px] bg-coral'></div>
+					<h1 className='m-5 lg:mx-14 p-1 lg:p-4 shrink-0 sp-heading text-6xl text-center'>Our Sponsors</h1>
+					<div className='w-1/4 h-[6px] bg-coral'></div>
 				</div>
 				<div className='w-full flex items-center justify-center gap-1 px-3 my-2 flex-col lg:flex-row'>
-					<div className='w-1/4 h-[3px] bg-[#5123c5]'></div>
+					<div className='w-1/4 h-[3px] bg-[#00ccff]'></div>
 					<h1 className='m-5 lg:m-14 p-1 lg:p-4 shrink-0  silver-heading-text text-4xl'>Winterland</h1>
-					<div className='w-1/4 h-[3px] bg-[#5123c5]'></div>
+					<div className='w-1/4 h-[3px] bg-[#00ccff]'></div>
 				</div>
 				<div className='flex justify-center items-center flex-col lg:flex-row'>
 					<div className='mx-2 lg:mx-12'>
@@ -132,9 +132,9 @@ export default function donations() {
 					</div>
 				</div>
 				<div className='w-full flex items-center justify-center gap-1 px-3 my-2 flex-col lg:flex-row'>
-					<div className='w-1/4 h-[3px] bg-[#5123c5]'></div>
+					<div className='w-1/4 h-[3px] bg-[#00ccff]'></div>
 					<h1 className='m-5 lg:m-14 p-1 lg:p-4 shrink-0  silver-heading-text text-4xl'>More Sponsors</h1>
-					<div className='w-1/4 h-[3px] bg-[#5123c5]'></div>
+					<div className='w-1/4 h-[3px] bg-[#00ccff]'></div>
 				</div>
 				<div className='flex justify-center flex-wrap'>
 					<div>

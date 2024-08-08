@@ -29,10 +29,10 @@ const Logo = () => {
 	}, []);
 
 	return (
-		<div className='h-48 w-48 lg:h-64 lg:w-64 xl:h-72 xl:w-72 relative shrink-0 flex items-end justify-center'>
-			<img src='Logo Assets/CnF Outline.png' className='h-full w-full absolute ' alt='' />
+		<div className='h-52 w-52 lg:h-72 lg:w-72 xl:h-80 xl:w-80 relative shrink-0 flex items-end justify-center'>
+			{/* <img src='Logo Assets/CnF Outline.png' className='h-full w-full absolute ' alt='' /> */}
 			<img
-				src='Logo Assets/DnS Outline.png'
+				src='Logo Assets/NUST ON24 LOGO COLORED.png'
 				className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 h-9/12 w-9/12'
 				alt=''
 				ref={domeRef}
@@ -42,4 +42,4 @@ const Logo = () => {
 	);
 };
 
-export default Logo;
+export default Logo;

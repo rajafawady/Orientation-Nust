@@ -12,11 +12,11 @@ export default function Merchandise() {
   const [imageIndex, setImageIndex] = useState(0);
 
   return (
-    <div className="bg-white dark:bg-black md:px-60 pt-0 sm:pt-0">
+    <div className="bg-white dark:bg-black md:px-60 pt-0 sm:pt-0 rounded-md ">
     <div className='w-full flex items-center justify-center gap-1 md:gap-3 px-3  mt-10 mb-8'>
-				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
+				<div className='w-1/4 h-[3px] bg-coral'></div>
 				<h1 className='my-3 p-4 shrink-0 heading text-4xl'>Buy Our Merchandise</h1>
-				<div className='w-1/4 h-[3px] bg-[#3F2073]'></div>
+				<div className='w-1/4 h-[3px] bg-coral'></div>
 			</div>
       <div className="max-w-2xl -mt-20 -mb-20 mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start">
@@ -108,7 +108,7 @@ export default function Merchandise() {
               <div className="mt-10 flex sm:flex-col">
               <button
               type="submit"
-              className="max-w-xs flex-1 rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white bg-gradient-to-r from-dark-purple to-prussian-blue hover:sm:w-full md:mb-0 mb-10 transition-all duration-200 transform focus:outline-none glow-on-hover"
+              className="max-w-xs flex-1 rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white bg-gradient-to-r from-purple to-coral hover:sm:w-full md:mb-0 mb-10 transition-all duration-200 transform focus:outline-none glow-on-hover"
             >
               Buy Now!!!
             </button>

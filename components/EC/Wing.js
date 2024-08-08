@@ -57,11 +57,12 @@ const Wing = ({ cards }) => {
 						{...bind(i)}
 						style={{
 							transform: interpolate([rot, scale], trans),
-							border: '10px solid #6390d5',
 							borderRadius: '2rem',
 							overflow: 'hidden',
 							position: 'relative',
-						}}>
+						}}
+						className='border-[10px] border-purple border-solid '
+						>
 						<div className={styles.gradientOverlay}></div>
 						<div className={styles.imageContainer}>
 							<Image src={cards[i].image} layout='fill' alt={`Card ${i + 1}`} />
