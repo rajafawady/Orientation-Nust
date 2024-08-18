@@ -13,7 +13,7 @@ const Page1 = () => {
 								<Image src='/calendar.png' layout='fill' alt='' className='invert' />
 							</div>
 							<div>
-								6<sup className='text-xs'>th</sup> - 12<sup className='text-xs'>th</sup> September 2024
+								2<sup className='text-xs'>nd</sup> - 6<sup className='text-xs'>th</sup> September 2024
 							</div>
 						</div>
 						<div className='text-xl font-extrabold  font-latoLight my-2 flex items-center gap-1'>
