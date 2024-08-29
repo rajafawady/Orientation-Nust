@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export const TimerContainer = () => {
-	const countDownDate = new Date('2024-09-06T09:00:00');
+	const countDownDate = new Date('2024-09-02T09:00:00');
 
 	const [days, setDays] = useState(0);
 	const [time, setTime] = useState(10);
