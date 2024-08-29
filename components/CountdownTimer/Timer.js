@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { TimerContainer } from './TimerContainer';
-import Mesh from '../../assets/bg.svg';
+
 // import LogoAnimation from '../../assets/THINGY.mp4';
 const Timer = () => {
 	const [time, setTime] = useState(10);
@@ -337,7 +337,7 @@ const Timer = () => {
 					{"Welcome to the Orientation '23"}
 				</div>
 				<div className='date-text mt-12 text-center font-sans font-bold text-white text-md md:text-xl lg:text-2xl'>
-					5th - 9th September 2022 in NUST H12, Islamabad
+					2nd - 6th September 2024 in NUST H12, Islamabad
 				</div>
 				<div></div>
 				<TimerContainer days={days} hours={hours} minutes={minutes} seconds={seconds} />
