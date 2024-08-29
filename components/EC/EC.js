@@ -63,7 +63,7 @@ export default function EC() {
 				</div>
 				<div className='w-1/3 h-[700px] flex flex-col items-center ustify-start gap-20 relative'>
 					<h2 className='text-4xl text-center bg-gradient-to-b font-latoBold bg-clip-text text-transparent from-purple to-coral font-bold'>
-						President Wing
+						QA & HR
 					</h2>
 					<Wing cards={presiwing} />
 				</div>
