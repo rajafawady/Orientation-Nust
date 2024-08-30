@@ -61,7 +61,7 @@ export default function Footer() {
 										In case of any query contact us at:
 									</div>
 									<div className='text-white text-lg mt-4 font-bold text-center md:text-left'>
-										liaison.orientation@nust.edu.pk
+									    nuston2024@gmail.com
 									</div>
 									<div className='text-white text-lg mt-4 font-bold text-center md:text-left'>
 										Team Liaison, ON 2024.
