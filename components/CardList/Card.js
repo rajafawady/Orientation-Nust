@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Card = ({ children, image, type, id, content }) => {
+const Card = ({ children, image, id, content }) => {
 	return (
 		<>
 			<div
@@ -27,7 +27,7 @@ const Card = ({ children, image, type, id, content }) => {
 	);
 };
 
-const Modal = ({ title, image, id, content }) => {
+const Modal = ({ title, id, content }) => {
 	return (
 		<dialog id={id} className='modal modal-bottom sm:modal-middle'>
 			<form method='dialog' className='modal-box'>
