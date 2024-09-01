@@ -8,7 +8,6 @@ export default function donations() {
             <div className='mt-32'>
                 <div className='w-full flex flex-col justify-center'>
                     <Tabs />
-                      
                 </div>
             </div>
         </Layout>
