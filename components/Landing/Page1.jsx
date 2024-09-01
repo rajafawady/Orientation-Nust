@@ -4,7 +4,7 @@ import { TimerContainer } from './TimerContainer';
 
 const Page1 = () => {
 	return (
-		<div className='text-light-gray h-[calc(100vh-4rem)] relative z-10 flex flex-col items-center justify-evenly'>
+		<div className='text-light-gray h-[calc(100vh-52px)] relative z-10 flex flex-col items-center justify-evenly'>
 			<div className='flex flex-col-reverse  md:flex-row items-center w-full justify-evenly font-mont'>
 				<div className='flex flex-col gap-2'>
 					<div>
