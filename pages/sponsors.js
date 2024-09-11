@@ -15,77 +15,77 @@ export default function Donations() {
 					
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/California.png"),
+							backgroundImage: `url("/sponsor-logos/California.png")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/cheezious.png"),
+							backgroundImage: `url("/sponsor-logos/cheezious.png")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/crusteez.png"),
+							backgroundImage: `url("/sponsor-logos/crusteez.png")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/nearpear.jpg"),
+							backgroundImage: `url("/sponsor-logos/nearpear.jpg")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/orange lake .png"),
+							backgroundImage: `url("/sponsor-logos/orange lake .png")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/Pizzrela.jpg"),
+							backgroundImage: `url("/sponsor-logos/Pizzrela.jpg")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/Ranchers .png"),
+							backgroundImage: `url("/sponsor-logos/Ranchers .png")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/ROX.jpg"),
+							backgroundImage: `url("/sponsor-logos/ROX.jpg")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/USA.jpg"),
+							backgroundImage: `url("/sponsor-logos/USA.jpg")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 						<div
 						style={{
-							backgroundImage: url("/sponsor-logos/AEO.jpg"),
+							backgroundImage: `url("/sponsor-logos/AEO.jpg")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center'
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
 					<div
 						style={{
-							backgroundImage: url("/sponsor-logos/ASCOM.jpg"),
+							backgroundImage: `url("/sponsor-logos/ASCOM.jpg")`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 						}}
