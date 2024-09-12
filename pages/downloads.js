@@ -12,7 +12,7 @@ const Downloads = () => {
 					<div className='w-1/4 h-[3px] bg-coral'></div>
 				</div>
 				<div className='flex w-full  flex-wrap justify-evenly'>
-					<BatchImage imgName='day-photo-1.jpg' dlName='day-photo-1' btnText='Day Drone' />
+					<BatchImage imgName='day-photo-1.png' dlName='day-photo-1' btnText='Day Drone' />
 					<BatchImage imgName='night-photo-1.jpg' dlName='night-photo-1' btnText='Night Drone' />
 					<BatchImage imgName='day-photo-2.jpg' dlName='day-photo-2' btnText='Day Panorama' />
 					<BatchImage imgName='night-photo-2.jpg' dlName='night-photo-2' btnText='Night Panorama' />
