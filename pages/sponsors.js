@@ -83,6 +83,14 @@ export default function Donations() {
 							backgroundPosition: 'center'
 						}}
 						className='rounded h-72 w-72 mx-auto school_link'></div>
+						
+						<div
+						style={{
+							backgroundImage: `url("/sponsor-logos/ASCOM.jpg")`,
+							backgroundSize: 'cover',
+							backgroundPosition: 'center',
+						}}
+						className='rounded h-72 w-72 mx-auto school_link'></div>
 					
 				</div>
 			</div>
